@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.0 - 2026-09-29
+
+- Move `index.html`, the schedule, printable poster, styles, scripts, downloads, and assets from `dist` to the repository root.
+- Replace the custom deployment workflow with GitHub Pages publishing from `main` and `/ (root)`; add `.nojekyll` for direct static-file publishing.
+- Update the Box synchronization script, local preview instructions, and asset documentation for the new file layout.
+
 ## 0.5.3 - 2026-09-29
 
 - Update the deployment repository check after the website repository was renamed to `YukeWang96/GeniSys.github.io`.

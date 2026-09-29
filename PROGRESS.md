@@ -51,7 +51,8 @@ Last updated: September 29, 2026
 ## Program and launch
 
 - [x] Create a GeniSys logo, browser tab icons, and touch icon.
-- [x] Prepare the dedicated `GeniSys27` website repository and automatic Pages deployment workflow.
+- [x] Prepare the dedicated website repository and automatic Pages publishing.
+- [x] Move the website to the repository root for branch-based Pages publishing.
 - [ ] Confirm speakers before adding their names to the website.
 - [ ] Finalize the schedule and poster/demo session.
 - [ ] Confirm hybrid attendance and remote poster participation details.

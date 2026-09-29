@@ -20,7 +20,7 @@ Website, printable event poster, and call for research posters for GeniSys 2027 
 No package installation or build step is required. From the repository root, run:
 
 ```sh
-python3 -m http.server 8765 --directory dist
+python3 -m http.server 8765
 ```
 
 Open [the website](http://localhost:8765/), [the printable poster](http://localhost:8765/poster.html), or [the poster call](http://localhost:8765/genisys-2027-call-for-posters.txt).
@@ -31,15 +31,15 @@ For the event poster, select **Print event poster**, then **Print / Save PDF**. 
 
 | File | Purpose |
 | --- | --- |
-| `dist/index.html` | Workshop page, tentative program, and poster call |
-| `dist/schedule.html` | Detailed tentative schedule; homepage summarizes morning, lunch, and afternoon |
-| `dist/styles.css` | Website styling and responsive layout |
-| `dist/poster.html` | Printable event poster |
-| `dist/poster.css` | Poster styling and A3 print layout |
-| `dist/script.js` | Section navigation, sticky-header offsets, and poster print action |
-| `dist/genisys-2027-call-for-posters.txt` | Downloadable call text |
-| `dist/assets/` | Campus photograph, logo, browser tab icons, and touch icon |
-| `.github/workflows/pages.yml` | Automatic GitHub Pages deployment of `dist` |
+| `index.html` | Workshop page, tentative program, and poster call |
+| `schedule.html` | Detailed tentative schedule; homepage summarizes morning, lunch, and afternoon |
+| `styles.css` | Website styling and responsive layout |
+| `poster.html` | Printable event poster |
+| `poster.css` | Poster styling and A3 print layout |
+| `script.js` | Section navigation, sticky-header offsets, and poster print action |
+| `genisys-2027-call-for-posters.txt` | Downloadable call text |
+| `assets/` | Campus photograph, logo, browser tab icons, and touch icon |
+| `.nojekyll` | Publish the static files directly without Jekyll processing |
 | `workshop.json` | Organizer-provided Box upload link |
 | `scripts/update-submission.mjs` | Synchronize the Box link across all three materials |
 
@@ -53,17 +53,17 @@ The organizer-provided Box upload form is embedded in the poster submission sect
 
 The public website repository is [YukeWang96/GeniSys.github.io](https://github.com/YukeWang96/GeniSys.github.io). The site is live at [yukewang96.github.io/GeniSys.github.io/](https://yukewang96.github.io/GeniSys.github.io/), verified September 29, 2026. The previous [planning repository](https://github.com/YukeWang96/Genisys-Workshop-Spring-2027) remains available separately.
 
-Only the contents of `dist` are published. Local Sites account metadata is excluded from Git; the original proposals, budgets, and CVs are not included in this repository.
+GitHub Pages publishes the repository root. The `.nojekyll` marker keeps the HTML, CSS, JavaScript, and assets as static files. Local Sites account metadata is excluded from Git; the original proposals, budgets, and CVs are not included in this repository.
 
 ## Publish updates with GitHub Pages
 
 The current Pages address is `https://yukewang96.github.io/GeniSys.github.io/`. GitHub derives the host from the repository owner, so naming a repository `GeniSys.github.io` under `YukeWang96` does not create `genisys.github.io`. That address requires a repository owned by the `genisys` account or organization.
 
-The workflow in `.github/workflows/pages.yml` publishes `dist` whenever `main` is pushed. No package installation, build service, custom domain, or paid hosting is required for this public repository. It follows [GitHub's custom Pages workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+GitHub Pages publishes the root-level `index.html`, supporting pages, styles, scripts, and assets whenever `main` is pushed. No custom workflow, package installation, custom domain, or paid hosting is required for this public repository.
 
-After renaming or transferring the website repository, update the repository check in `.github/workflows/pages.yml`, the public URLs in the pages and downloadable call, and the local Git remote before publishing again.
+After renaming or transferring the website repository, update the public URLs in the pages and downloadable call and the local Git remote, then verify the Pages source before publishing again.
 
-For the initial repository setup, select **Settings → Pages → Build and deployment → Source → GitHub Actions**. Then push to `main` or run **Publish GeniSys 2027 website** from the Actions tab. Wait for a successful deployment before checking the public URL.
+Configure **Settings → Pages → Build and deployment → Source → Deploy from a branch**, choose **main** and **/ (root)**, then select **Save**. Future pushes publish automatically through GitHub’s managed **pages build and deployment** workflow. Wait for a successful deployment before checking the public URL.
 
 For later content changes, preview locally and commit the updated files, then run:
 

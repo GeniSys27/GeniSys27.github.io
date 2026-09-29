@@ -4,10 +4,10 @@ The mark joins three mint diamond-shaped nodes around a central junction, reflec
 
 ## Assets
 
-- `dist/assets/genisys-logo.png`: original 1254 × 1254 transparent logo.
-- `dist/assets/genisys-mark.png`: 128 × 128 optimized mark used in the header and footer.
-- `dist/assets/favicon-32.png` and `dist/assets/favicon-16.png`: browser tab icons.
-- `dist/assets/apple-touch-icon.png`: 180 × 180 touch icon.
+- `assets/genisys-logo.png`: original 1254 × 1254 transparent logo.
+- `assets/genisys-mark.png`: 128 × 128 optimized mark used in the header and footer.
+- `assets/favicon-32.png` and `assets/favicon-16.png`: browser tab icons.
+- `assets/apple-touch-icon.png`: 180 × 180 touch icon.
 
 Keep the mark's proportions. The PNGs retain transparency outside the navy tile. The logo is a workshop identity, not an official Rice University seal. Icon references use `?v=network-1` so browsers request the replacement assets.
 

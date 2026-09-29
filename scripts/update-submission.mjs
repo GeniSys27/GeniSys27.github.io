@@ -39,7 +39,7 @@ export async function updateSubmission(root) {
   const escapedUrl = escapeHtml(url);
   const externalLink = (label, className = '') =>
     `<a${className ? ` class="${className}"` : ''} href="${escapedUrl}" target="_blank" rel="noopener noreferrer">${label}</a>`;
-  const paths = ['dist/index.html', 'dist/poster.html', 'dist/genisys-2027-call-for-posters.txt'];
+  const paths = ['index.html', 'poster.html', 'genisys-2027-call-for-posters.txt'];
   let [index, poster, call] = await Promise.all(paths.map(file => readFile(path.join(root, file), 'utf8')));
 
   index = replaceSlot(index, 'status', url ? 'Box upload available' : 'Box upload link forthcoming');

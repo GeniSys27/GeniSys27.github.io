@@ -1,8 +1,8 @@
-# GeniSys workshop website
+# GeniSys 2027 workshop website
 
-Website, printable event poster, and call for research posters for the GeniSys workshop at Rice University. The workshop explores AI, systems, and networking for a sustainable future.
+Website, printable event poster, and call for research posters for GeniSys 2027 at Rice University in Spring 2027. The workshop explores AI, systems, and networking for a sustainable future.
 
-**Version 0.1.0:** The first draft uses **GeniSys 2026** from the event proposal. This repository is named **Genisys-Workshop-Spring-2027**. Confirm the intended event year before distributing the materials; track this and other outstanding decisions in [PROGRESS.md](PROGRESS.md).
+**Confirmed event:** GeniSys 2027, Spring 2027. The exact date remains to be announced. Track remaining decisions in [PROGRESS.md](PROGRESS.md).
 
 ## Included
 
@@ -19,7 +19,7 @@ No package installation or build step is required. From the repository root, run
 python3 -m http.server 8765 --directory dist
 ```
 
-Open [the website](http://localhost:8765/), [the printable poster](http://localhost:8765/poster.html), or [the poster call](http://localhost:8765/genisys-2026-call-for-posters.txt).
+Open [the website](http://localhost:8765/), [the printable poster](http://localhost:8765/poster.html), or [the poster call](http://localhost:8765/genisys-2027-call-for-posters.txt).
 
 For the event poster, select **View / print event poster**, then **Print / Save PDF**. Choose A3 portrait, disable browser headers and footers, and enable background graphics. Printing behavior depends on the browser; use a browser with print support if the embedded preview does not open a print dialog.
 
@@ -32,7 +32,7 @@ For the event poster, select **View / print event poster**, then **Print / Save 
 | `dist/poster.html` | Printable event poster |
 | `dist/poster.css` | Poster styling and A3 print layout |
 | `dist/script.js` | Poster print action |
-| `dist/genisys-2026-call-for-posters.txt` | Downloadable call text |
+| `dist/genisys-2027-call-for-posters.txt` | Downloadable call text |
 | `dist/assets/` | Campus photograph and favicon |
 | `workshop.json` | Organizer-provided Box upload link |
 | `scripts/update-submission.mjs` | Synchronize the Box link across all three materials |
@@ -41,7 +41,7 @@ Update the website, printable poster, and downloadable call together when dates,
 
 ## Current content status
 
-The organizer-provided Box upload form is embedded in the poster submission section, with a direct Box link as a fallback. The same URL appears on the printable poster and in the downloadable call. Event dates, the poster submission deadline, file requirements, and poster dimensions are to be announced. The program is tentative, and potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
+The organizer-provided Box upload form is embedded in the poster submission section, with a direct Box link as a fallback. The same URL appears on the printable poster and in the downloadable call. The exact event date, the poster submission deadline, file requirements, and poster dimensions are to be announced. The program is tentative, and potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
 
 The website is available locally. No hosted publication has been completed. The `dist` directory can be served by a static web host. Local Sites account metadata is excluded from Git; the original proposals, budgets, and CVs are not included in this repository.
 
@@ -55,7 +55,7 @@ To change the configured Box upload URL:
 
 This adds an **Upload your poster to Box** button leading to the embedded form, provides a direct Box link as a fallback, puts the full URL on the printable poster, and includes it in the downloadable call. The embed uses the supplied 800 by 550 dimensions and scales to the available width. The website remains static; Box handles file uploads. Direct links work without the website's JavaScript, while the embedded Box form may require scripts and cookies from Box.
 
-Leave `boxUploadUrl` as an empty string and run the same command to keep or restore the forthcoming state. The script validates the URL and content markers before writing changes. Do not edit inside the `box:` comment markers directly; those sections are regenerated. Dates, deadlines, and file requirements remain to be announced until confirmed separately.
+Leave `boxUploadUrl` as an empty string and run the same command to keep or restore the forthcoming state. The script validates the URL and content markers before writing changes. Do not edit inside the `box:` comment markers directly; those sections are regenerated. The exact event date, submission deadline, and file requirements remain to be announced until confirmed separately.
 
 ## Image credit
 

@@ -39,13 +39,13 @@ export async function updateSubmission(root) {
   const escapedUrl = escapeHtml(url);
   const externalLink = (label, className = '') =>
     `<a${className ? ` class="${className}"` : ''} href="${escapedUrl}" target="_blank" rel="noopener noreferrer">${label}</a>`;
-  const paths = ['dist/index.html', 'dist/poster.html', 'dist/genisys-2026-call-for-posters.txt'];
+  const paths = ['dist/index.html', 'dist/poster.html', 'dist/genisys-2027-call-for-posters.txt'];
   let [index, poster, call] = await Promise.all(paths.map(file => readFile(path.join(root, file), 'utf8')));
 
   index = replaceSlot(index, 'status', url ? 'Submit your poster via Box' : 'Box upload link forthcoming');
   index = replaceSlot(index, 'actions',
     (url ? '<a class="button button-dark" href="#poster-upload">Upload your poster to Box</a>' : '') +
-    `<a class="button ${url ? 'button-outline' : 'button-dark'}" href="genisys-2026-call-for-posters.txt" download>Download the poster call</a>` +
+    `<a class="button ${url ? 'button-outline' : 'button-dark'}" href="genisys-2027-call-for-posters.txt" download>Download the poster call</a>` +
     '<a class="button button-outline" href="poster.html">View / print event poster</a>');
   index = replaceSlot(index, 'note', url
     ? 'Upload your research poster through Box. The submission deadline will be announced.'

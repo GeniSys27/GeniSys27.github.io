@@ -1,14 +1,15 @@
 CALL FOR RESEARCH POSTERS
-GeniSys 2026
+GeniSys 2027
 Exploring Synergy among Next-Generation AI, Systems, and Networking for a Sustainable Future
 
 Rice University | Houston, Texas
-Event date: To be announced
+Event timing: Spring 2027
+Exact event date: To be announced
 Submission deadline: To be announced
 Submission channel: Box upload
 Box upload link: https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80
 
-GeniSys 2026 invites research posters exploring the intersection of artificial intelligence, computing systems, and networking. We welcome recent research and previously published work. The poster session offers an opportunity to share results, exchange ideas, and connect with researchers, practitioners, and students across these communities.
+GeniSys 2027 invites research posters exploring the intersection of artificial intelligence, computing systems, and networking. We welcome recent research and previously published work. The poster session offers an opportunity to share results, exchange ideas, and connect with researchers, practitioners, and students across these communities.
 
 TOPICS OF INTEREST
 Topics include, but are not limited to:

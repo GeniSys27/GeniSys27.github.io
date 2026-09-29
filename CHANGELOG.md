@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.4 - 2026-09-29
+
+- Confirm the event as GeniSys 2027, taking place in Spring 2027.
+- Update event branding, page metadata, season labels, the printable poster, and the poster call.
+- Rename the downloadable call to `genisys-2027-call-for-posters.txt` and update its links and generation script.
+- Keep the exact date and poster submission deadline to be announced.
+
 ## 0.1.3 - 2026-09-29
 
 - Connect the organizer-provided Rice Box file request URL across all submission materials.

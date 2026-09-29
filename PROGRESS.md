@@ -1,4 +1,4 @@
-# GeniSys workshop progress
+# GeniSys 2027 workshop progress
 
 Last updated: September 29, 2026
 
@@ -16,8 +16,8 @@ Last updated: September 29, 2026
 
 ## Decisions needed before circulation
 
-- [ ] Confirm the event year: the current materials say GeniSys 2026; the repository name says Spring 2027.
-- [ ] Confirm the workshop date and update all materials consistently.
+- [x] Confirm the event name and season: GeniSys 2027, Spring 2027.
+- [ ] Confirm the exact workshop date in Spring 2027 and update all materials consistently.
 - [ ] Confirm the campus venue and room.
 - [ ] Set the poster submission deadline.
 - [x] Confirm the submission channel: research posters are uploaded through Box.

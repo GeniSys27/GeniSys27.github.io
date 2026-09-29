@@ -45,8 +45,10 @@ img { max-width: 100%; }
 /* Persistent navigation keeps the submission path available throughout the page. */
 .site-header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--line); background: #fff; }
 .header-inner { min-height: 82px; width: min(1320px, calc(100% - 64px)); margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
-.wordmark { display: inline-flex; align-items: baseline; gap: 6px; font: 700 1.65rem/1.1 var(--display); letter-spacing: -.065em; white-space: nowrap; text-decoration: none; }
-.wordmark span { font-size: .88em; color: var(--teal); font-weight: 500; letter-spacing: -.06em; }
+.wordmark { display: inline-flex; align-items: center; gap: 10px; font: 700 1.65rem/1.1 var(--display); letter-spacing: -.065em; white-space: nowrap; text-decoration: none; }
+.brand-mark { display: block; width: 36px; height: 36px; flex: 0 0 auto; }
+.wordmark-type { display: inline-flex; align-items: baseline; gap: 6px; }
+.wordmark-year { font-size: .88em; color: var(--teal); font-weight: 500; letter-spacing: -.06em; }
 .section-nav { display: flex; align-items: center; gap: 28px; }
 .section-nav a { position: relative; padding-block: 12px; color: var(--muted); font-size: .875rem; font-weight: 500; text-decoration: none; white-space: nowrap; }
 .section-nav a:hover, .section-nav a[aria-current] { color: var(--teal); }
@@ -222,6 +224,7 @@ img { max-width: 100%; }
   .section-space { padding-block: 56px; }
   .header-inner { width: calc(100% - 36px); gap: 5px 12px; }
   .wordmark { font-size: 1.5rem; }
+  .brand-mark { width: 30px; height: 30px; }
   .header-cta { padding: 10px 13px; min-height: 42px; font-size: .875rem; }
   .section-nav { min-width: 0; gap: 8px; }
   .section-nav a { font-size: .875rem; }
@@ -280,6 +283,8 @@ img { max-width: 100%; }
 }
 @media (max-width: 380px) {
   .wordmark { font-size: 1.35rem; }
+  .site-header .wordmark-type { flex-direction: column; align-items: flex-start; gap: 1px; }
+  .site-header .wordmark-year { font-size: .65em; letter-spacing: .03em; }
   .header-cta { padding-inline: 11px; }
 }
 @media (prefers-reduced-motion: reduce) {

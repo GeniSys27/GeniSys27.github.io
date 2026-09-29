@@ -1,5 +1,13 @@
 # Changelog
 
+## 0.3.0 - 2026-09-29
+
+- Move ongoing website publishing to the dedicated `YukeWang96/GeniSys27` repository while preserving the existing commit history and previous planning remote.
+- Add automatic GitHub Pages deployment from `main`, publishing only the static `dist` directory.
+- Generate a coordinated GeniSys logo, integrate the mark into the header and footer, and add 16px/32px browser icons and a touch icon.
+- Add the public site URL to metadata and document branding assets and the publishing workflow.
+- Retain Spring 2027, the Box upload form, and all unconfirmed event details.
+
 ## 0.2.0 - 2026-09-29
 
 - Simplify the homepage with a clearer event summary and primary poster submission action.

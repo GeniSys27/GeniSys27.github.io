@@ -10,6 +10,7 @@ Website, printable event poster, and call for research posters for GeniSys 2027 
 - A three-step poster submission flow with requirements, FAQs, and the Box form in one section.
 - Call for posters welcoming recent research and previously published work.
 - A3 event poster with a browser print / Save PDF control.
+- A coordinated logo, browser tab icons, and touch icon; see [BRANDING.md](BRANDING.md).
 - [Progress checklist](PROGRESS.md) and [change history](CHANGELOG.md).
 
 ## Preview locally
@@ -34,7 +35,8 @@ For the event poster, select **Print event poster**, then **Print / Save PDF**. 
 | `dist/poster.css` | Poster styling and A3 print layout |
 | `dist/script.js` | Section navigation, sticky-header offsets, and poster print action |
 | `dist/genisys-2027-call-for-posters.txt` | Downloadable call text |
-| `dist/assets/` | Campus photograph and favicon |
+| `dist/assets/` | Campus photograph, logo, browser tab icons, and touch icon |
+| `.github/workflows/pages.yml` | Automatic GitHub Pages deployment of `dist` |
 | `workshop.json` | Organizer-provided Box upload link |
 | `scripts/update-submission.mjs` | Synchronize the Box link across all three materials |
 
@@ -44,7 +46,23 @@ Update the website, printable poster, and downloadable call together when dates,
 
 The organizer-provided Box upload form is embedded in the poster submission section, with a direct Box link as a fallback. The same URL appears on the printable poster and in the downloadable call. The exact event date, the poster submission deadline, file requirements, and poster dimensions are to be announced. The program is tentative, and potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
 
-The website is available locally. No hosted publication has been completed. The `dist` directory can be served by a static web host. Local Sites account metadata is excluded from Git; the original proposals, budgets, and CVs are not included in this repository.
+The public website repository is [YukeWang96/GeniSys27](https://github.com/YukeWang96/GeniSys27). Its GitHub Pages address is [yukewang96.github.io/GeniSys27/](https://yukewang96.github.io/GeniSys27/). The previous [planning repository](https://github.com/YukeWang96/Genisys-Workshop-Spring-2027) remains available separately.
+
+Only the contents of `dist` are published. Local Sites account metadata is excluded from Git; the original proposals, budgets, and CVs are not included in this repository.
+
+## Publish updates with GitHub Pages
+
+The workflow in `.github/workflows/pages.yml` publishes `dist` whenever `main` is pushed. No package installation, build service, custom domain, or paid hosting is required for this public repository. It follows [GitHub's custom Pages workflow](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages).
+
+For the initial repository setup, select **Settings → Pages → Build and deployment → Source → GitHub Actions**. Then push to `main` or run **Publish GeniSys 2027 website** from the Actions tab. Wait for a successful deployment before checking the public URL.
+
+For later content changes, preview locally and commit the updated files, then run:
+
+```sh
+git push origin main
+```
+
+In this checkout, `origin` points to `GeniSys27`; `planning` preserves the previous repository remote. Relative URLs keep the site, assets, printable poster, and downloads working under the `/GeniSys27/` project path. Box continues to handle research poster uploads.
 
 ## Configure the Box upload link
 

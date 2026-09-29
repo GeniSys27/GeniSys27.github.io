@@ -17,7 +17,7 @@ concurrency:
 jobs:
   deploy:
     # This repository is the public website; the previous planning repository is retained separately.
-    if: github.repository == 'YukeWang96/GeniSys27'
+    if: github.repository == 'YukeWang96/GeniSys.github.io'
     runs-on: ubuntu-latest
     environment:
       name: github-pages

@@ -56,12 +56,12 @@ Last updated: September 29, 2026
 - [ ] Finalize the schedule and poster/demo session.
 - [ ] Confirm hybrid attendance and remote poster participation details.
 - [ ] Verify the A3 print output in the intended printing browser.
-- [x] Publish through GitHub Pages at [yukewang96.github.io/GeniSys27/](https://yukewang96.github.io/GeniSys27/).
+- [x] Publish through GitHub Pages at [yukewang96.github.io/GeniSys.github.io/](https://yukewang96.github.io/GeniSys.github.io/).
 - [x] Check published file contents, logo and icon assets, poster download, navigation, and Box form loading.
 - [ ] Circulate the final announcement and poster call.
 
 ## How to track progress
 
-GitHub Pages launched on September 29, 2026. The [initial deployment](https://github.com/YukeWang96/GeniSys27/actions/runs/36594957630) succeeded after selecting GitHub Actions as the Pages source. Future pushes to `main` publish automatically. Local layout checks passed at 320px and 1440px, and the public site was verified at 1920px. The live Box form loaded; no files were submitted during verification.
+GitHub Pages launched on September 29, 2026. The [initial deployment](https://github.com/YukeWang96/GeniSys.github.io/actions/runs/36594957630) succeeded after selecting GitHub Actions as the Pages source. Future pushes to `main` publish automatically. Local layout checks passed at 320px and 1440px, and the public site was verified at 1920px. The live Box form loaded; no files were submitted during verification.
 
 Check off completed work in this file and summarize material changes in [CHANGELOG.md](CHANGELOG.md). Use GitHub Issues for tasks that need an owner or discussion, linking the issue from the relevant checklist item. Commit the related content changes together so that the website, poster, and call stay consistent.

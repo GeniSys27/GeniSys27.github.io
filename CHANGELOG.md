@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.3 - 2026-09-29
+
+- Update the deployment repository check after the website repository was renamed to `YukeWang96/GeniSys.github.io`.
+- Use the corresponding Pages project address in page metadata, the downloadable schedule link, and publishing documentation.
+
 ## 0.5.2 - 2026-09-29
 
 - Replace the G-shaped logo with a navy-and-mint network symbol across the website, browser tab icons, and touch icon.

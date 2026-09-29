@@ -7,7 +7,7 @@ Website, printable event poster, and call for research posters for GeniSys 2027 
 ## Included
 
 - Responsive workshop website with phone, tablet, and desktop layouts, touch-friendly section navigation, research topics, a tentative program, and organizers.
-- A dedicated [schedule page](https://yukewang96.github.io/GeniSys.github.io/schedule.html) with the rough day overview.
+- A dedicated [schedule page](https://genisys27.github.io/schedule.html) with the rough day overview.
 - Venue information and a responsive Google Map for the Ralph S. O’Connor Building for Engineering and Science, fifth-floor conference room.
 - A three-step poster submission flow with requirements, FAQs, and the Box form in one section.
 - Call for posters welcoming recent research and previously published work.
@@ -51,13 +51,13 @@ The venue is the fifth-floor conference room in Rice University’s Ralph S. O�
 
 The organizer-provided Box upload form is embedded in the poster submission section, with a direct Box link as a fallback. The same URL appears on the printable poster and in the downloadable call. The recommended research poster size is 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm). The exact event date, the poster submission deadline, and file requirements are to be announced. The program is tentative, and potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
 
-The public website repository is [YukeWang96/GeniSys.github.io](https://github.com/YukeWang96/GeniSys.github.io). The site is live at [yukewang96.github.io/GeniSys.github.io/](https://yukewang96.github.io/GeniSys.github.io/), verified September 29, 2026. The previous [planning repository](https://github.com/YukeWang96/Genisys-Workshop-Spring-2027) remains available separately.
+The public website repository is [GeniSys27/GeniSys27.github.io](https://github.com/GeniSys27/GeniSys27.github.io). The site is live at [genisys27.github.io/](https://genisys27.github.io/), verified September 29, 2026. The previous [planning repository](https://github.com/YukeWang96/Genisys-Workshop-Spring-2027) remains available separately.
 
 GitHub Pages publishes the repository root. The `.nojekyll` marker keeps the HTML, CSS, JavaScript, and assets as static files. Local Sites account metadata is excluded from Git; the original proposals, budgets, and CVs are not included in this repository.
 
 ## Publish updates with GitHub Pages
 
-The current Pages address is `https://yukewang96.github.io/GeniSys.github.io/`. GitHub derives the host from the repository owner, so naming a repository `GeniSys.github.io` under `YukeWang96` does not create `genisys.github.io`. That address requires a repository owned by the `genisys` account or organization.
+The Pages address is `https://genisys27.github.io/`, published from the `GeniSys27.github.io` repository owned by the `GeniSys27` organization.
 
 GitHub Pages publishes the root-level `index.html`, supporting pages, styles, scripts, and assets whenever `main` is pushed. No custom workflow, package installation, custom domain, or paid hosting is required for this public repository.
 
@@ -71,7 +71,7 @@ For later content changes, preview locally and commit the updated files, then ru
 git push origin main
 ```
 
-In this checkout, `origin` points to `YukeWang96/GeniSys.github.io`; `planning` preserves the previous repository remote. Relative URLs keep the site, assets, printable poster, and downloads working under the `/GeniSys.github.io/` project path. Box continues to handle research poster uploads.
+In this checkout, `origin` points to `GeniSys27/GeniSys27.github.io`; `previous-site` preserves `YukeWang96/GeniSys.github.io`, and `planning` preserves the original planning repository remote. Relative URLs keep the site, assets, printable poster, and downloads working at the organization site root. Box continues to handle research poster uploads.
 
 ## Responsive layout
 

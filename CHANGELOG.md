@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.6.1 - 2026-09-29
+
+- Publish the workshop from `GeniSys27/GeniSys27.github.io` at `https://genisys27.github.io/`.
+- Update canonical URLs, social metadata, the downloadable schedule link, and documentation for the organization address.
+- Retain the root-level website files and `main` / `/ (root)` Pages publishing setup.
+
 ## 0.6.0 - 2026-09-29
 
 - Move `index.html`, the schedule, printable poster, styles, scripts, downloads, and assets from `dist` to the repository root.

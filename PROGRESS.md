@@ -58,7 +58,7 @@ Last updated: September 29, 2026
 - [ ] Finalize the schedule and poster/demo session.
 - [ ] Confirm hybrid attendance and remote poster participation details.
 - [ ] Verify the A3 print output in the intended printing browser.
-- [x] Publish through GitHub Pages at [yukewang96.github.io/GeniSys.github.io/](https://yukewang96.github.io/GeniSys.github.io/).
+- [x] Publish through GitHub Pages at [genisys27.github.io/](https://genisys27.github.io/).
 - [x] Check published file contents, logo and icon assets, poster download, navigation, and Box form loading.
 - [ ] Circulate the final announcement and poster call.
 

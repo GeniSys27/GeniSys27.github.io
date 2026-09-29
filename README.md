@@ -41,19 +41,19 @@ Update the website, printable poster, and downloadable call together when dates,
 
 ## Current content status
 
-Research posters will be submitted through a Box upload link. The link has not yet been provided, so no upload button is active. Event dates, the poster submission deadline, file requirements, and poster dimensions are to be announced. The program is tentative, and potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
+The organizer-provided Box upload form is embedded in the poster submission section, with a direct Box link as a fallback. The same URL appears on the printable poster and in the downloadable call. Event dates, the poster submission deadline, file requirements, and poster dimensions are to be announced. The program is tentative, and potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
 
 The website is available locally. No hosted publication has been completed. The `dist` directory can be served by a static web host. Local Sites account metadata is excluded from Git; the original proposals, budgets, and CVs are not included in this repository.
 
 ## Configure the Box upload link
 
-When the organizer supplies the Box upload URL:
+To change the configured Box upload URL:
 
 1. Set `boxUploadUrl` in `workshop.json` to the complete HTTPS Box URL.
 2. Run `node scripts/update-submission.mjs` from the repository root. Node.js 18 or newer is sufficient; no package installation is needed.
 3. Verify that the Box page accepts uploads from the intended participants, then commit the configuration and updated materials together.
 
-This adds an **Upload your poster to Box** button to the website, puts the full URL on the printable poster, and includes it in the downloadable call. The output remains plain static HTML and text, so visitors do not need JavaScript for the upload link.
+This adds an **Upload your poster to Box** button leading to the embedded form, provides a direct Box link as a fallback, puts the full URL on the printable poster, and includes it in the downloadable call. The embed uses the supplied 800 by 550 dimensions and scales to the available width. The website remains static; Box handles file uploads. Direct links work without the website's JavaScript, while the embedded Box form may require scripts and cookies from Box.
 
 Leave `boxUploadUrl` as an empty string and run the same command to keep or restore the forthcoming state. The script validates the URL and content markers before writing changes. Do not edit inside the `box:` comment markers directly; those sections are regenerated. Dates, deadlines, and file requirements remain to be announced until confirmed separately.
 

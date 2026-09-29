@@ -6,7 +6,7 @@ Rice University | Houston, Texas
 Event date: To be announced
 Submission deadline: To be announced
 Submission channel: Box upload
-Box upload link: To be announced
+Box upload link: https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80
 
 GeniSys 2026 invites research posters exploring the intersection of artificial intelligence, computing systems, and networking. We welcome recent research and previously published work. The poster session offers an opportunity to share results, exchange ideas, and connect with researchers, practitioners, and students across these communities.
 
@@ -26,9 +26,11 @@ WORKSHOP EXPERIENCE
 The tentative one-day program includes a keynote, invited talks, a lunch poster/demo session, a panel, student lightning talks, and a research roundtable. Hybrid participation is planned; arrangements for remote poster presentations will be announced.
 
 SUBMISSION INFORMATION
-Submit your research poster by uploading it through the Box link provided on the workshop website. Recent research and previously published work are both welcome.
+Upload your research poster to Box: https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80
 
-The Box upload link, submission deadline, file requirements, and poster dimensions will be announced. Please check the workshop website for the upload link and final instructions.
+Recent research and previously published work are both welcome.
+
+The submission deadline, file requirements, and poster dimensions will be announced. Follow the instructions on the Box upload page and check the workshop website for updates.
 
 ORGANIZERS
 T. S. Eugene Ng, Professor, Computer Science, Rice University

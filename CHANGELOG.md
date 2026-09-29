@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.3 - 2026-09-29
+
+- Connect the organizer-provided Rice Box file request URL across all submission materials.
+- Embed the Box upload form with responsive width, a descriptive title, and a direct-link fallback.
+- Make the primary upload button lead to the embedded form.
+
 ## 0.1.2 - 2026-09-29
 
 - Add a single Box upload URL setting and a command to synchronize all submission materials.

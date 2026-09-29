@@ -44,7 +44,7 @@ export async function updateSubmission(root) {
 
   index = replaceSlot(index, 'status', url ? 'Submit your poster via Box' : 'Box upload link forthcoming');
   index = replaceSlot(index, 'actions',
-    (url ? externalLink('Upload your poster to Box', 'button button-dark') : '') +
+    (url ? '<a class="button button-dark" href="#poster-upload">Upload your poster to Box</a>' : '') +
     `<a class="button ${url ? 'button-outline' : 'button-dark'}" href="genisys-2026-call-for-posters.txt" download>Download the poster call</a>` +
     '<a class="button button-outline" href="poster.html">View / print event poster</a>');
   index = replaceSlot(index, 'note', url
@@ -54,6 +54,9 @@ export async function updateSubmission(root) {
   index = replaceSlot(index, 'panel-note', url
     ? 'Use the Box upload link above to submit your research poster. Recent research and previously published work are both welcome.'
     : 'Upload your research poster using the Box link that will be provided here. Recent research and previously published work are both welcome.');
+  index = replaceSlot(index, 'embed', url
+    ? `<section class="box-upload" id="poster-upload" aria-labelledby="box-upload-title"><h3 id="box-upload-title">Upload your research poster</h3><p>Submit your poster using the Box form below. If the form does not load, ${externalLink('open the upload form directly in Box')}.</p><iframe src="${escapedUrl}" height="550" width="800" title="GeniSys research poster upload form on Box" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></section>`
+    : '');
   index = replaceSlot(index, 'prepare',
     'Start with a clear research question, your approach, and the results or insights you would like to discuss. ' +
     (url ? 'Submit your research poster using the Box upload link above. File requirements and poster dimensions will be announced.'

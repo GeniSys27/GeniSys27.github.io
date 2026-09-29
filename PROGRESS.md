@@ -22,7 +22,8 @@ Last updated: September 29, 2026
 - [ ] Set the poster submission deadline.
 - [x] Confirm the submission channel: research posters are uploaded through Box.
 - [x] Prepare one configuration entry to synchronize the Box link across the website, printable poster, and downloadable call.
-- [ ] Receive and connect the organizer-provided Box upload link.
+- [x] Receive and connect the organizer-provided Box upload link.
+- [x] Embed the Box upload form and provide a direct-link fallback.
 - [ ] Confirm poster file requirements and any additional submission fields.
 - [ ] Confirm poster dimensions and presentation arrangements.
 - [ ] Approve the final call for research posters.

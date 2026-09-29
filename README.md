@@ -34,6 +34,8 @@ For the event poster, select **View / print event poster**, then **Print / Save 
 | `dist/script.js` | Poster print action |
 | `dist/genisys-2026-call-for-posters.txt` | Downloadable call text |
 | `dist/assets/` | Campus photograph and favicon |
+| `workshop.json` | Organizer-provided Box upload link |
+| `scripts/update-submission.mjs` | Synchronize the Box link across all three materials |
 
 Update the website, printable poster, and downloadable call together when dates, eligibility, or submission details change. If the event is renamed, also update page titles, metadata, filenames, download links, and this documentation.
 
@@ -45,7 +47,15 @@ The website is available locally. No hosted publication has been completed. The 
 
 ## Configure the Box upload link
 
-When the organizer supplies the Box upload URL, add it to the submission panel in `dist/index.html`, make the upload action a link to that URL, and include the same URL in the printable poster and downloadable call. Verify that the destination accepts uploads from the intended participants before marking submissions open.
+When the organizer supplies the Box upload URL:
+
+1. Set `boxUploadUrl` in `workshop.json` to the complete HTTPS Box URL.
+2. Run `node scripts/update-submission.mjs` from the repository root. Node.js 18 or newer is sufficient; no package installation is needed.
+3. Verify that the Box page accepts uploads from the intended participants, then commit the configuration and updated materials together.
+
+This adds an **Upload your poster to Box** button to the website, puts the full URL on the printable poster, and includes it in the downloadable call. The output remains plain static HTML and text, so visitors do not need JavaScript for the upload link.
+
+Leave `boxUploadUrl` as an empty string and run the same command to keep or restore the forthcoming state. The script validates the URL and content markers before writing changes. Do not edit inside the `box:` comment markers directly; those sections are regenerated. Dates, deadlines, and file requirements remain to be announced until confirmed separately.
 
 ## Image credit
 

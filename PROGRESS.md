@@ -21,6 +21,7 @@ Last updated: September 29, 2026
 - [ ] Confirm the campus venue and room.
 - [ ] Set the poster submission deadline.
 - [x] Confirm the submission channel: research posters are uploaded through Box.
+- [x] Prepare one configuration entry to synchronize the Box link across the website, printable poster, and downloadable call.
 - [ ] Receive and connect the organizer-provided Box upload link.
 - [ ] Confirm poster file requirements and any additional submission fields.
 - [ ] Confirm poster dimensions and presentation arrangements.

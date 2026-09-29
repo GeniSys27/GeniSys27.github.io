@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.2 - 2026-09-29
+
+- Add a single Box upload URL setting and a command to synchronize all submission materials.
+- Prepare an upload button that appears only after a valid Box URL is configured.
+- Include the configured URL in the printable poster and downloadable call, with wrapping for long links.
+- Preserve the forthcoming state while the organizer's URL is pending.
+
 ## 0.1.1 - 2026-09-29
 
 - Specify Box upload as the research poster submission channel across the website, printable poster, and downloadable call.

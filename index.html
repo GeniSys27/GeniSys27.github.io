@@ -17,8 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-  <link rel="stylesheet" href="styles.css">
-  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=0.7.0">
+  <script src="script.js?v=0.7.0" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -38,110 +38,83 @@
   <section class="hero" id="home" aria-labelledby="hero-title">
     <div class="hero-inner page-width">
       <div class="hero-copy">
-        <p class="eyebrow">RICE UNIVERSITY / SPRING 2027</p>
+        <p class="eyebrow">RICE UNIVERSITY · SPRING 2027</p>
         <h1 id="hero-title">GeniSys <span>2027</span></h1>
-        <p class="hero-statement">AI, systems &amp; networking.<br><span>For a sustainable future.</span></p>
-        <p class="hero-description">A one-day workshop connecting the people building the next generation of intelligent infrastructure.</p>
+        <p class="hero-statement">AI, systems &amp; networking.</p>
+        <p class="hero-description">A one-day workshop on efficient, connected, and sustainable computing.</p>
         <div class="hero-actions">
-          <a class="button button-mint" href="#posters">Submit a research poster</a>
-          <a class="button button-ghost" href="schedule.html">View the schedule</a>
+          <a class="button button-mint" href="#posters">Submit a poster</a>
+          <a class="text-link" href="schedule.html">View the program <span aria-hidden="true">↗</span></a>
         </div>
-        <p class="hero-welcome">Researchers, practitioners, and students welcome.</p>
       </div>
       <figure class="hero-photo">
-        <img src="assets/rice-sallyport-1000.jpg" srcset="assets/rice-sallyport-600.jpg 600w, assets/rice-sallyport-1000.jpg 1000w, assets/rice-sallyport.jpg 1800w" sizes="(max-width: 960px) calc(100vw - 40px), (max-width: 1280px) 44vw, 520px" decoding="async" alt="Lovett Hall's brick arches on the Rice University campus" width="1800" height="1350" fetchpriority="high">
-        <figcaption><span>HOSTED AT</span><strong>Rice University</strong><span>Houston, Texas</span></figcaption>
+        <img src="assets/rice-sallyport-1000.jpg" srcset="assets/rice-sallyport-600.jpg 600w, assets/rice-sallyport-1000.jpg 1000w, assets/rice-sallyport.jpg 1800w" sizes="(max-width: 900px) calc(100vw - 40px), 480px" decoding="async" alt="Lovett Hall's brick arches at Rice University" width="1800" height="1350" fetchpriority="high">
+        <figcaption>Rice University <span>Houston, Texas</span></figcaption>
       </figure>
     </div>
     <dl class="event-facts page-width" aria-label="Workshop details">
-      <div><dt>When</dt><dd>Spring 2027 <span>Exact date to be announced</span></dd></div>
-      <div><dt>Where</dt><dd><a href="#venue">Rice University · O’Connor Building</a><span>Fifth-floor conference room · Houston, Texas</span></dd></div>
-      <div><dt>Format</dt><dd>One-day workshop <span>On campus · Hybrid participation planned</span></dd></div>
+      <div><dt>When</dt><dd>Spring 2027<span>Exact date to be announced</span></dd></div>
+      <div><dt>Where</dt><dd><a href="#venue">Rice University</a><span>O’Connor Building · Fifth floor</span></dd></div>
+      <div><dt>Format</dt><dd>Talks, posters &amp; discussion<span>Hybrid participation planned</span></dd></div>
     </dl>
   </section>
-  <div class="call-strip"><div class="page-width"><span class="strip-label">CALL FOR RESEARCH POSTERS</span><p>Recent research and previously published work welcome.</p><a href="#posters">Submission details</a></div></div>
 
-  <section class="overview section-space page-width" id="about" aria-labelledby="about-title">
-    <div class="section-heading split-heading">
-      <div><p class="eyebrow">01 / THE WORKSHOP</p><h2 id="about-title">Where AI meets<br>its infrastructure.</h2></div>
-      <div class="section-intro"><p>GeniSys explores synergy among next-generation AI, systems, and networking for a sustainable future.</p><p>Join researchers across algorithms, systems software, and networked platforms to discuss scalable, reliable, secure, and energy-efficient AI.</p></div>
-    </div>
-    <div class="topics-grid">
-      <article><span class="topic-index">01</span><h3>Efficient AI</h3><p>Scalable training, distributed inference, and optimization across models, compilers, and heterogeneous accelerators.</p><span class="topic-label">MODELS + COMPUTE</span></article>
-      <article><span class="topic-index">02</span><h3>Connected systems</h3><p>Communication-efficient learning, networked platforms, and resilient infrastructure for distributed AI workloads.</p><span class="topic-label">SYSTEMS + NETWORKS</span></article>
-      <article><span class="topic-index">03</span><h3>Sustainable computing</h3><p>Energy-aware design, secure deployment, and responsible use of computing resources at every layer.</p><span class="topic-label">EFFICIENCY + RELIABILITY</span></article>
-    </div>
-    <p class="format-note">Invited talks <span>·</span> Research posters &amp; demos <span>·</span> Panels <span>·</span> Student lightning talks</p>
+  <section class="themes section-space page-width" id="about" aria-labelledby="about-title">
+    <h2 id="about-title">Research<br class="desktop-break"> themes</h2>
+    <article><h3>Efficient AI</h3><p>Scalable training, inference, and heterogeneous computing.</p></article>
+    <article><h3>Connected systems</h3><p>Networks and infrastructure for distributed intelligence.</p></article>
+    <article><h3>Sustainable computing</h3><p>Energy-aware, reliable, and secure systems.</p></article>
   </section>
 
   <section class="poster-section section-space" id="posters" aria-labelledby="poster-title">
     <div class="page-width">
-      <div class="section-heading poster-heading">
-        <div><p class="eyebrow">02 / SHARE YOUR RESEARCH</p><h2 id="poster-title">Call for research posters</h2><p class="section-deck">Bring your recent work, or give your published work a new audience.</p></div>
-        <span class="call-status"><!-- box:status -->Box upload available<!-- /box:status --></span>
-      </div>
       <div class="submission-grid">
-        <div class="poster-workflow">
-          <ol class="submission-steps">
-            <li><span class="step-number" aria-hidden="true">1</span><div><h3>Check the scope</h3><p>Recent research and previously published work in AI, systems, and networking are welcome. Work connecting these areas is especially relevant.</p></div></li>
-            <li><span class="step-number" aria-hidden="true">2</span><div><h3>Prepare your research poster</h3><p>Explain the research problem, your approach, and the results or insights you want to discuss. We recommend a 36 in wide × 48 in tall poster (portrait). File requirements will be announced.</p></div></li>
-            <li><span class="step-number" aria-hidden="true">3</span><div><h3>Upload through Box</h3><p><!-- box:step-three -->Use the submission form below and follow the instructions in Box to complete your upload.<!-- /box:step-three --></p></div></li>
-          </ol>
-          <div class="poster-actions"><!-- box:actions --><a class="button button-dark" href="#poster-upload">Upload your poster</a><a class="button button-outline" href="genisys-2027-call-for-posters.txt" download>Download the call</a><a class="button button-outline" href="poster.html">Print event poster</a><!-- /box:actions --></div>
-          <p class="small-note"><!-- box:note -->Submission deadline: to be announced.<!-- /box:note --></p>
+        <div class="poster-copy">
+          <p class="call-status"><!-- box:status -->Box upload available<!-- /box:status --></p>
+          <h2 id="poster-title">Call for posters</h2>
+          <p class="section-deck">Recent research and previously published work in AI, systems, and networking are welcome.</p>
+          <p class="poster-guidance">Share your research question, approach, and key results.</p>
+          <div class="poster-actions"><!-- box:actions --><a class="button button-dark" href="https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80" target="_blank" rel="noopener noreferrer">Submit via Box <span aria-hidden="true">↗</span></a><a class="text-link" href="genisys-2027-call-for-posters.txt" download>Download the call <span aria-hidden="true">↓</span></a><!-- /box:actions --></div>
+          <p class="small-note">Remote poster arrangements to be announced.</p>
         </div>
         <aside class="submission-panel" aria-labelledby="submission-details-title">
-          <p class="eyebrow">BEFORE YOU SUBMIT</p><h3 id="submission-details-title">Submission at a glance</h3>
+          <h3 id="submission-details-title">Poster details</h3>
           <dl>
-            <div><dt>Eligible work</dt><dd>Recent or previously published research</dd></div>
+            <div><dt>Recommended size</dt><dd>36 × 48 in · Portrait<span>91 × 122 cm · Width × height</span></dd></div>
             <div><dt>Deadline</dt><dd>To be announced</dd></div>
             <div><dt>File requirements</dt><dd>To be announced</dd></div>
-            <div><dt>Recommended poster size</dt><dd>36 in wide × 48 in tall (portrait)<br>Approx. 91 × 122 cm</dd></div>
-            <div><dt>Submit through</dt><dd><!-- box:url --><a href="https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80" target="_blank" rel="noopener noreferrer">Rice Box upload form</a><!-- /box:url --></dd></div>
           </dl>
-          <p class="panel-note"><!-- box:panel-note -->Box handles your file upload. Follow the instructions in the form to complete your submission.<!-- /box:panel-note --></p>
         </aside>
       </div>
-      <div class="poster-questions">
-        <h3>Common questions</h3>
-        <div class="faq-list">
-          <details><summary>Can I present work that is already published?</summary><p>Yes. Previously published work is welcome, alongside recent research. Use the session to share your findings with the GeniSys community and discuss new directions.</p></details>
-          <details><summary>What should I prepare?</summary><p><!-- box:prepare -->Start with a clear research question, your approach, and the results or insights you would like to discuss. We recommend a 36 in wide × 48 in tall poster (portrait; approximately 91 × 122 cm). Submit your research poster using the Box form below. File requirements will be announced.<!-- /box:prepare --></p></details>
-          <details><summary>Can I present a poster remotely?</summary><p>Hybrid workshop participation is planned. Arrangements for remote poster presentations have not yet been announced.</p></details>
-        </div>
-      </div>
-      <!-- box:embed --><section class="box-upload" id="poster-upload" aria-labelledby="box-upload-title"><div class="upload-heading"><div><p class="eyebrow">POSTER SUBMISSION</p><h3 id="box-upload-title">Submit your poster</h3><p>Upload your recent research or previously published work.</p></div><a href="https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80" target="_blank" rel="noopener noreferrer">Open in Box</a></div><iframe src="https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80" height="550" width="800" title="GeniSys research poster upload form on Box" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="upload-help">Having trouble with the form? <a href="https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80" target="_blank" rel="noopener noreferrer">Open it directly in Box</a>.</p></section><!-- /box:embed -->
+      <!-- box:embed --><details class="upload-panel" id="poster-upload"><summary>Upload on this page</summary><div class="upload-content"><iframe src="https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80" height="550" width="800" title="GeniSys research poster upload form on Box" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="upload-help">Form not loading? <a href="https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80" target="_blank" rel="noopener noreferrer">Open in Box</a>.</p></div></details><!-- /box:embed -->
     </div>
   </section>
 
-  <section class="program-section section-space" id="program" aria-labelledby="program-title">
-    <div class="page-width">
-      <div class="section-heading program-heading"><div><p class="eyebrow">03 / THE DAY AT A GLANCE</p><h2 id="program-title">Workshop program</h2></div><div class="program-note"><span class="outline-label">Tentative program</span><p>All times are local to Houston.<br>Spring 2027 · Exact date to be announced.</p></div></div>
-      <div class="program-overview">
-        <article><p class="program-time">08:30–11:45</p><h3>Morning ideas</h3><p>Registration, a keynote, and invited talks on AI systems and networking.</p></article>
-        <article class="program-highlight"><p class="program-time">11:45–13:00</p><h3>Lunch &amp; research posters</h3><p>Meet researchers, explore posters and demos, and share your work.</p></article>
-        <article><p class="program-time">13:00–17:00</p><h3>Afternoon exchange</h3><p>A panel, student lightning talks, and a research roundtable.</p></article>
-      </div>
-      <div class="program-actions"><a class="button button-mint" href="schedule.html">View the full schedule</a><p>Speakers will be announced. All session times and topics are tentative.</p></div>
+  <section class="program-section section-space page-width" id="program" aria-labelledby="program-title">
+    <div class="section-heading heading-row"><div><h2 id="program-title">Program at a glance</h2><p class="section-note">Tentative · All times local to Houston</p></div><a class="text-link" href="schedule.html">Full schedule <span aria-hidden="true">↗</span></a></div>
+    <div class="program-overview">
+      <article><p class="program-time">08:30–11:45</p><h3>Talks &amp; ideas</h3><p>Registration, keynote, and invited talks.</p></article>
+      <article><p class="program-time">11:45–13:00</p><h3>Lunch &amp; posters</h3><p>Research posters and demos.</p></article>
+      <article><p class="program-time">13:00–17:00</p><h3>Discussion &amp; exchange</h3><p>Panel, student talks, and roundtable.</p></article>
     </div>
   </section>
 
   <section class="venue-section section-space" id="venue" aria-labelledby="venue-title">
     <div class="page-width venue-grid">
-      <div class="venue-copy"><p class="eyebrow">04 / FIND YOUR WAY</p><h2 id="venue-title">Meet us at Rice.</h2><p class="venue-building">Ralph S. O’Connor Building for Engineering and Science</p><p class="venue-room">Fifth-floor conference room</p><p class="venue-location">Rice University · Houston, Texas</p><a class="button button-dark" href="https://www.google.com/maps/search/?api=1&amp;query=Ralph+S.+O%27Connor+Building+for+Engineering+and+Science+Rice+University" target="_blank" rel="noopener noreferrer">Open in Google Maps</a><p class="small-note">The map marks the building. The workshop takes place in the conference room on the fifth floor.</p></div>
+      <div class="venue-copy"><p class="eyebrow">HOUSTON, TEXAS</p><h2 id="venue-title">At Rice University</h2><p class="venue-building">Ralph S. O’Connor Building<br>for Engineering and Science</p><p class="venue-room">Fifth-floor conference room</p><a class="text-link" href="https://www.google.com/maps/search/?api=1&amp;query=Ralph+S.+O%27Connor+Building+for+Engineering+and+Science+Rice+University" target="_blank" rel="noopener noreferrer">Get directions <span aria-hidden="true">↗</span></a></div>
       <div class="venue-map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d474.21266470474126!2d-95.39892190267346!3d29.720777240278874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640c1da790436e3%3A0xcc1f7a2e23e1b00f!2sRalph%20S.%20O%E2%80%99Connor%20Building%20for%20Engineering%20and%20Science!5e0!3m2!1sen!2sus!4v1790696967280!5m2!1sen!2sus" width="600" height="450" title="Google Map of the Ralph S. O’Connor Building for Engineering and Science at Rice University" allowfullscreen loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
     </div>
   </section>
 
   <section class="organizers-section section-space page-width" id="organizers" aria-labelledby="organizers-title">
-    <div class="section-heading"><p class="eyebrow">05 / THE PEOPLE BEHIND GENISYS</p><h2 id="organizers-title">Workshop organizers</h2><p class="section-deck">Department of Computer Science, Rice University</p></div>
+    <div class="section-heading heading-row"><h2 id="organizers-title">Organizers</h2><p class="section-note">Computer Science · Rice University</p></div>
     <div class="organizers-grid">
-      <article><span class="organizer-initials" aria-hidden="true">EN</span><div><h3>T. S. Eugene Ng</h3><p>Professor</p><a href="https://www.cs.rice.edu/~eugeneng/" target="_blank" rel="noopener noreferrer" aria-label="T. S. Eugene Ng faculty website">Faculty website</a></div></article>
-      <article><span class="organizer-initials" aria-hidden="true">YW</span><div><h3>Yuke Wang</h3><p>Assistant Professor</p><a href="https://www.wang-yuke.com/" target="_blank" rel="noopener noreferrer" aria-label="Yuke Wang faculty website">Faculty website</a></div></article>
-      <article><span class="organizer-initials" aria-hidden="true">JX</span><div><h3>Jiarong Xing</h3><p>Assistant Professor</p><a href="https://jxing.me/" target="_blank" rel="noopener noreferrer" aria-label="Jiarong Xing faculty website">Faculty website</a></div></article>
+      <article><h3><a href="https://www.cs.rice.edu/~eugeneng/" target="_blank" rel="noopener noreferrer" aria-label="T. S. Eugene Ng faculty website">T. S. Eugene Ng <span aria-hidden="true">↗</span></a></h3><p>Professor</p></article>
+      <article><h3><a href="https://www.wang-yuke.com/" target="_blank" rel="noopener noreferrer" aria-label="Yuke Wang faculty website">Yuke Wang <span aria-hidden="true">↗</span></a></h3><p>Assistant Professor</p></article>
+      <article><h3><a href="https://jxing.me/" target="_blank" rel="noopener noreferrer" aria-label="Jiarong Xing faculty website">Jiarong Xing <span aria-hidden="true">↗</span></a></h3><p>Assistant Professor</p></article>
     </div>
   </section>
 </main>
-<footer class="site-footer"><div class="page-width"><div class="footer-top"><a class="wordmark" href="#home" aria-label="GeniSys 2027 home"><img class="brand-mark" src="assets/genisys-mark.png?v=network-1" width="36" height="36" alt="" loading="lazy"><span class="wordmark-type">GeniSys<span class="wordmark-year">2027</span></span></a><p>Spring 2027 · Rice University · Houston, Texas</p><a class="back-top" href="#home">Back to top</a></div><div class="footer-bottom"><span>AI, systems &amp; networking for a sustainable future.</span><span>Campus photo: Daderot / <a href="https://commons.wikimedia.org/wiki/File:Rice_University_-_Sally_Port.JPG" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>, public domain.</span></div></div></footer>
+<footer class="site-footer"><div class="page-width"><div class="footer-top"><a class="wordmark" href="#home" aria-label="GeniSys 2027 home"><img class="brand-mark" src="assets/genisys-mark.png?v=network-1" width="36" height="36" alt="" loading="lazy"><span class="wordmark-type">GeniSys<span class="wordmark-year">2027</span></span></a><div class="footer-links"><a href="poster.html">Event poster</a><a href="#home">Back to top ↑</a></div></div><p class="photo-credit">Campus photo: Daderot / <a href="https://commons.wikimedia.org/wiki/File:Rice_University_-_Sally_Port.JPG" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a> · Public domain</p></div></footer>
 </body>
 </html>

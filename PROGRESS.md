@@ -28,6 +28,8 @@ Last updated: September 29, 2026
 
 ## Responsive experience
 
+- [x] Simplify the website and schedule, reduce repeated copy, and make embedded uploads optional to expand.
+- [x] Verify the simplified homepage and schedule at 18 page/viewport combinations, plus keyboard uploads, direct upload anchors, and configured/pending Box links.
 - [x] Check the homepage, schedule, and printable poster across 45 page/viewport combinations, from 320px phones to 1920px desktops, including phone landscape.
 - [x] Improve tablet layouts, phone submission details, and touch targets; keep all content within the viewport.
 - [x] Add 600px and 1000px campus image variants and responsive source selection.

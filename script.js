@@ -3,6 +3,18 @@ printButton?.addEventListener('click', () => {
   window.print();
 });
 
+// Preserve direct links to the embedded upload form while keeping it compact by default.
+const uploadPanel = document.getElementById('poster-upload');
+if (uploadPanel instanceof HTMLDetailsElement) {
+  const revealUpload = () => {
+    if (window.location.hash !== '#poster-upload') return;
+    uploadPanel.open = true;
+    requestAnimationFrame(() => uploadPanel.scrollIntoView({ block: 'start' }));
+  };
+  window.addEventListener('hashchange', revealUpload);
+  revealUpload();
+}
+
 const header = document.querySelector('.site-header');
 if (header && 'ResizeObserver' in window) {
   let previousHeight = 0;

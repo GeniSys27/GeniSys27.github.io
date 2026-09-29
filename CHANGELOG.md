@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.7.0 - 2026-09-29
+
+- Reduce homepage text by approximately 60%, removing repeated descriptions, submission steps, and FAQs while retaining event and submission details.
+- Simplify the hero, research themes, program overview, venue, organizers, and schedule with consistent spacing and quieter typography.
+- Give poster submissions one primary Box link and keep the embedded upload form in an accessible native disclosure; preserve direct links to the form.
+- Retain responsive layouts, all ten tentative schedule sessions, poster dimensions, venue map, and pending dates and deadlines.
+
 ## 0.6.1 - 2026-09-29
 
 - Publish the workshop from `GeniSys27/GeniSys27.github.io` at `https://genisys27.github.io/`.

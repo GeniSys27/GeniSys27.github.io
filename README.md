@@ -9,7 +9,7 @@ Website, printable event poster, and call for research posters for GeniSys 2027 
 - Responsive workshop website with phone, tablet, and desktop layouts, touch-friendly section navigation, research topics, a tentative program, and organizers.
 - A dedicated [schedule page](https://genisys27.github.io/schedule.html) with the rough day overview.
 - Venue information and a responsive Google Map for the Ralph S. O’Connor Building for Engineering and Science, fifth-floor conference room.
-- A three-step poster submission flow with requirements, FAQs, and the Box form in one section.
+- A concise poster call with one primary Box submission link, a details panel, and an expandable embedded upload form.
 - Call for posters welcoming recent research and previously published work.
 - A3 event poster with a browser print / Save PDF control.
 - A coordinated logo, browser tab icons, and touch icon; see [BRANDING.md](BRANDING.md).
@@ -49,7 +49,7 @@ Update the website, schedule, printable poster, and downloadable call together w
 
 The venue is the fifth-floor conference room in Rice University’s Ralph S. O’Connor Building for Engineering and Science. The embedded Google Map marks the building; a direct Google Maps link is available as a fallback.
 
-The organizer-provided Box upload form is embedded in the poster submission section, with a direct Box link as a fallback. The same URL appears on the printable poster and in the downloadable call. The recommended research poster size is 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm). The exact event date, the poster submission deadline, and file requirements are to be announced. The program is tentative, and potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
+The organizer-provided Box link is the primary submission action. An embedded form is available under **Upload on this page**; direct links to `#poster-upload` open that panel automatically. The same Box URL appears on the printable poster and in the downloadable call. The recommended research poster size is 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm). The exact event date, the poster submission deadline, and file requirements are to be announced. The program is tentative, and potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
 
 The public website repository is [GeniSys27/GeniSys27.github.io](https://github.com/GeniSys27/GeniSys27.github.io). The site is live at [genisys27.github.io/](https://genisys27.github.io/), verified September 29, 2026. The previous [planning repository](https://github.com/YukeWang96/Genisys-Workshop-Spring-2027) remains available separately.
 
@@ -75,11 +75,11 @@ In this checkout, `origin` points to `GeniSys27/GeniSys27.github.io`; `previous-
 
 ## Responsive layout
 
-The homepage and schedule use fluid spacing and typography, with tablet layouts below 960px and phone adjustments below 600px. Key navigation and primary controls have touch targets of at least 44px. The header becomes non-sticky in short landscape viewports so it does not cover the content. The poster adapts for screen reading while retaining its A3 print rules.
+The homepage and schedule use fluid spacing and typography, with a stacked hero and agenda at 900px and phone layouts at 600px. Research themes simplify at 1100px; very narrow phones receive additional adjustments at 380px. Key navigation and primary controls have touch targets of at least 44px. The header becomes non-sticky in short landscape viewports. The printable poster retains its A3 print rules.
 
 The campus photo has 600px, 1000px, and 1800px sources; browsers choose a suitable image for the viewport and display density. Native links, keyboard focus, pinch zoom, reduced-motion preferences, and direct Box/Google Maps links remain available.
 
-Checked in browser viewport simulations at 320, 360, 390, 540, 600, 601, 768, 820, 844, 960, 961, 1024, 1280, 1440, and 1920 pixels wide. These checks cover layout and interaction; they do not replace testing on every physical device or browser.
+Checked the homepage and schedule in browser viewport simulations from 320px to 1920px, including portrait tablets and landscape phones. Checks cover overflow, local links, agenda content, upload disclosure, and direct upload anchors; they do not replace testing on every physical device or browser.
 
 ## Configure the Box upload link
 
@@ -89,7 +89,7 @@ To change the configured Box upload URL:
 2. Run `node scripts/update-submission.mjs` from the repository root. Node.js 18 or newer is sufficient; no package installation is needed.
 3. Verify that the Box page accepts uploads from the intended participants, then commit the configuration and updated materials together.
 
-This adds an **Upload your poster** button leading to the embedded form, provides a direct Box link as a fallback, puts the full URL on the printable poster, and includes it in the downloadable call. The embed uses the supplied 800 by 550 dimensions and scales to the available width. The website remains static; Box handles file uploads. Navigation and direct links work without the website's JavaScript, while the embedded Box form may require scripts and cookies from Box.
+This updates the **Submit via Box** button, the expandable embedded form and its direct-link fallback, the printable poster, and the downloadable call. The embed uses the supplied 800 by 550 dimensions and scales to the available width. The website remains static; Box handles file uploads. Navigation, the native disclosure control, and direct links work without the website's JavaScript, while the Box form may require scripts and cookies from Box.
 
 Leave `boxUploadUrl` as an empty string and run the same command to keep or restore the forthcoming state. The script validates the URL and content markers before writing changes. Do not edit inside the `box:` comment markers directly; those sections are regenerated. The exact event date, submission deadline, and file requirements remain to be announced until confirmed separately.
 

@@ -42,24 +42,27 @@ export async function updateSubmission(root) {
   const paths = ['dist/index.html', 'dist/poster.html', 'dist/genisys-2027-call-for-posters.txt'];
   let [index, poster, call] = await Promise.all(paths.map(file => readFile(path.join(root, file), 'utf8')));
 
-  index = replaceSlot(index, 'status', url ? 'Submit your poster via Box' : 'Box upload link forthcoming');
+  index = replaceSlot(index, 'status', url ? 'Box upload available' : 'Box upload link forthcoming');
   index = replaceSlot(index, 'actions',
-    (url ? '<a class="button button-dark" href="#poster-upload">Upload your poster to Box</a>' : '') +
-    `<a class="button ${url ? 'button-outline' : 'button-dark'}" href="genisys-2027-call-for-posters.txt" download>Download the poster call</a>` +
-    '<a class="button button-outline" href="poster.html">View / print event poster</a>');
+    (url ? '<a class="button button-dark" href="#poster-upload">Upload your poster</a>' : '') +
+    `<a class="button ${url ? 'button-outline' : 'button-dark'}" href="genisys-2027-call-for-posters.txt" download>Download the call</a>` +
+    '<a class="button button-outline" href="poster.html">Print event poster</a>');
   index = replaceSlot(index, 'note', url
-    ? 'Upload your research poster through Box. The submission deadline will be announced.'
+    ? 'Submission deadline: to be announced.'
     : 'Submit your research poster through the Box upload link. The link and submission deadline will be announced.');
-  index = replaceSlot(index, 'url', url ? externalLink('Open the Box upload page') : 'To be announced');
+  index = replaceSlot(index, 'url', url ? externalLink('Rice Box upload form') : 'Box · Link forthcoming');
   index = replaceSlot(index, 'panel-note', url
-    ? 'Use the Box upload link above to submit your research poster. Recent research and previously published work are both welcome.'
+    ? 'Box handles your file upload. Follow the instructions in the form to complete your submission.'
     : 'Upload your research poster using the Box link that will be provided here. Recent research and previously published work are both welcome.');
   index = replaceSlot(index, 'embed', url
-    ? `<section class="box-upload" id="poster-upload" aria-labelledby="box-upload-title"><h3 id="box-upload-title">Upload your research poster</h3><p>Submit your poster using the Box form below. If the form does not load, ${externalLink('open the upload form directly in Box')}.</p><iframe src="${escapedUrl}" height="550" width="800" title="GeniSys research poster upload form on Box" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></section>`
+    ? `<section class="box-upload" id="poster-upload" aria-labelledby="box-upload-title"><div class="upload-heading"><div><p class="eyebrow">POSTER SUBMISSION</p><h3 id="box-upload-title">Submit your poster</h3><p>Upload your recent research or previously published work.</p></div>${externalLink('Open in Box')}</div><iframe src="${escapedUrl}" height="550" width="800" title="GeniSys research poster upload form on Box" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="upload-help">Having trouble with the form? ${externalLink('Open it directly in Box')}.</p></section>`
     : '');
+  index = replaceSlot(index, 'step-three', url
+    ? 'Use the submission form below and follow the instructions in Box to complete your upload.'
+    : 'The Box upload link will appear here when it is available. Check back for submission instructions.');
   index = replaceSlot(index, 'prepare',
     'Start with a clear research question, your approach, and the results or insights you would like to discuss. ' +
-    (url ? 'Submit your research poster using the Box upload link above. File requirements and poster dimensions will be announced.'
+    (url ? 'Submit your research poster using the Box form below. File requirements and poster dimensions will be announced.'
       : 'You will submit your research poster through a provided Box upload link. File requirements, poster dimensions, and the upload link will be announced.'));
   poster = replaceSlot(poster, 'poster', url
     ? `Upload through Box<br>${externalLink(escapedUrl, 'poster-upload-link')}<br>Deadline to be announced`

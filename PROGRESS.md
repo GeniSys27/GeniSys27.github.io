@@ -14,6 +14,14 @@ Last updated: September 29, 2026
 - [x] Check local page references, JavaScript syntax, mobile overflow, and FAQ keyboard interaction.
 - [x] Add repository documentation and progress tracking.
 
+## Website layout and submission workflow
+
+- [x] Put event timing, venue, and format together at the top of the page.
+- [x] Add persistent navigation and a clear poster submission entry point.
+- [x] Group eligibility, preparation, requirements, questions, and Box upload into one section.
+- [x] Present the tentative agenda in morning and afternoon columns with the poster session highlighted.
+- [x] Verify desktop and phone navigation, keyboard FAQ controls, and Box form loading without submitting files.
+
 ## Decisions needed before circulation
 
 - [x] Confirm the event name and season: GeniSys 2027, Spring 2027.

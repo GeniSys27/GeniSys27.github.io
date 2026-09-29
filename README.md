@@ -6,7 +6,8 @@ Website, printable event poster, and call for research posters for GeniSys 2027 
 
 ## Included
 
-- Responsive workshop website with research topics, a tentative program, and organizers.
+- Responsive workshop website with persistent section navigation, research topics, a tentative program, and organizers.
+- A three-step poster submission flow with requirements, FAQs, and the Box form in one section.
 - Call for posters welcoming recent research and previously published work.
 - A3 event poster with a browser print / Save PDF control.
 - [Progress checklist](PROGRESS.md) and [change history](CHANGELOG.md).
@@ -21,7 +22,7 @@ python3 -m http.server 8765 --directory dist
 
 Open [the website](http://localhost:8765/), [the printable poster](http://localhost:8765/poster.html), or [the poster call](http://localhost:8765/genisys-2027-call-for-posters.txt).
 
-For the event poster, select **View / print event poster**, then **Print / Save PDF**. Choose A3 portrait, disable browser headers and footers, and enable background graphics. Printing behavior depends on the browser; use a browser with print support if the embedded preview does not open a print dialog.
+For the event poster, select **Print event poster**, then **Print / Save PDF**. Choose A3 portrait, disable browser headers and footers, and enable background graphics. Printing behavior depends on the browser; use a browser with print support if the embedded preview does not open a print dialog.
 
 ## Edit the materials
 
@@ -31,7 +32,7 @@ For the event poster, select **View / print event poster**, then **Print / Save 
 | `dist/styles.css` | Website styling and responsive layout |
 | `dist/poster.html` | Printable event poster |
 | `dist/poster.css` | Poster styling and A3 print layout |
-| `dist/script.js` | Poster print action |
+| `dist/script.js` | Section navigation, sticky-header offsets, and poster print action |
 | `dist/genisys-2027-call-for-posters.txt` | Downloadable call text |
 | `dist/assets/` | Campus photograph and favicon |
 | `workshop.json` | Organizer-provided Box upload link |
@@ -53,7 +54,7 @@ To change the configured Box upload URL:
 2. Run `node scripts/update-submission.mjs` from the repository root. Node.js 18 or newer is sufficient; no package installation is needed.
 3. Verify that the Box page accepts uploads from the intended participants, then commit the configuration and updated materials together.
 
-This adds an **Upload your poster to Box** button leading to the embedded form, provides a direct Box link as a fallback, puts the full URL on the printable poster, and includes it in the downloadable call. The embed uses the supplied 800 by 550 dimensions and scales to the available width. The website remains static; Box handles file uploads. Direct links work without the website's JavaScript, while the embedded Box form may require scripts and cookies from Box.
+This adds an **Upload your poster** button leading to the embedded form, provides a direct Box link as a fallback, puts the full URL on the printable poster, and includes it in the downloadable call. The embed uses the supplied 800 by 550 dimensions and scales to the available width. The website remains static; Box handles file uploads. Navigation and direct links work without the website's JavaScript, while the embedded Box form may require scripts and cookies from Box.
 
 Leave `boxUploadUrl` as an empty string and run the same command to keep or restore the forthcoming state. The script validates the URL and content markers before writing changes. Do not edit inside the `box:` comment markers directly; those sections are regenerated. The exact event date, submission deadline, and file requirements remain to be announced until confirmed separately.
 

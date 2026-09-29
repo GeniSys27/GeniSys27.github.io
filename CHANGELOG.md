@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.2.0 - 2026-09-29
+
+- Simplify the homepage with a clearer event summary and primary poster submission action.
+- Add persistent navigation with active-section indicators and anchors that account for the header height.
+- Consolidate the poster call into a three-step workflow, requirements summary, FAQs, and an embedded Box submission area.
+- Replace the long agenda with morning and afternoon columns while retaining all ten scheduled sessions.
+- Improve mobile typography, spacing, focus behavior, and narrow-screen navigation.
+- Preserve the configurable Box URL, printable poster, downloadable call, and pending exact date and deadline.
+
 ## 0.1.4 - 2026-09-29
 
 - Confirm the event as GeniSys 2027, taking place in Spring 2027.

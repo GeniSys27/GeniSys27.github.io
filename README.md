@@ -7,6 +7,8 @@ Website, printable event poster, and call for research posters for GeniSys 2027 
 ## Included
 
 - Responsive workshop website with persistent section navigation, research topics, a tentative program, and organizers.
+- A dedicated [schedule page](https://yukewang96.github.io/GeniSys27/schedule.html) with the rough day overview.
+- Venue information and a responsive Google Map for the Ralph S. O’Connor Building for Engineering and Science, fifth-floor conference room.
 - A three-step poster submission flow with requirements, FAQs, and the Box form in one section.
 - Call for posters welcoming recent research and previously published work.
 - A3 event poster with a browser print / Save PDF control.
@@ -30,6 +32,7 @@ For the event poster, select **Print event poster**, then **Print / Save PDF**. 
 | File | Purpose |
 | --- | --- |
 | `dist/index.html` | Workshop page, tentative program, and poster call |
+| `dist/schedule.html` | Detailed tentative schedule; homepage summarizes morning, lunch, and afternoon |
 | `dist/styles.css` | Website styling and responsive layout |
 | `dist/poster.html` | Printable event poster |
 | `dist/poster.css` | Poster styling and A3 print layout |
@@ -40,9 +43,11 @@ For the event poster, select **Print event poster**, then **Print / Save PDF**. 
 | `workshop.json` | Organizer-provided Box upload link |
 | `scripts/update-submission.mjs` | Synchronize the Box link across all three materials |
 
-Update the website, printable poster, and downloadable call together when dates, eligibility, or submission details change. If the event is renamed, also update page titles, metadata, filenames, download links, and this documentation.
+Update the website, schedule, printable poster, and downloadable call together when dates, eligibility, or submission details change. If the event is renamed, also update page titles, metadata, filenames, download links, and this documentation.
 
 ## Current content status
+
+The venue is the fifth-floor conference room in Rice University’s Ralph S. O’Connor Building for Engineering and Science. The embedded Google Map marks the building; a direct Google Maps link is available as a fallback.
 
 The organizer-provided Box upload form is embedded in the poster submission section, with a direct Box link as a fallback. The same URL appears on the printable poster and in the downloadable call. The exact event date, the poster submission deadline, file requirements, and poster dimensions are to be announced. The program is tentative, and potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
 

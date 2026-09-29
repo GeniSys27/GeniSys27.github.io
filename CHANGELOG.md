@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.4.0 - 2026-09-29
+
+- Confirm the venue as the fifth-floor conference room in Rice University’s Ralph S. O’Connor Building for Engineering and Science.
+- Add the supplied responsive Google Maps embed and a direct Google Maps link.
+- Add a separate schedule page retaining the ten tentative sessions, with the exact date and speakers still to be announced.
+- Replace the homepage’s full agenda with a compact overview linking to the schedule, and add venue navigation.
+- Update the printable poster, downloadable call, and progress tracker with the venue.
+- Keep section highlighting compatible with links to separate pages and fix active-section updates on wide screens and after resizing.
+
 ## 0.3.0 - 2026-09-29
 
 - Move ongoing website publishing to the dedicated `YukeWang96/GeniSys27` repository while preserving the existing commit history and previous planning remote.

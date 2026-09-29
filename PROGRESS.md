@@ -22,11 +22,15 @@ Last updated: September 29, 2026
 - [x] Present the tentative agenda in morning and afternoon columns with the poster session highlighted.
 - [x] Verify desktop and phone navigation, keyboard FAQ controls, and Box form loading without submitting files.
 
+- [x] Add the organizer-provided Google Map with a direct-link fallback.
+- [x] Add a dedicated tentative schedule page and a concise homepage overview.
+- [x] Verify the new pages at desktop and 320px widths, map loading, section highlighting, cross-page links, all ten agenda sessions, and Box configuration compatibility.
+
 ## Decisions needed before circulation
 
 - [x] Confirm the event name and season: GeniSys 2027, Spring 2027.
 - [ ] Confirm the exact workshop date in Spring 2027 and update all materials consistently.
-- [ ] Confirm the campus venue and room.
+- [x] Confirm the venue: Ralph S. O’Connor Building for Engineering and Science, fifth-floor conference room.
 - [ ] Set the poster submission deadline.
 - [x] Confirm the submission channel: research posters are uploaded through Box.
 - [x] Prepare one configuration entry to synchronize the Box link across the website, printable poster, and downloadable call.

@@ -145,13 +145,13 @@ img { max-width: 100%; }
 .program-note p { color: #b6c8d9; font-size: .875rem; margin-top: 12px; }
 .agenda-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 38px; }
 .agenda-column { border: 1px solid #3a526b; border-radius: 6px; overflow: hidden; }
-.agenda-column > h3 { padding: 20px 24px; border-bottom: 1px solid #3a526b; display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 1.25rem; background: #112b47; }
-.agenda-column > h3 span { font: 400 .875rem/1.5 var(--body); color: #b6c8d9; white-space: nowrap; }
+.agenda-column > :is(h2, h3) { padding: 20px 24px; border-bottom: 1px solid #3a526b; display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 1.25rem; background: #112b47; }
+.agenda-column > :is(h2, h3) span { font: 400 .875rem/1.5 var(--body); color: #b6c8d9; white-space: nowrap; }
 .agenda-list { list-style: none; margin: 0; padding: 0; }
 .agenda-list li { padding: 23px 24px; display: grid; grid-template-columns: 106px 1fr; gap: 18px; border-bottom: 1px solid #304962; }
 .agenda-list li:last-child { border-bottom: 0; }
 .agenda-list time { color: #bdcfdf; font: 400 .875rem/1.5 var(--display); white-space: nowrap; }
-.agenda-list h4 { font: 500 1rem/1.5 var(--body); }
+.agenda-list :is(h3, h4) { font: 500 1rem/1.5 var(--body); }
 .agenda-list li span { display: block; color: #b6c8d9; margin-top: 5px; font-size: .875rem; }
 .agenda-list .break-session { padding-block: 16px; color: #c2d1df; }
 .agenda-list .featured-session { background: var(--mint); color: var(--navy); }
@@ -170,6 +170,56 @@ img { max-width: 100%; }
 .back-top { font-size: .875rem; font-weight: 500; }
 .footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; padding-top: 24px; margin-top: 26px; border-top: 1px solid var(--line); font-size: .75rem; color: var(--muted); }
 
+/* A short homepage program leads to the dedicated schedule. */
+.program-overview { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 38px; }
+.program-overview article { padding: 28px; border: 1px solid #3a526b; border-radius: 6px; }
+.program-overview h3 { margin: 18px 0 12px; font-size: 1.375rem; }
+.program-overview article > p:last-child { color: #b6c8d9; font-size: .9375rem; }
+.program-time { color: var(--mint); font: 500 .9375rem/1.5 var(--display); }
+.program-overview .program-highlight { background: var(--mint); color: var(--navy); border-color: var(--mint); }
+.program-highlight .program-time, .program-overview .program-highlight > p:last-child { color: #1c584a; }
+.program-actions { display: flex; align-items: center; gap: 28px; margin-top: 30px; }
+.program-actions p { color: #b6c8d9; font-size: .875rem; max-width: 430px; }
+
+/* Venue details stay outside the map so they remain available at every screen size. */
+.venue-section { background: #f5f8fa; border-bottom: 1px solid var(--line); }
+.venue-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 56px; align-items: center; }
+.venue-copy .eyebrow { color: var(--teal); margin-bottom: 16px; }
+.venue-building { font: 500 1.5rem/1.4 var(--display); letter-spacing: -.025em; margin-top: 26px; }
+.venue-room { color: var(--teal); font-size: 1.125rem; font-weight: 600; margin-top: 16px; }
+.venue-location { color: var(--muted); margin: 6px 0 26px; }
+.venue-copy .small-note { max-width: 390px; }
+.venue-map { min-width: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 6px; background: #e4ece8; }
+.venue-map iframe { display: block; width: 100%; height: 450px; border: 0; }
+
+/* The schedule keeps the tentative agenda on its own shareable page. */
+.schedule-hero { background: var(--navy); color: white; padding-block: 34px 0; }
+.breadcrumb { display: inline-block; color: #bdcfdf; font-size: .875rem; margin-bottom: 38px; }
+.schedule-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 28px; }
+.schedule-heading .eyebrow { color: var(--mint); margin-bottom: 18px; }
+.schedule-heading h1 { font-size: clamp(2.6rem, 4.8vw, 4.5rem); letter-spacing: -.05em; }
+.schedule-heading .outline-label { flex-shrink: 0; margin-top: 34px; }
+.schedule-deck { color: #bdcfdf; font-size: 1.25rem; margin-top: 18px; }
+.schedule-facts { display: grid; grid-template-columns: 1fr .9fr 1.4fr; gap: 32px; margin-top: 42px; padding-block: 24px 30px; border-top: 1px solid #496075; }
+.schedule-facts dt { font-size: .75rem; color: #bdcfdf; text-transform: uppercase; letter-spacing: .1em; margin-bottom: 7px; }
+.schedule-facts dd { margin: 0; font-weight: 500; }
+.schedule-facts dd span { display: block; color: #bdcfdf; font-size: .875rem; font-weight: 400; margin-top: 4px; }
+.schedule-content .agenda-column { border-color: var(--line); }
+.schedule-content .agenda-column > h2 { background: #f5f8fa; border-color: var(--line); color: var(--ink); letter-spacing: -.025em; }
+.schedule-content .agenda-column > h2 span { color: var(--muted); }
+.schedule-content .agenda-list li { border-color: var(--line); }
+.schedule-content .agenda-list time { color: var(--teal); }
+.schedule-content .agenda-list li span, .schedule-content .agenda-list .break-session { color: var(--muted); }
+.schedule-content .agenda-list .break-session { background: #f5f8fa; }
+.schedule-content .agenda-list .featured-session span { color: #1c584a; }
+.schedule-next, .schedule-venue { display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.schedule-next { padding: 32px; margin-top: 36px; background: var(--pale); border: 1px solid #d3e5dd; border-radius: 6px; }
+.schedule-next h2, .schedule-venue h2 { font-size: 1.6rem; letter-spacing: -.025em; }
+.schedule-next p, .schedule-venue p:not(.eyebrow) { color: var(--muted); font-size: .9375rem; margin-top: 12px; max-width: 600px; }
+.schedule-next .button, .schedule-venue .button { flex-shrink: 0; }
+.schedule-venue { padding-top: 36px; margin-top: 36px; border-top: 1px solid var(--line); }
+.schedule-venue .eyebrow { color: var(--teal); margin-bottom: 14px; }
+
 @media (max-width: 1100px) {
   .page-width { width: calc(100% - 64px); }
   .hero-inner { gap: 32px; }
@@ -185,6 +235,13 @@ img { max-width: 100%; }
   .organizer-initials { margin-bottom: 20px; }
 }
 @media (max-width: 800px) {
+  .program-overview { gap: 16px; }
+  .program-overview article { padding: 22px; }
+  .venue-grid { grid-template-columns: 1fr; gap: 30px; }
+  .venue-copy .small-note { max-width: 560px; }
+  .schedule-facts { grid-template-columns: 1fr 1fr; gap: 24px; }
+  .schedule-facts > div:last-child { grid-column: 1 / -1; }
+  .schedule-next, .schedule-venue { align-items: flex-start; flex-direction: column; gap: 24px; }
   :root { --header-height: 118px; }
   .header-inner { flex-wrap: wrap; gap: 6px 20px; padding-top: 14px; }
   .section-nav { order: 3; flex-basis: 100%; justify-content: space-between; gap: 20px; padding-bottom: 7px; }
@@ -214,12 +271,26 @@ img { max-width: 100%; }
   .program-heading { align-items: flex-start; }
   .program-note { max-width: 240px; }
   .agenda-grid { gap: 22px; }
-  .agenda-column > h3 { align-items: flex-start; flex-direction: column; gap: 6px; }
+  .agenda-column > :is(h2, h3) { align-items: flex-start; flex-direction: column; gap: 6px; }
   .organizers-grid { gap: 20px; }
   .organizers-grid h3 { font-size: 1.1rem; }
   .footer-top { flex-wrap: wrap; }
 }
 @media (max-width: 600px) {
+  .program-overview { grid-template-columns: 1fr; gap: 16px; margin-top: 28px; }
+  .program-overview h3 { margin-top: 12px; }
+  .program-actions { flex-direction: column; align-items: flex-start; gap: 18px; }
+  .venue-building { font-size: 1.375rem; margin-top: 20px; }
+  .venue-map iframe { height: 350px; }
+  .schedule-hero { padding-top: 26px; }
+  .breadcrumb { margin-bottom: 28px; }
+  .schedule-heading { display: block; }
+  .schedule-heading .outline-label { margin-top: 24px; }
+  .schedule-deck { font-size: 1.125rem; }
+  .schedule-facts { grid-template-columns: 1fr; margin-top: 28px; gap: 20px; }
+  .schedule-facts > div:last-child { grid-column: auto; }
+  .schedule-next { padding: 24px; }
+  .schedule-next h2, .schedule-venue h2 { font-size: 1.4rem; }
   .page-width { width: calc(100% - 40px); }
   .section-space { padding-block: 56px; }
   .header-inner { width: calc(100% - 36px); gap: 5px 12px; }
@@ -270,7 +341,7 @@ img { max-width: 100%; }
   .program-heading { display: block; }
   .program-note { max-width: none; text-align: left; margin-top: 22px; }
   .agenda-grid { grid-template-columns: 1fr; margin-top: 28px; }
-  .agenda-column > h3 { flex-direction: row; align-items: center; padding: 18px 20px; }
+  .agenda-column > :is(h2, h3) { flex-direction: row; align-items: center; padding: 18px 20px; }
   .agenda-list li { padding: 20px; }
   .organizers-grid { grid-template-columns: 1fr; gap: 28px; }
   .organizers-grid article { display: flex; }

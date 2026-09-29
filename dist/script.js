@@ -11,18 +11,32 @@ if (header && 'ResizeObserver' in window) {
   headerSize.observe(header);
 }
 
-const navigation = [...document.querySelectorAll('.section-nav a')];
-if (navigation.length && 'IntersectionObserver' in window) {
-  const sections = navigation.map(link => document.querySelector(link.hash)).filter(Boolean);
-  const home = document.getElementById('home');
-  const observer = new IntersectionObserver(entries => {
-    const visible = entries.filter(entry => entry.isIntersecting);
-    if (!visible.length) return;
-    const current = visible[visible.length - 1].target.id;
+// Observe only local section links; preserve aria-current="page" on standalone pages.
+const navigation = [...document.querySelectorAll('.section-nav a')].filter(link =>
+  link.getAttribute('href')?.startsWith('#') && link.hash.length > 1
+);
+if (navigation.length) {
+  const sections = navigation.map(link => document.getElementById(link.hash.slice(1))).filter(Boolean);
+  let updatePending = false;
+  const updateNavigation = () => {
+    updatePending = false;
+    const readingLine = (header?.getBoundingClientRect().bottom ?? 0) + 60;
+    const current = sections.find(section => {
+      const bounds = section.getBoundingClientRect();
+      return bounds.top <= readingLine && bounds.bottom > readingLine;
+    })?.id;
     navigation.forEach(link => {
       if (link.hash === `#${current}`) link.setAttribute('aria-current', 'location');
       else link.removeAttribute('aria-current');
     });
-  }, { rootMargin: '-25% 0px -55% 0px', threshold: 0 });
-  [...sections, home].filter(Boolean).forEach(section => observer.observe(section));
+  };
+  const queueNavigationUpdate = () => {
+    if (updatePending) return;
+    updatePending = true;
+    requestAnimationFrame(updateNavigation);
+  };
+  window.addEventListener('scroll', queueNavigationUpdate, { passive: true });
+  window.addEventListener('resize', queueNavigationUpdate);
+  window.addEventListener('load', queueNavigationUpdate);
+  updateNavigation();
 }

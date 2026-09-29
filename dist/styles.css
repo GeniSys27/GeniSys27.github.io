@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
-
 :root {
   --navy: #071e3b;
   --ink: #102b43;
@@ -9,11 +7,12 @@
   --pale: #eef7f3;
   --line: #d7e2e7;
   --header-height: 82px;
+  --page-gutter: clamp(20px, 4vw, 48px);
   --display: 'Space Grotesk', Arial, sans-serif;
   --body: 'DM Sans', Arial, sans-serif;
 }
 * { box-sizing: border-box; }
-html { scroll-padding-top: calc(var(--header-height) + 24px); }
+html { scroll-padding-top: calc(var(--header-height) + 24px); -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
 body { margin: 0; color: var(--ink); font: 400 1rem/1.65 var(--body); background: #fff; }
 h1, h2, h3, h4, p, figure, dl { margin: 0; }
 h1, h2, h3, h4 { font-family: var(--display); font-weight: 500; line-height: 1.15; }
@@ -21,11 +20,12 @@ h1, h2 { letter-spacing: -.045em; }
 h2 { font-size: clamp(2rem, 3.5vw, 3rem); }
 h3 { font-size: 1.35rem; letter-spacing: -.025em; }
 a { color: inherit; text-underline-offset: 5px; }
-a, button, summary { -webkit-tap-highlight-color: transparent; }
+a, button, summary { -webkit-tap-highlight-color: rgb(0 102 92 / .16); touch-action: manipulation; }
 :focus-visible { outline: 3px solid #1488cc; outline-offset: 5px; }
 img { max-width: 100%; }
-.page-width { width: min(1200px, calc(100% - 96px)); margin-inline: auto; }
-.section-space { padding-block: 88px; }
+.hero-inner > *, .submission-grid > *, .agenda-grid > *, .topics-grid > *, .program-overview > *, .venue-grid > *, .schedule-facts > *, .event-facts > * { min-width: 0; }
+.page-width { width: min(1200px, calc(100% - 2 * var(--page-gutter))); margin-inline: auto; }
+.section-space { padding-block: clamp(52px, 6vw, 88px); }
 .eyebrow { font-size: .75rem; font-weight: 600; letter-spacing: .12em; line-height: 1.5; }
 .section-heading { margin-bottom: 36px; }
 .section-heading .eyebrow { color: var(--teal); margin-bottom: 16px; }
@@ -44,29 +44,29 @@ img { max-width: 100%; }
 
 /* Persistent navigation keeps the submission path available throughout the page. */
 .site-header { position: sticky; top: 0; z-index: 20; border-bottom: 1px solid var(--line); background: #fff; }
-.header-inner { min-height: 82px; width: min(1320px, calc(100% - 64px)); margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
-.wordmark { display: inline-flex; align-items: center; gap: 10px; font: 700 1.65rem/1.1 var(--display); letter-spacing: -.065em; white-space: nowrap; text-decoration: none; }
+.header-inner { min-height: 82px; width: min(1320px, calc(100% - 2 * var(--page-gutter))); margin: auto; display: flex; align-items: center; justify-content: space-between; gap: 32px; }
+.wordmark { min-height: 44px; display: inline-flex; align-items: center; gap: 10px; font: 700 1.65rem/1.1 var(--display); letter-spacing: -.065em; white-space: nowrap; text-decoration: none; }
 .brand-mark { display: block; width: 36px; height: 36px; flex: 0 0 auto; }
 .wordmark-type { display: inline-flex; align-items: baseline; gap: 6px; }
 .wordmark-year { font-size: .88em; color: var(--teal); font-weight: 500; letter-spacing: -.06em; }
 .section-nav { display: flex; align-items: center; gap: 28px; }
-.section-nav a { position: relative; padding-block: 12px; color: var(--muted); font-size: .875rem; font-weight: 500; text-decoration: none; white-space: nowrap; }
+.section-nav a { position: relative; display: inline-flex; align-items: center; justify-content: center; min-width: 44px; min-height: 44px; padding-block: 12px; color: var(--muted); font-size: .875rem; font-weight: 500; text-decoration: none; white-space: nowrap; }
 .section-nav a:hover, .section-nav a[aria-current] { color: var(--teal); }
 .section-nav a[aria-current]::after { content: ''; position: absolute; height: 2px; bottom: 5px; left: 0; right: 0; background: var(--teal); }
-.header-cta { min-height: 42px; padding: 10px 17px; font-size: .875rem; }
+.header-cta { min-height: 44px; padding: 10px 17px; font-size: .875rem; }
 
 /* Event poster and practical details share the first screen. */
 .hero { background: var(--navy); color: #fff; }
-.hero-inner { display: grid; grid-template-columns: 1.2fr 1fr; gap: 60px; align-items: center; padding-block: 54px 44px; }
+.hero-inner { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(32px, 4vw, 60px); align-items: center; padding-block: 54px 44px; }
 .hero-copy .eyebrow { color: var(--mint); }
-.hero h1 { font-size: clamp(3.25rem, 6vw, 5.5rem); line-height: 1.06; margin-block: 22px 24px; white-space: nowrap; letter-spacing: -.065em; }
-.hero h1 span { color: var(--mint); font-weight: 400; }
+.hero h1 { font-size: clamp(3.25rem, 6vw, 5.5rem); line-height: 1.06; margin-block: 22px 24px; text-wrap: balance; letter-spacing: -.065em; }
+.hero h1 span { white-space: nowrap; color: var(--mint); font-weight: 400; }
 .hero-statement { font: 500 clamp(1.55rem, 2.4vw, 2.2rem)/1.3 var(--display); letter-spacing: -.03em; }
 .hero-statement span { color: #c0d1e0; }
 .hero-description { margin-top: 22px; max-width: 470px; color: #c0d1e0; font-size: 1.0625rem; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
 .hero-welcome { margin-top: 18px; font-size: .875rem; color: #afc4d7; }
-.hero-photo { height: 440px; position: relative; overflow: hidden; border-radius: 4px; background: #243d56; }
+.hero-photo { height: clamp(350px, 34vw, 440px); position: relative; overflow: hidden; border-radius: 4px; background: #243d56; }
 .hero-photo img { width: 100%; height: 100%; object-fit: cover; object-position: 61% center; filter: saturate(.8); }
 .hero-photo::after { content: ''; position: absolute; inset: 40% 0 0; background: linear-gradient(transparent, #061b37d9); }
 .hero-photo figcaption { position: absolute; z-index: 1; left: 28px; bottom: 26px; display: flex; flex-direction: column; line-height: 1.5; }
@@ -131,7 +131,7 @@ img { max-width: 100%; }
 .upload-heading .eyebrow { color: var(--teal); margin-bottom: 10px; }
 .upload-heading h3 { font-size: 1.7rem; }
 .upload-heading p:not(.eyebrow) { color: var(--muted); font-size: .9375rem; margin-top: 10px; }
-.upload-heading > a { font-size: .875rem; font-weight: 500; color: var(--teal); white-space: nowrap; }
+.upload-heading > a { display: inline-flex; align-items: center; min-height: 44px; font-size: .875rem; font-weight: 500; color: var(--teal); white-space: nowrap; }
 .box-upload iframe { display: block; width: 100%; max-width: 800px; height: 550px; margin-inline: auto; border: 0; background: #fff; }
 .upload-help { color: var(--muted); font-size: .875rem; text-align: center; padding-top: 18px; }
 .upload-help a { color: var(--teal); }
@@ -143,12 +143,12 @@ img { max-width: 100%; }
 .program-note { text-align: right; }
 .outline-label { display: inline-block; color: var(--mint); border: 1px solid #5d7e85; padding: 5px 10px; border-radius: 4px; font-size: .8125rem; }
 .program-note p { color: #b6c8d9; font-size: .875rem; margin-top: 12px; }
-.agenda-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; margin-top: 38px; }
+.agenda-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px; margin-top: 38px; }
 .agenda-column { border: 1px solid #3a526b; border-radius: 6px; overflow: hidden; }
 .agenda-column > :is(h2, h3) { padding: 20px 24px; border-bottom: 1px solid #3a526b; display: flex; align-items: center; justify-content: space-between; gap: 20px; font-size: 1.25rem; background: #112b47; }
 .agenda-column > :is(h2, h3) span { font: 400 .875rem/1.5 var(--body); color: #b6c8d9; white-space: nowrap; }
 .agenda-list { list-style: none; margin: 0; padding: 0; }
-.agenda-list li { padding: 23px 24px; display: grid; grid-template-columns: 106px 1fr; gap: 18px; border-bottom: 1px solid #304962; }
+.agenda-list li { padding: 23px 24px; display: grid; grid-template-columns: 106px minmax(0, 1fr); gap: 18px; border-bottom: 1px solid #304962; }
 .agenda-list li:last-child { border-bottom: 0; }
 .agenda-list time { color: #bdcfdf; font: 400 .875rem/1.5 var(--display); white-space: nowrap; }
 .agenda-list :is(h3, h4) { font: 500 1rem/1.5 var(--body); }
@@ -163,11 +163,11 @@ img { max-width: 100%; }
 .organizer-initials { display: flex; justify-content: center; align-items: center; flex-shrink: 0; width: 52px; height: 52px; color: var(--teal); background: var(--pale); border-radius: 4px; font: 500 1.25rem/1 var(--display); }
 .organizers-grid h3 { font-size: 1.1875rem; margin-block: 3px 6px; }
 .organizers-grid p { font-size: .9375rem; color: var(--muted); }
-.organizers-grid a { display: inline-block; margin-top: 15px; font-size: .875rem; color: var(--teal); font-weight: 500; }
+.organizers-grid a { display: inline-flex; align-items: center; min-height: 44px; margin-top: 7px; font-size: .875rem; color: var(--teal); font-weight: 500; }
 .site-footer { border-top: 1px solid var(--line); background: #f5f8fa; padding-block: 34px 24px; }
 .footer-top { display: flex; align-items: center; justify-content: space-between; gap: 24px; }
 .footer-top p { font-size: .875rem; color: var(--muted); }
-.back-top { font-size: .875rem; font-weight: 500; }
+.back-top { display: inline-flex; align-items: center; min-height: 44px; font-size: .875rem; font-weight: 500; }
 .footer-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 14px; padding-top: 24px; margin-top: 26px; border-top: 1px solid var(--line); font-size: .75rem; color: var(--muted); }
 
 /* A short homepage program leads to the dedicated schedule. */
@@ -194,7 +194,7 @@ img { max-width: 100%; }
 
 /* The schedule keeps the tentative agenda on its own shareable page. */
 .schedule-hero { background: var(--navy); color: white; padding-block: 34px 0; }
-.breadcrumb { display: inline-block; color: #bdcfdf; font-size: .875rem; margin-bottom: 38px; }
+.breadcrumb { display: inline-flex; align-items: center; min-height: 44px; color: #bdcfdf; font-size: .875rem; margin-bottom: 38px; }
 .schedule-heading { display: flex; align-items: flex-start; justify-content: space-between; gap: 28px; }
 .schedule-heading .eyebrow { color: var(--mint); margin-bottom: 18px; }
 .schedule-heading h1 { font-size: clamp(2.6rem, 4.8vw, 4.5rem); letter-spacing: -.05em; }
@@ -221,21 +221,19 @@ img { max-width: 100%; }
 .schedule-venue .eyebrow { color: var(--teal); margin-bottom: 14px; }
 
 @media (max-width: 1100px) {
-  .page-width { width: calc(100% - 64px); }
   .hero-inner { gap: 32px; }
   .hero h1 { font-size: clamp(3.2rem, 6.2vw, 4.8rem); }
-  .hero-photo { height: 425px; }
   .hero-statement { font-size: 1.75rem; }
   .section-nav { gap: 22px; }
   .submission-grid { gap: 36px; }
   .poster-heading { display: block; }
   .call-status { margin-top: 20px; display: inline-block; }
-  .agenda-list li { grid-template-columns: 1fr; gap: 7px; }
   .organizers-grid article { display: block; }
   .organizer-initials { margin-bottom: 20px; }
 }
-@media (max-width: 800px) {
-  .program-overview { gap: 16px; }
+@media (max-width: 960px) {
+  .program-overview, .topics-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+  .program-overview > :last-child, .topics-grid > :last-child { grid-column: 1 / -1; }
   .program-overview article { padding: 22px; }
   .venue-grid { grid-template-columns: 1fr; gap: 30px; }
   .venue-copy .small-note { max-width: 560px; }
@@ -246,13 +244,15 @@ img { max-width: 100%; }
   .header-inner { flex-wrap: wrap; gap: 6px 20px; padding-top: 14px; }
   .section-nav { order: 3; flex-basis: 100%; justify-content: space-between; gap: 20px; padding-bottom: 7px; }
   .section-nav a { padding-block: 9px; }
-  .hero-inner { grid-template-columns: 1.1fr .9fr; gap: 28px; padding-top: 40px; }
-  .hero h1 { font-size: 3.15rem; }
-  .hero-statement { font-size: 1.4rem; }
+  .hero-inner { grid-template-columns: 1fr; gap: 32px; padding-block: 40px 32px; }
+  .hero h1 { font-size: clamp(3rem, 8vw, 4.8rem); }
+  .hero-statement { font-size: clamp(1.5rem, 3.8vw, 2.1rem); }
   .hero-description { font-size: 1rem; }
   .hero-actions { align-items: stretch; }
-  .hero-actions .button { flex: 1 1 auto; }
-  .hero-photo { height: 410px; }
+  .hero-actions .button { flex: 0 1 auto; }
+  .hero-photo { height: clamp(250px, 40vw, 340px); }
+  .hero-description { max-width: 620px; }
+  .hero-photo img { object-position: center 43%; }
   .event-facts { gap: 20px; grid-template-columns: 1fr 1fr; }
   .event-facts > div:last-child { grid-column: 1 / -1; }
   .event-facts > div:last-child dd span { display: inline; margin-left: 8px; }
@@ -270,8 +270,8 @@ img { max-width: 100%; }
   .upload-heading > a { display: inline-block; margin-top: 15px; }
   .program-heading { align-items: flex-start; }
   .program-note { max-width: 240px; }
-  .agenda-grid { gap: 22px; }
-  .agenda-column > :is(h2, h3) { align-items: flex-start; flex-direction: column; gap: 6px; }
+  .agenda-grid { grid-template-columns: 1fr; gap: 24px; }
+  .agenda-column > :is(h2, h3) { align-items: center; flex-direction: row; gap: 12px; }
   .organizers-grid { gap: 20px; }
   .organizers-grid h3 { font-size: 1.1rem; }
   .footer-top { flex-wrap: wrap; }
@@ -281,30 +281,29 @@ img { max-width: 100%; }
   .program-overview h3 { margin-top: 12px; }
   .program-actions { flex-direction: column; align-items: flex-start; gap: 18px; }
   .venue-building { font-size: 1.375rem; margin-top: 20px; }
-  .venue-map iframe { height: 350px; }
-  .schedule-hero { padding-top: 26px; }
-  .breadcrumb { margin-bottom: 28px; }
+  .venue-map iframe { height: clamp(300px, 80vw, 400px); }
+  .schedule-hero { padding-top: 18px; }
+  .schedule-heading h1 { font-size: clamp(2.25rem, 8.4vw, 3rem); }
+  .breadcrumb { margin-bottom: 22px; }
   .schedule-heading { display: block; }
   .schedule-heading .outline-label { margin-top: 24px; }
   .schedule-deck { font-size: 1.125rem; }
-  .schedule-facts { grid-template-columns: 1fr; margin-top: 28px; gap: 20px; }
-  .schedule-facts > div:last-child { grid-column: auto; }
+  .schedule-facts { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 24px; gap: 20px; }
+  .schedule-facts > div:last-child { grid-column: 1 / -1; }
   .schedule-next { padding: 24px; }
   .schedule-next h2, .schedule-venue h2 { font-size: 1.4rem; }
-  .page-width { width: calc(100% - 40px); }
-  .section-space { padding-block: 56px; }
-  .header-inner { width: calc(100% - 36px); gap: 5px 12px; }
+  .header-inner { width: calc(100% - 36px); gap: 4px 12px; padding-top: 10px; }
   .wordmark { font-size: 1.5rem; }
   .brand-mark { width: 30px; height: 30px; }
-  .header-cta { padding: 10px 13px; min-height: 42px; font-size: .875rem; }
-  .section-nav { min-width: 0; gap: 8px; }
+  .header-cta { padding: 10px 13px; min-height: 44px; font-size: .875rem; }
+  .section-nav { min-width: 0; gap: 8px; padding-bottom: 4px; }
   .section-nav a { font-size: .875rem; }
   .hero-inner { display: block; padding-block: 34px 28px; }
   .hero h1 { font-size: clamp(2.8rem, 11.5vw, 4.3rem); margin-block: 20px; }
   .hero-statement { font-size: clamp(1.35rem, 5.6vw, 1.9rem); }
   .hero-description { margin-top: 18px; }
   .hero-actions { margin-top: 25px; gap: 10px; }
-  .hero-actions .button { padding-inline: 14px; font-size: .875rem; }
+  .hero-actions .button { flex: 1 1 auto; padding-inline: 14px; font-size: .875rem; }
   .hero-welcome { margin-top: 16px; }
   .hero-photo { height: 240px; margin-top: 30px; }
   .hero-photo img { object-position: center 43%; }
@@ -351,6 +350,19 @@ img { max-width: 100%; }
   .footer-top p { order: 3; flex-basis: 100%; }
   .back-top { margin-left: auto; }
   .footer-bottom { padding-top: 20px; margin-top: 22px; }
+}
+@media (max-width: 480px) {
+  .hero-actions { flex-direction: column; }
+  .hero-actions .button, .poster-actions .button { width: 100%; }
+  .agenda-list li { grid-template-columns: 1fr; gap: 7px; }
+  .submission-panel dl > div { grid-template-columns: 1fr; gap: 4px; }
+  .upload-heading > a { margin-top: 10px; }
+  .box-upload { padding-inline: 8px; }
+}
+/* In phone landscape, leave more of the short viewport for the content. */
+@media (max-height: 500px) and (orientation: landscape) {
+  .site-header { position: static; }
+  html { scroll-padding-top: 24px; }
 }
 @media (max-width: 380px) {
   .wordmark { font-size: 1.35rem; }

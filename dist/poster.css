@@ -2,3 +2,22 @@
 @page{size:A3 portrait;margin:0}@media print{html,body{margin:0;background:#071e3b!important;print-color-adjust:exact;-webkit-print-color-adjust:exact}.print-toolbar{display:none}#print-sheet{width:297mm;max-width:none;min-height:420mm;margin:0;padding:17mm 20mm 15mm;background:#071e3b!important;color:white!important}.print-masthead{font-size:10pt;letter-spacing:1.5px;margin-bottom:11mm}h1{font-size:70pt;letter-spacing:-4px;margin-bottom:7mm}h1 span{font-size:36pt;letter-spacing:-2px}.print-headline{font-size:51pt;line-height:1.05;letter-spacing:-2px;margin-bottom:7mm}h2{font-size:23pt;line-height:1.2;max-width:235mm;margin-bottom:8mm}.print-meta{font-size:11pt;line-height:1.6;margin-bottom:8mm}#print-sheet>img{height:65mm;margin-bottom:10mm}h3{font-size:31pt;margin-bottom:5mm}.print-lead{font-size:18pt!important;margin-bottom:4mm!important}#print-sheet>p{font-size:13pt;line-height:1.45;margin-bottom:7mm}.print-info{padding-top:6mm;gap:15mm;font-size:13pt}.print-info p{font-size:12pt;line-height:1.5;margin:3mm 0 7mm}.print-organizers{padding-top:5mm}.print-organizers strong{font-size:10pt}.print-organizers p{font-size:12pt;line-height:1.5;margin:3mm 0 0}}
 
 .poster-upload-link{color:inherit;display:inline-block;max-width:100%;overflow-wrap:anywhere;font-size:.85em;line-height:1.4;text-underline-offset:3px}
+
+@media screen {
+  html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+  .print-toolbar a, .print-toolbar button { min-height: 44px; display: inline-flex; align-items: center; touch-action: manipulation; }
+  .print-toolbar { flex-wrap: wrap; }
+  .print-toolbar span { flex: 1 1 260px; }
+  #print-sheet { width: min(1000px, calc(100% - 32px)); padding: clamp(24px, 5vw, 55px) clamp(22px, 6vw, 65px); }
+  .print-info { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .print-info > div { min-width: 0; }
+  .print-info p, .print-organizers p { font-size: 16px; }
+}
+@media screen and (max-width: 540px) {
+  .print-info { grid-template-columns: 1fr; gap: 0; }
+  #print-sheet { margin: 18px auto; }
+  .print-toolbar { gap: 10px; padding: 16px; }
+  .print-toolbar span { flex-basis: 100%; }
+  h1 { font-size: clamp(2.7rem, 10vw, 3.2rem); }
+  .print-headline { font-size: clamp(2.4rem, 9vw, 3rem); }
+}

@@ -26,6 +26,13 @@ Last updated: September 29, 2026
 - [x] Add a dedicated tentative schedule page and a concise homepage overview.
 - [x] Verify the new pages at desktop and 320px widths, map loading, section highlighting, cross-page links, all ten agenda sessions, and Box configuration compatibility.
 
+## Responsive experience
+
+- [x] Check the homepage, schedule, and printable poster across 45 page/viewport combinations, from 320px phones to 1920px desktops, including phone landscape.
+- [x] Improve tablet layouts, phone submission details, and touch targets; keep all content within the viewport.
+- [x] Add 600px and 1000px campus image variants and responsive source selection.
+- [x] Preserve Box configuration compatibility, cross-page links, and the print stylesheet.
+
 ## Decisions needed before circulation
 
 - [x] Confirm the event name and season: GeniSys 2027, Spring 2027.

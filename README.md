@@ -6,7 +6,7 @@ Website, printable event poster, and call for research posters for GeniSys 2027 
 
 ## Included
 
-- Responsive workshop website with persistent section navigation, research topics, a tentative program, and organizers.
+- Responsive workshop website with phone, tablet, and desktop layouts, touch-friendly section navigation, research topics, a tentative program, and organizers.
 - A dedicated [schedule page](https://yukewang96.github.io/GeniSys27/schedule.html) with the rough day overview.
 - Venue information and a responsive Google Map for the Ralph S. O’Connor Building for Engineering and Science, fifth-floor conference room.
 - A three-step poster submission flow with requirements, FAQs, and the Box form in one section.
@@ -68,6 +68,14 @@ git push origin main
 ```
 
 In this checkout, `origin` points to `GeniSys27`; `planning` preserves the previous repository remote. Relative URLs keep the site, assets, printable poster, and downloads working under the `/GeniSys27/` project path. Box continues to handle research poster uploads.
+
+## Responsive layout
+
+The homepage and schedule use fluid spacing and typography, with tablet layouts below 960px and phone adjustments below 600px. Key navigation and primary controls have touch targets of at least 44px. The header becomes non-sticky in short landscape viewports so it does not cover the content. The poster adapts for screen reading while retaining its A3 print rules.
+
+The campus photo has 600px, 1000px, and 1800px sources; browsers choose a suitable image for the viewport and display density. Native links, keyboard focus, pinch zoom, reduced-motion preferences, and direct Box/Google Maps links remain available.
+
+Checked in browser viewport simulations at 320, 360, 390, 540, 600, 601, 768, 820, 844, 960, 961, 1024, 1280, 1440, and 1920 pixels wide. These checks cover layout and interaction; they do not replace testing on every physical device or browser.
 
 ## Configure the Box upload link
 

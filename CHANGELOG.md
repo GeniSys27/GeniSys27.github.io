@@ -1,5 +1,14 @@
 # Changelog
 
+## 0.5.0 - 2026-09-29
+
+- Adapt spacing, hero layout, topic cards, submission details, venue, and schedule for phone, tablet, and desktop widths.
+- Enlarge navigation and primary control touch targets to at least 44px and stack phone actions and poster details for easier reading.
+- Keep the header out of the way in short landscape viewports; retain active-section indicators and reduced-motion support.
+- Serve responsive campus image sizes and discover font stylesheets earlier to improve loading.
+- Avoid redundant layout and navigation style updates during scrolling and resizing.
+- Verify 45 page/viewport combinations, including widths from 320px to 1920px and landscape phones, without horizontal overflow or clipped content.
+
 ## 0.4.0 - 2026-09-29
 
 - Confirm the venue as the fifth-floor conference room in Rice University’s Ralph S. O’Connor Building for Engineering and Science.

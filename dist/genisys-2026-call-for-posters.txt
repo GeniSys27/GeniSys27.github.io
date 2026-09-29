@@ -1,0 +1,35 @@
+CALL FOR RESEARCH POSTERS
+GeniSys 2026
+Exploring Synergy among Next-Generation AI, Systems, and Networking for a Sustainable Future
+
+Rice University | Houston, Texas
+Event date: To be announced
+Submission deadline: To be announced
+Submission channel: To be announced
+
+GeniSys 2026 invites research posters exploring the intersection of artificial intelligence, computing systems, and networking. We welcome recent research and previously published work. The poster session offers an opportunity to share results, exchange ideas, and connect with researchers, practitioners, and students across these communities.
+
+TOPICS OF INTEREST
+Topics include, but are not limited to:
+- Scalable AI training and efficient distributed inference
+- GPU and heterogeneous system optimization
+- Communication-efficient learning and networking for AI
+- Reliable and resilient AI infrastructure
+- Energy-efficient and sustainable computing
+- Secure AI deployment and cross-layer co-design
+
+ELIGIBLE WORK
+Both recent research and previously published work are welcome. Presenters are encouraged to explain the research problem, approach, and key results or insights, and to highlight questions for discussion with the workshop community.
+
+WORKSHOP EXPERIENCE
+The tentative one-day program includes a keynote, invited talks, a lunch poster/demo session, a panel, student lightning talks, and a research roundtable. Hybrid participation is planned; arrangements for remote poster presentations will be announced.
+
+SUBMISSION INFORMATION
+Submissions are not yet open. The event date, submission deadline, submission channel, abstract requirements, and poster format will be announced. Please check the workshop website for updates before preparing a final submission.
+
+ORGANIZERS
+T. S. Eugene Ng, Professor, Computer Science, Rice University
+Yuke Wang, Assistant Professor, Computer Science, Rice University
+Jiarong Xing, Assistant Professor, Computer Science, Rice University
+
+The workshop program is tentative and subject to change.

@@ -46,7 +46,7 @@ Update the website, printable poster, and downloadable call together when dates,
 
 The organizer-provided Box upload form is embedded in the poster submission section, with a direct Box link as a fallback. The same URL appears on the printable poster and in the downloadable call. The exact event date, the poster submission deadline, file requirements, and poster dimensions are to be announced. The program is tentative, and potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
 
-The public website repository is [YukeWang96/GeniSys27](https://github.com/YukeWang96/GeniSys27). Its GitHub Pages address is [yukewang96.github.io/GeniSys27/](https://yukewang96.github.io/GeniSys27/). The previous [planning repository](https://github.com/YukeWang96/Genisys-Workshop-Spring-2027) remains available separately.
+The public website repository is [YukeWang96/GeniSys27](https://github.com/YukeWang96/GeniSys27). The site is live at [yukewang96.github.io/GeniSys27/](https://yukewang96.github.io/GeniSys27/), verified September 29, 2026. The previous [planning repository](https://github.com/YukeWang96/Genisys-Workshop-Spring-2027) remains available separately.
 
 Only the contents of `dist` are published. Local Sites account metadata is excluded from Git; the original proposals, budgets, and CVs are not included in this repository.
 

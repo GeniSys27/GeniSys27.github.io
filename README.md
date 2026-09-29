@@ -39,9 +39,13 @@ Update the website, printable poster, and downloadable call together when dates,
 
 ## Current content status
 
-Event dates, the poster submission deadline, submission channel, final requirements, and poster dimensions are to be announced. No submission form is connected. The program is tentative, and potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
+Research posters will be submitted through a Box upload link. The link has not yet been provided, so no upload button is active. Event dates, the poster submission deadline, file requirements, and poster dimensions are to be announced. The program is tentative, and potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
 
 The website is available locally. No hosted publication has been completed. The `dist` directory can be served by a static web host. Local Sites account metadata is excluded from Git; the original proposals, budgets, and CVs are not included in this repository.
+
+## Configure the Box upload link
+
+When the organizer supplies the Box upload URL, add it to the submission panel in `dist/index.html`, make the upload action a link to that URL, and include the same URL in the printable poster and downloadable call. Verify that the destination accepts uploads from the intended participants before marking submissions open.
 
 ## Image credit
 

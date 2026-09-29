@@ -20,8 +20,9 @@ Last updated: September 29, 2026
 - [ ] Confirm the workshop date and update all materials consistently.
 - [ ] Confirm the campus venue and room.
 - [ ] Set the poster submission deadline.
-- [ ] Provide and connect the submission form or submission email.
-- [ ] Confirm required submission fields and abstract length.
+- [x] Confirm the submission channel: research posters are uploaded through Box.
+- [ ] Receive and connect the organizer-provided Box upload link.
+- [ ] Confirm poster file requirements and any additional submission fields.
 - [ ] Confirm poster dimensions and presentation arrangements.
 - [ ] Approve the final call for research posters.
 

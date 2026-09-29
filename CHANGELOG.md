@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.1 - 2026-09-29
+
+- Recommend 36 in wide × 48 in tall research posters (portrait; approximately 91 × 122 cm) in the submission panel, preparation guidance, and downloadable call.
+
 ## 0.5.0 - 2026-09-29
 
 - Adapt spacing, hero layout, topic cards, submission details, venue, and schedule for phone, tablet, and desktop widths.

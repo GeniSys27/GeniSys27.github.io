@@ -44,7 +44,8 @@ Last updated: September 29, 2026
 - [x] Receive and connect the organizer-provided Box upload link.
 - [x] Embed the Box upload form and provide a direct-link fallback.
 - [ ] Confirm poster file requirements and any additional submission fields.
-- [ ] Confirm poster dimensions and presentation arrangements.
+- [x] Recommend a standard research poster size: 36 in wide × 48 in tall (portrait).
+- [ ] Confirm presentation arrangements and available display space.
 - [ ] Approve the final call for research posters.
 
 ## Program and launch

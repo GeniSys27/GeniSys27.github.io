@@ -62,8 +62,9 @@ export async function updateSubmission(root) {
     : 'The Box upload link will appear here when it is available. Check back for submission instructions.');
   index = replaceSlot(index, 'prepare',
     'Start with a clear research question, your approach, and the results or insights you would like to discuss. ' +
-    (url ? 'Submit your research poster using the Box form below. File requirements and poster dimensions will be announced.'
-      : 'You will submit your research poster through a provided Box upload link. File requirements, poster dimensions, and the upload link will be announced.'));
+    'We recommend a 36 in wide × 48 in tall poster (portrait; approximately 91 × 122 cm). ' +
+    (url ? 'Submit your research poster using the Box form below. File requirements will be announced.'
+      : 'You will submit your research poster through a provided Box upload link. File requirements and the upload link will be announced.'));
   poster = replaceSlot(poster, 'poster', url
     ? `Upload through Box<br>${externalLink(escapedUrl, 'poster-upload-link')}<br>Deadline to be announced`
     : 'Upload through Box<br>Link and deadline to be announced');
@@ -76,8 +77,9 @@ export async function updateSubmission(root) {
     '\nSUBMISSION INFORMATION\n' +
     (url ? `Upload your research poster to Box: ${url}\n\n` : 'Submit your research poster by uploading it through the Box link provided on the workshop website. ') +
     'Recent research and previously published work are both welcome.\n\n' +
-    (url ? 'The submission deadline, file requirements, and poster dimensions will be announced. Follow the instructions on the Box upload page and check the workshop website for updates.'
-      : 'The Box upload link, submission deadline, file requirements, and poster dimensions will be announced. Please check the workshop website for the upload link and final instructions.') +
+    'Recommended poster size: 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm).\n\n' +
+    (url ? 'The submission deadline and file requirements will be announced. Follow the instructions on the Box upload page and check the workshop website for updates.'
+      : 'The Box upload link, submission deadline, and file requirements will be announced. Please check the workshop website for the upload link and final instructions.') +
     '\n\nORGANIZERS\n');
 
   // Validate all inputs and render all outputs before changing any file.

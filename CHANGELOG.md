@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.5.2 - 2026-09-29
+
+- Replace the G-shaped logo with a navy-and-mint network symbol across the website, browser tab icons, and touch icon.
+- Version the icon URLs to refresh previously cached artwork.
+
 ## 0.5.1 - 2026-09-29
 
 - Recommend 36 in wide × 48 in tall research posters (portrait; approximately 91 × 122 cm) in the submission panel, preparation guidance, and downloadable call.

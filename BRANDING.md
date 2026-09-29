@@ -1,6 +1,6 @@
 # GeniSys 2027 branding
 
-The mark connects three bold segments into a G, reflecting AI, systems, and networking. Its navy, mint, and teal colors match the website. The wordmark stays live HTML text for clarity and accessibility.
+The mark joins three mint diamond-shaped nodes around a central junction, reflecting AI, systems, and networking. A navy rounded-square tile makes the symbol readable at small sizes. It replaces the previous G-shaped mark to distinguish GeniSys from Google's icon. The wordmark stays live HTML text for clarity and accessibility.
 
 ## Assets
 
@@ -9,12 +9,16 @@ The mark connects three bold segments into a G, reflecting AI, systems, and netw
 - `dist/assets/favicon-32.png` and `dist/assets/favicon-16.png`: browser tab icons.
 - `dist/assets/apple-touch-icon.png`: 180 × 180 touch icon.
 
-Keep the mark's proportions and use a light background. The PNGs retain transparency. The logo is a workshop identity, not an official Rice University seal.
+Keep the mark's proportions. The PNGs retain transparency outside the navy tile. The logo is a workshop identity, not an official Rice University seal. Icon references use `?v=network-1` so browsers request the replacement assets.
 
 ## Generation
 
 Created September 29, 2026 using the built-in image-generation tool. Smaller assets were resized from the original with macOS `sips`.
 
-Final prompt:
+Generation prompt:
 
-> Create one polished, minimal geometric brand symbol for GeniSys 2027, an academic workshop connecting AI, systems, networking and sustainable computing at Rice University. Asset type: logo / app icon, NOT a presentation board. Output a single centered symbol with a genuinely transparent background. Design a bold open circular capital G built from three connected geometric ribbon-like segments, suggesting three research disciplines working together. Use a deep navy #071e3b primary shape and a mint #a3f0db inner connecting segment, with a small dark teal #00665c accent if useful. Strong silhouette, thick simple strokes, crisp flat vector-like edges, sophisticated academic technology identity, balanced negative space. The G should remain legible at 16px. The symbol itself should fill roughly 86% of the square canvas with even padding. No text, no numerals, no wordmark, no gradients, no shadows, no glow, no mockup, no background tile, no complex circuit details, no Rice owl or seal. One single logo only. Transparent PNG.
+> Use case: logo-brand. Create a completely new compact brand icon for GeniSys 2027, an academic workshop joining AI, systems, and networking. Replace its old letter G identity with a distinctive non-letter network symbol. Asset: one square website logo and browser favicon master. Design one deep navy #071e3b rounded-square tile, containing a bold mint #a3f0db network glyph: three substantial rounded diamond-shaped nodes, one above and two below, joined by thick clean straight stems into a central Y junction. All three nodes solid; generous clear spacing and symmetry. The nodes and connections should read as one cohesive connected system, with no thin details. Crisp flat geometric vector-like style, calm premium academic identity, excellent visual legibility at 16px and 32px. Tile fills about 90% of the square canvas with even transparent padding. Actual transparent background outside the navy tile. Exact palette navy and mint only. A single icon, no wordmark, no letters, no G or GS, no numbers, no gradients, no shadows, no outlines, no mockup, no multiple options, no text, no watermark, no Google-colored segments, no circular G shape, no star or sparkle. Keep the symbol maximally simple and bold.
+
+Final refinement prompt (built-in image edit):
+
+> Refine this exact logo into clean flat artwork. Keep the exact geometry, arrangement, padding, silhouette, rounded-square navy tile, and three connected mint diamond nodes unchanged. Change ONLY the color rendering: the navy tile must be one perfectly uniform solid #071e3b with absolutely no texture, black blotches, marbling, gradients, highlights, or noise anywhere inside it. Every mint shape must be one perfectly uniform solid #a3f0db. Preserve a genuinely transparent background outside the rounded navy square. Crisp anti-aliased edges. This is a flat two-color favicon and brand icon master. No new shapes, text, shadows, effects, decorations, or border.

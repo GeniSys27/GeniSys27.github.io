@@ -88,7 +88,7 @@ export async function updateSubmission(root) {
     (url ? externalLink('Submit a poster <span aria-hidden="true">↗</span>', 'button button-dark') : '') +
     homepagePresentation + '</div>' +
     (studentUrl ? '' : '<p id="homepage-presentation-link-status" class="submission-link-status">Presentation submission link to be announced.</p>') +
-    '<a class="text-link" href="output/pdf/genisys-2027-call-for-submissions.pdf?v=0.8.19" download="genisys-2027-call-for-submissions.pdf">Download the call for contribution (PDF) <span aria-hidden="true">↓</span></a>');
+    '<a class="text-link" href="output/pdf/genisys-2027-call-for-submissions.pdf?v=0.8.20" download="genisys-2027-call-for-submissions.pdf">Download the call for contribution (PDF) <span aria-hidden="true">↓</span></a>');
   index = replaceSlot(index, 'embed', url || studentUrl
     ? '<details class="upload-panel" id="poster-upload"><summary>Upload your research</summary><div class="upload-content">' +
       '<p class="upload-help"><strong>Presentations (PPTX)</strong><br>' +

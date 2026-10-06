@@ -125,8 +125,8 @@ def build():
 
     text("RESEARCH THEMES", MARGIN, 322, 10, True, TEAL)
     themes = [
-        ("Efficient AI", "AI algorithm design, agent systems, scalable training and inference, "
-         "and heterogeneous computing."),
+        ("Efficient AI", "Algorithm design, agent systems, scalable training/inference, "
+         "heterogeneous computing."),
         ("Connected systems", "Networks and infrastructure for distributed intelligence."),
         ("Sustainable computing", "Energy-aware, reliable, and secure systems."),
     ]
@@ -135,7 +135,7 @@ def build():
         c.setFillColor(TEAL)
         c.circle(MARGIN + 3, HEIGHT - top - 6, 2.1, stroke=0, fill=1)
         height = paragraph(f"<b>{name}:</b> {description}", MARGIN + 14, top,
-                           CONTENT - 14, 10, 13, max_height=26)
+                           CONTENT - 14, 10, 13, max_height=13)
         top += height + 7
 
     # Separate cards make the two submission types and their formats unambiguous.

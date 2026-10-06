@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.20 - 2026-10-06
+
+- Shorten the PDF’s Efficient AI description to fit on one line while retaining all research topics.
+
 ## 0.8.19 - 2026-10-06
 
 - Rename the PDF heading to “Call for contribution” and align its document title and website download labels.

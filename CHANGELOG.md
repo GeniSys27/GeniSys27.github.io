@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.6 - 2026-10-06
+
+- Make navigation, page descriptions, the Schedule submission section, the event flyer, and the downloadable call consistently cover posters and undergraduate/master’s research presentations.
+- Include both submission destinations and the presentation slide limit in the event flyer and downloadable call; synchronize them through the configuration script.
+- Add AI algorithm design and agent systems to the flyer and downloadable call, and retain poster-specific size and upload guidance.
+
 ## 0.8.5 - 2026-10-06
 
 - Remove the redundant poster submission button from the Schedule page header; keep the matching submission buttons at the bottom.

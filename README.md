@@ -1,6 +1,6 @@
 # GeniSys 2027 workshop website
 
-Website, printable event poster, and call for research posters for GeniSys 2027 at Rice University in Spring 2027. The workshop explores AI, systems, and networking for a sustainable future.
+Website, printable event poster, and call for research posters and undergraduate/master’s presentations for GeniSys 2027 at Rice University in Spring 2027. The workshop explores AI, systems, and networking for a sustainable future.
 
 **Confirmed event:** GeniSys 2027, Spring 2027. The exact date remains to be announced. Track remaining decisions in [PROGRESS.md](PROGRESS.md).
 
@@ -10,7 +10,7 @@ Website, printable event poster, and call for research posters for GeniSys 2027 
 - A dedicated [schedule page](https://genisys27.github.io/schedule.html) with a clear 9:00 am–5:00 pm timetable, session durations, and planned formats.
 - Venue information and a responsive Google Map for the Ralph S. O’Connor Building for Engineering and Science, fifth-floor conference room.
 - A homepage submission section with matching poster and student presentation buttons, presentation slide limits, poster details, and an expandable poster upload form.
-- Call for posters welcoming recent research and previously published work.
+- Call for research posters and undergraduate/master’s presentations, with separate submission links and requirements.
 - A3 event poster with a browser print / Save PDF control.
 - A coordinated logo, browser tab icons, and touch icon; see [BRANDING.md](BRANDING.md).
 - [Progress checklist](PROGRESS.md) and [change history](CHANGELOG.md).
@@ -23,25 +23,25 @@ No package installation or build step is required. From the repository root, run
 python3 -m http.server 8765
 ```
 
-Open [the website](http://localhost:8765/), [the printable poster](http://localhost:8765/poster.html), or [the poster call](http://localhost:8765/genisys-2027-call-for-posters.txt).
+Open [the website](http://localhost:8765/), [the printable poster](http://localhost:8765/poster.html), or [the submission call](http://localhost:8765/genisys-2027-call-for-posters.txt).
 
-For the event poster, select **Print event poster**, then **Print / Save PDF**. Choose A3 portrait, disable browser headers and footers, and enable background graphics. Printing behavior depends on the browser; use a browser with print support if the embedded preview does not open a print dialog.
+For the event poster, select **Event poster**, then **Print / Save PDF**. Choose A3 portrait, disable browser headers and footers, and enable background graphics. Printing behavior depends on the browser; use a browser with print support if the embedded preview does not open a print dialog.
 
 ## Edit the materials
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Workshop page, tentative program, and poster call |
+| `index.html` | Workshop page, tentative program, and submission call |
 | `schedule.html` | Detailed tentative schedule; homepage summarizes morning, lunch, and afternoon |
 | `styles.css` | Website styling and responsive layout |
 | `poster.html` | Printable event poster |
 | `poster.css` | Poster styling and A3 print layout |
 | `script.js` | Section navigation, sticky-header offsets, and poster print action |
-| `genisys-2027-call-for-posters.txt` | Downloadable call text |
+| `genisys-2027-call-for-posters.txt` | Downloadable call for posters and undergraduate/master’s presentations; original URL retained for existing links |
 | `assets/` | Campus photograph, logo, browser tab icons, and touch icon |
 | `.nojekyll` | Publish the static files directly without Jekyll processing |
 | `workshop.json` | Poster Box upload link and student presentation submission link |
-| `scripts/update-submission.mjs` | Synchronize poster links and student presentation buttons on the homepage and schedule |
+| `scripts/update-submission.mjs` | Synchronize both submission destinations across the homepage, schedule, event poster, and downloadable call |
 
 Update the website, schedule, printable poster, and downloadable call together when dates, eligibility, or submission details change. If the event is renamed, also update page titles, metadata, filenames, download links, and this documentation.
 
@@ -49,7 +49,7 @@ Update the website, schedule, printable poster, and downloadable call together w
 
 The venue is the fifth-floor conference room in Rice University’s Ralph S. O’Connor Building for Engineering and Science. The embedded Google Map marks the building; a direct Google Maps link is available as a fallback.
 
-The organizer-provided Box link is the primary submission action. An embedded form is available under **Upload a poster on this page**; direct links to `#poster-upload` open that panel automatically. The same Box URL appears on the printable poster and in the downloadable call. The recommended research poster size is 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm). The exact event date, the poster submission deadline, and file requirements are to be announced. The program is tentative and runs from 9:00 am to 5:00 pm Houston (Central Time), with all sessions held sequentially. Three external speakers have 45-minute slots at 9:00 am, 11:45 am, and 1:15 pm, including introductions, Q&A, and transitions. Lunch is 12:30–1:15 pm, with coffee breaks at 10:30–10:45 am and 2:45–3:00 pm. Posters and demos finish the day from 4:00 to 5:00 pm.
+Separate organizer-provided links handle research poster uploads and undergraduate/master’s research presentation submissions. An embedded form is available under **Upload a poster on this page**; direct links to `#poster-upload` open that panel automatically. Both destinations appear on the printable event poster and in the downloadable call. The recommended research poster size is 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm). The exact event date, both submission deadlines, and additional file requirements are to be announced. The program is tentative and runs from 9:00 am to 5:00 pm Houston (Central Time), with all sessions held sequentially. Three external speakers have 45-minute slots at 9:00 am, 11:45 am, and 1:15 pm, including introductions, Q&A, and transitions. Lunch is 12:30–1:15 pm, with coffee breaks at 10:30–10:45 am and 2:45–3:00 pm. Posters and demos finish the day from 4:00 to 5:00 pm.
 
 Eight undergraduate/master’s presentations occupy two one-hour sessions, from 10:45 to 11:45 am and 3:00 to 4:00 pm, with four 15-minute slots in each. Six PhD presentations occupy two 45-minute sessions, from 9:45 to 10:30 am and 2:00 to 2:45 pm, with three speakers in each. PhD slots are provisionally 15 minutes each. For all student talks, the suggested format is 10–12 minutes presenting, with the remaining time for Q&A and transition. Separate registration, welcome, roundtable, and closing blocks are not scheduled in this draft. Potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
 
@@ -73,7 +73,7 @@ For later content changes, preview locally and commit the updated files, then ru
 git push origin main
 ```
 
-In this checkout, `origin` points to `GeniSys27/GeniSys27.github.io`; `previous-site` preserves `YukeWang96/GeniSys.github.io`, and `planning` preserves the original planning repository remote. Relative URLs keep the site, assets, printable poster, and downloads working at the organization site root. Box continues to handle research poster uploads.
+In this checkout, `origin` points to `GeniSys27/GeniSys27.github.io`; `previous-site` preserves `YukeWang96/GeniSys.github.io`, and `planning` preserves the original planning repository remote. Relative URLs keep the site, assets, printable poster, and downloads working at the organization site root. The configured destinations handle poster and student presentation submissions.
 
 ## Responsive layout
 
@@ -97,11 +97,11 @@ Leave `boxUploadUrl` as an empty string and run the same command to keep or rest
 
 ## Configure student presentation submissions
 
-Undergraduate/master’s presentation decks must contain fewer than 15 slides (maximum 14). This requirement appears beside the submission button and in the downloadable call.
+Undergraduate/master’s presentation decks must contain fewer than 15 slides (maximum 14). This requirement appears beside the submission buttons, on the event poster, and in the downloadable call.
 
-The homepage’s `#posters` section and the bottom of the schedule have matching buttons for undergraduate/master’s research presentation submissions and poster submissions. Set `studentPresentationUrl` in `workshop.json` to the organizer-provided HTTPS submission form, then run `node scripts/update-submission.mjs`. The form can be hosted on Box or another service. This setting is independent of the poster upload link.
+The homepage’s `#posters` section and the bottom of the schedule have matching buttons for undergraduate/master’s research presentation submissions and poster submissions. Set `studentPresentationUrl` in `workshop.json` to the organizer-provided HTTPS submission form, then run `node scripts/update-submission.mjs`. The script also updates the presentation link on the printable event poster and in the downloadable call. The destination can be hosted on Box or another service. This setting is independent of the poster upload link.
 
-Leave `studentPresentationUrl` empty while the destination is pending. Both pages then show a disabled presentation button and a message that its submission link will be announced. Do not edit inside the `presentation:` markers directly; the script regenerates this action. No student presentation files are collected by the static website itself.
+Leave `studentPresentationUrl` empty while the destination is pending. Both pages then show a disabled presentation button and a message that its submission link will be announced. The event poster and downloadable call also show the pending status. Do not edit inside the `presentation:` markers directly; the script regenerates those links. No student presentation files are collected by the static website itself.
 
 ## Image credit
 

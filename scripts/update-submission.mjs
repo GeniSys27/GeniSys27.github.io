@@ -70,25 +70,32 @@ export async function updateSubmission(root) {
     (url ? externalLink('Submit a poster <span aria-hidden="true">↗</span>', 'button button-dark') : '') +
     homepagePresentation + '</div>' +
     (studentUrl ? '' : '<p id="homepage-presentation-link-status" class="submission-link-status">Presentation submission link to be announced.</p>') +
-    '<a class="text-link" href="genisys-2027-call-for-posters.txt" download>Download the poster call <span aria-hidden="true">↓</span></a>');
+    '<a class="text-link" href="genisys-2027-call-for-posters.txt" download="genisys-2027-call-for-submissions.txt">Download the submission call <span aria-hidden="true">↓</span></a>');
   index = replaceSlot(index, 'embed', url
     ? `<details class="upload-panel" id="poster-upload"><summary>Upload a poster on this page</summary><div class="upload-content"><iframe src="${escapedUrl}" height="550" width="800" title="GeniSys research poster upload form on Box" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="upload-help">Form not loading? ${externalLink('Open in Box')}.</p></div></details>`
     : '');
   poster = replaceSlot(poster, 'poster', url
     ? `Upload through Box<br>${externalLink(escapedUrl, 'poster-upload-link')}<br>Deadline to be announced`
     : 'Upload through Box<br>Link and deadline to be announced');
+  poster = replaceSlot(poster, 'poster', studentUrl
+    ? `<a class="poster-upload-link" href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a research presentation</a>`
+    : 'Presentation submission link to be announced', 'presentation');
 
-  if (!/^Box upload link: .+$/m.test(call) || !/\nSUBMISSION INFORMATION\n[\s\S]*?\nORGANIZERS\n/.test(call)) {
-    throw new Error('The downloadable call is missing its Box link or submission information section.');
+  if (!/^Poster submission link: .+$/m.test(call) || !/^Undergraduate\/master’s presentation submission link: .+$/m.test(call) || !/\nSUBMISSION INFORMATION\n[\s\S]*?\nORGANIZERS\n/.test(call)) {
+    throw new Error('The downloadable call is missing its submission links or submission information section.');
   }
-  call = call.replace(/^Box upload link: .+$/m, () => `Box upload link: ${url || 'To be announced'}`);
+  call = call.replace(/^Poster submission link: .+$/m, () => `Poster submission link: ${url || 'To be announced'}`);
+  call = call.replace(/^Undergraduate\/master’s presentation submission link: .+$/m, () => `Undergraduate/master’s presentation submission link: ${studentUrl || 'To be announced'}`);
   call = call.replace(/\nSUBMISSION INFORMATION\n[\s\S]*?\nORGANIZERS\n/, () =>
-    '\nSUBMISSION INFORMATION\n' +
-    (url ? `Upload your research poster to Box: ${url}\n\n` : 'Submit your research poster by uploading it through the Box link provided on the workshop website. ') +
+    '\nSUBMISSION INFORMATION\nResearch posters\n' +
+    (url ? `Upload your research poster to Box: ${url}\n\n` : 'The poster upload link will be announced on the workshop website.\n\n') +
     'Recent research and previously published work are both welcome.\n\n' +
     'Recommended poster size: 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm).\n\n' +
-    (url ? 'The submission deadline and file requirements will be announced. Follow the instructions on the Box upload page and check the workshop website for updates.'
-      : 'The Box upload link, submission deadline, and file requirements will be announced. Please check the workshop website for the upload link and final instructions.') +
+    'The poster submission deadline and file requirements will be announced.\n\n' +
+    'Undergraduate/master’s research presentations\n' +
+    (studentUrl ? `Submit your research presentation: ${studentUrl}\n\n` : 'The presentation submission link will be announced on the workshop website.\n\n') +
+    'Presentation decks must contain fewer than 15 slides (maximum 14). Eight 15-minute slots are planned, four in the morning and four in the afternoon, including Q&A and transitions.\n\n' +
+    'The presentation submission deadline and any additional file requirements will be announced. Check the workshop website for updates: https://genisys27.github.io/#posters' +
     '\n\nORGANIZERS\n');
 
   // Validate all inputs and render all outputs before changing any file.

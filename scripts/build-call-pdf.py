@@ -117,8 +117,9 @@ def build():
     text("SUBMISSION DEADLINE", MARGIN, 204, 10, True, NAVY)
     text(deadline_label, 325, 199, 20, True, NAVY)
 
-    paragraph("Share research, exchange ideas, and connect across AI, systems, and networking "
-              "for a sustainable future.", MARGIN, 249, CONTENT, 11, 15, max_height=30)
+    paragraph("Connect with people across backgrounds and disciplines, showcase your work to a "
+              "wider audience, and find potential collaborators.",
+              MARGIN, 249, CONTENT, 11, 15, max_height=30)
     paragraph("<b>Venue:</b> Ralph S. O'Connor Building for Engineering and Science, "
               "fifth-floor conference room.", MARGIN, 286, CONTENT, 9.5, 13,
               color=MUTED, max_height=26)

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.22 - 2026-10-06
+
+- Refocus the PDF introduction on connecting across backgrounds and disciplines, showcasing work to a wider audience, and finding potential collaborators.
+
 ## 0.8.21 - 2026-10-06
 
 - Add presentation and poster filename conventions with Undergrad, Master, or PhD suffixes to the homepage, schedule, and PDF/text calls.

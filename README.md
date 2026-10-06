@@ -40,7 +40,7 @@ For the event poster, select **Event poster**, then **Print / Save PDF**. Choose
 | `genisys-2027-call-for-posters.txt` | Downloadable call for posters and undergraduate/master’s presentations; original URL retained for existing links |
 | `assets/` | Campus photograph, logo, browser tab icons, and touch icon |
 | `.nojekyll` | Publish the static files directly without Jekyll processing |
-| `workshop.json` | Poster Box upload link and student presentation submission link |
+| `workshop.json` | Poster upload link, student presentation submission link, and shared submission deadline |
 | `scripts/update-submission.mjs` | Synchronize both submission destinations across the homepage, schedule, event poster, and downloadable call |
 
 Update the website, schedule, printable poster, and downloadable call together when dates, eligibility, or submission details change. If the event is renamed, also update page titles, metadata, filenames, download links, and this documentation.
@@ -49,7 +49,7 @@ Update the website, schedule, printable poster, and downloadable call together w
 
 The venue is the fifth-floor conference room in Rice University’s Ralph S. O’Connor Building for Engineering and Science. The embedded Google Map marks the building; a direct Google Maps link is available as a fallback.
 
-Separate organizer-provided links handle research poster uploads and undergraduate/master’s research presentation submissions. An embedded form is available under **Upload a poster on this page**; direct links to `#poster-upload` open that panel automatically. Both destinations appear on the printable event poster and in the downloadable call. The recommended research poster size is 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm). The exact event date, both submission deadlines, and additional file requirements are to be announced. The program is tentative and runs from 9:00 am to 5:00 pm Houston (Central Time), with all sessions held sequentially. Three external speakers have 45-minute slots at 9:00 am, 11:45 am, and 1:15 pm, including introductions, Q&A, and transitions. Lunch is 12:30–1:15 pm, with coffee breaks at 10:30–10:45 am and 2:45–3:00 pm. Posters and demos finish the day from 4:00 to 5:00 pm.
+Separate organizer-provided links handle research poster uploads and undergraduate/master’s research presentation submissions. The **Upload your research** panel includes a PPTX presentation link and a separate embedded PDF poster form; direct links to `#poster-upload` open that panel automatically. Both destinations appear on the printable event poster and in the downloadable call. The recommended research poster size is 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm). Both submission types are due January 10, 2027. Presentations must be PPTX files and research posters must be PDF files. The exact event date remains to be announced. The program is tentative and runs from 9:00 am to 5:00 pm Houston (Central Time), with all sessions held sequentially. Three external speakers have 45-minute slots at 9:00 am, 11:45 am, and 1:15 pm, including introductions, Q&A, and transitions. Lunch is 12:30–1:15 pm, with coffee breaks at 10:30–10:45 am and 2:45–3:00 pm. Posters and demos finish the day from 4:00 to 5:00 pm.
 
 Eight undergraduate/master’s presentations occupy two one-hour sessions, from 10:45 to 11:45 am and 3:00 to 4:00 pm, with four 15-minute slots in each. Six PhD presentations occupy two 45-minute sessions, from 9:45 to 10:30 am and 2:00 to 2:45 pm, with three speakers in each. PhD slots are provisionally 15 minutes each. For all student talks, the suggested format is 10–12 minutes presenting, with the remaining time for Q&A and transition. Separate registration, welcome, roundtable, and closing blocks are not scheduled in this draft. Potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
 
@@ -91,13 +91,17 @@ To change the configured Box upload URL:
 2. Run `node scripts/update-submission.mjs` from the repository root. Node.js 18 or newer is sufficient; no package installation is needed.
 3. Verify that the Box page accepts uploads from the intended participants, then commit the configuration and updated materials together.
 
-This updates the **Submit a poster** button, the expandable embedded form and its direct-link fallback, the printable poster, and the downloadable call. The embed uses the supplied 800 by 550 dimensions and scales to the available width. The website remains static; Box handles file uploads. Navigation, the native disclosure control, and direct links work without the website's JavaScript, while the Box form may require scripts and cookies from Box.
+This updates the **Submit a poster** button, the expandable embedded form and its direct-link fallback, the printable poster, and the downloadable call. The poster-only embed uses the supplied 800 by 550 dimensions and scales to the available width. The website remains static; Box handles file uploads. Navigation, the native disclosure control, and direct links work without the website's JavaScript, while the Box form may require scripts and cookies from Box.
 
-Leave `boxUploadUrl` as an empty string and run the same command to keep or restore the forthcoming state. The script validates the URL and content markers before writing changes. Do not edit inside the `box:` comment markers directly; those sections are regenerated. The exact event date, submission deadline, and file requirements remain to be announced until confirmed separately.
+Leave `boxUploadUrl` as an empty string and run the same command to keep or restore the forthcoming state. The script validates the URL and content markers before writing changes. Do not edit inside the `box:` comment markers directly; those sections are regenerated. The exact workshop date remains to be announced. Submission deadlines and accepted file formats are separate from link availability.
+
+## Configure the submission deadline
+
+Set `submissionDeadline` in `workshop.json` to an ISO date (`YYYY-MM-DD`), then run `node scripts/update-submission.mjs`. This updates the shared deadline on the homepage, schedule, event flyer, and downloadable call. Use an empty string while the deadline is pending. Dates are displayed with the month spelled out; no cutoff time has been specified.
 
 ## Configure student presentation submissions
 
-Undergraduate/master’s presentation decks must contain fewer than 15 slides (maximum 14). This requirement appears beside the submission buttons, on the event poster, and in the downloadable call.
+Undergraduate/master’s presentations must be submitted as PPTX files with fewer than 15 slides (maximum 14). This requirement appears beside the submission buttons, on the event poster, and in the downloadable call.
 
 The homepage’s `#posters` section and the bottom of the schedule have matching buttons for undergraduate/master’s research presentation submissions and poster submissions. Set `studentPresentationUrl` in `workshop.json` to the organizer-provided HTTPS submission form, then run `node scripts/update-submission.mjs`. The script also updates the presentation link on the printable event poster and in the downloadable call. The destination can be hosted on Box or another service. This setting is independent of the poster upload link.
 

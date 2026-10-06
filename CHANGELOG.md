@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.9 - 2026-10-06
+
+- Set the shared submission deadline to January 10, 2027, and specify PPTX presentations and PDF research posters across the website, flyer, and downloadable call.
+- Rename the upload panel to “Upload your research” and distinguish the presentation link from the embedded poster form.
+- Match the homepage program overview to the schedule’s alternating backgrounds, rounded borders, and subtle shadows.
+
 ## 0.8.8 - 2026-10-06
 
 - Separate schedule sessions with alternating light backgrounds, rounded borders, spacing, and subtle shadows; keep the poster session highlighted in mint.

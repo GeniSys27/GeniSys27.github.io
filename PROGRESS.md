@@ -40,12 +40,13 @@ Last updated: October 6, 2026
 - [x] Confirm the event name and season: GeniSys 2027, Spring 2027.
 - [ ] Confirm the exact workshop date in Spring 2027 and update all materials consistently.
 - [x] Confirm the venue: Ralph S. O’Connor Building for Engineering and Science, fifth-floor conference room.
-- [ ] Set the poster and undergraduate/master’s presentation submission deadlines.
+- [x] Set January 10, 2027 as the shared poster and undergraduate/master’s presentation submission deadline.
 - [x] Confirm the submission channel: research posters are uploaded through Box.
 - [x] Prepare one configuration entry to synchronize the Box link across the website, printable poster, and downloadable call.
 - [x] Receive and connect the organizer-provided Box upload link.
 - [x] Embed the Box upload form and provide a direct-link fallback.
-- [ ] Confirm poster file requirements and any additional submission fields.
+- [x] Set PDF for research posters and PPTX for undergraduate/master’s presentations.
+- [ ] Confirm any additional submission fields.
 - [x] Recommend a standard research poster size: 36 in wide × 48 in tall (portrait).
 - [ ] Confirm presentation arrangements and available display space.
 - [ ] Approve the final call for posters and undergraduate/master’s presentations.
@@ -69,6 +70,8 @@ Last updated: October 6, 2026
 - [x] Connect the organizer-provided Box link for undergraduate/master’s research presentation submissions and activate the button.
 - [x] Specify fewer than 15 slides (maximum 14) for undergraduate/master’s presentation decks.
 - [x] Align navigation, page descriptions, the event poster, and downloadable call with both submission types and their separate destinations.
+- [x] Rename the upload panel to “Upload your research,” with presentation and poster destinations clearly distinguished.
+- [x] Add schedule-style alternating backgrounds and shadows to the homepage program overview.
 
 ## Program and launch
 

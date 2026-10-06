@@ -136,13 +136,13 @@ img { max-width: 100%; }
 .organizers-grid p { font-size: .85rem; color: var(--muted); margin-top: 3px; }
 .site-footer { background: #f7f9f9; border-top: 1px solid var(--line); padding-block: 28px; }
 .footer-top { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px 28px; }
+.footer-brand { display: flex; align-items: center; gap: 12px; flex-shrink: 0; }
 .footer-top .wordmark { font-size: 1.2rem; }
 .footer-top .brand-mark { width: 28px; height: 28px; }
 .footer-top p, .footer-links, .back-top { font-size: .8rem; color: var(--muted); }
 .footer-links { display: flex; gap: 24px; }
 .footer-links a, .back-top { display: inline-flex; align-items: center; min-height: 44px; }
-.footer-contact { margin-top: 18px; }
-.contact-icon { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; color: var(--navy); text-decoration: none; }
+.contact-icon { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex-shrink: 0; border: 1px solid var(--line); border-radius: 50%; color: var(--navy); text-decoration: none; }
 .contact-icon:hover { background: #e7f5ef; border-color: #b9d9cc; }
 .photo-credit { color: var(--muted); font-size: .7rem; margin-top: 14px; }
 /* The schedule shares typography and spacing with the workshop homepage. */

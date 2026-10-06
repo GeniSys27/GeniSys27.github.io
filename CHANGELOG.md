@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.14 - 2026-10-06
+
+- Align the contact envelope icon beside the GeniSys 2027 logo in both page footers, including on mobile.
+
 ## 0.8.13 - 2026-10-06
 
 - Remove the introductory sentence beneath the homepage’s “Posters & presentations” heading.

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.7 - 2026-10-06
+
+- Shorten the presentation submission label to “Submit a presentation” on the homepage, Schedule, and event flyer.
+
 ## 0.8.6 - 2026-10-06
 
 - Make navigation, page descriptions, the Schedule submission section, the event flyer, and the downloadable call consistently cover posters and undergraduate/master’s research presentations.

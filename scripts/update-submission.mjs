@@ -56,12 +56,12 @@ export async function updateSubmission(root) {
   let [index, poster, call, schedule] = await Promise.all(paths.map(file => readFile(path.join(root, file), 'utf8')));
 
   schedule = replaceSlot(schedule, 'actions', studentUrl
-    ? `<a class="button button-dark" href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a research presentation <span aria-hidden="true">↗</span></a>`
-    : '<button class="button button-dark" type="button" disabled aria-describedby="presentation-link-status">Submit a research presentation</button><p id="presentation-link-status" class="submission-link-status">Submission link to be announced.</p>', 'presentation');
+    ? `<a class="button button-dark" href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a presentation <span aria-hidden="true">↗</span></a>`
+    : '<button class="button button-dark" type="button" disabled aria-describedby="presentation-link-status">Submit a presentation</button><p id="presentation-link-status" class="submission-link-status">Submission link to be announced.</p>', 'presentation');
 
   const homepagePresentation = studentUrl
-    ? `<a class="button button-dark" href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a research presentation <span aria-hidden="true">↗</span></a>`
-    : '<button class="button button-dark" type="button" disabled aria-describedby="homepage-presentation-link-status">Submit a research presentation</button>';
+    ? `<a class="button button-dark" href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a presentation <span aria-hidden="true">↗</span></a>`
+    : '<button class="button button-dark" type="button" disabled aria-describedby="homepage-presentation-link-status">Submit a presentation</button>';
   index = replaceSlot(index, 'status', url && studentUrl ? 'Poster and presentation links available'
     : url ? 'Poster submission link available'
     : studentUrl ? 'Presentation submission link available' : 'Submission links coming soon');
@@ -78,7 +78,7 @@ export async function updateSubmission(root) {
     ? `Upload through Box<br>${externalLink(escapedUrl, 'poster-upload-link')}<br>Deadline to be announced`
     : 'Upload through Box<br>Link and deadline to be announced');
   poster = replaceSlot(poster, 'poster', studentUrl
-    ? `<a class="poster-upload-link" href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a research presentation</a>`
+    ? `<a class="poster-upload-link" href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a presentation</a>`
     : 'Presentation submission link to be announced', 'presentation');
 
   if (!/^Poster submission link: .+$/m.test(call) || !/^Undergraduate\/master’s presentation submission link: .+$/m.test(call) || !/\nSUBMISSION INFORMATION\n[\s\S]*?\nORGANIZERS\n/.test(call)) {

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.15 - 2026-10-06
+
+- Add matching teal chip, connected-node, and leaf icons to the three research themes.
+
 ## 0.8.14 - 2026-10-06
 
 - Align the contact envelope icon beside the GeniSys 2027 logo in both page footers, including on mobile.

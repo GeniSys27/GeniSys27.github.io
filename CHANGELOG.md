@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.9.0 - 2026-10-06
+
+- Emphasize the submission deadline and selection counts, put submission buttons before filename instructions, and simplify the presentation requirements.
+- Improve the narrow-phone header and shorten repetitive agenda descriptions.
+- Refine the PDF filename panel, emphasize talk selection, and label the submission QR code; align the text call’s collaboration message and contact details.
+
 ## 0.8.24 - 2026-10-06
 
 - Clarify that the workshop plans to select eight undergraduate/master’s and six PhD talks.

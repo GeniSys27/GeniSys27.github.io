@@ -161,14 +161,15 @@ def build():
     button("Submit a poster", poster_url, MARGIN + 15, 523, card_width - 30)
     button("Submit a presentation", presentation_url, right + 15, 523, card_width - 30)
 
-    paragraph("<b>Presentations:</b> Presentation_First_Lastname_Level.pptx<br/>"
-              "<b>Posters:</b> Poster_First_Lastname_Level.pptx<br/>"
+    box(MARGIN, 570, CONTENT, 47, PALE, radius=4)
+    paragraph("<b>Presentation filename:</b> Presentation_First_Lastname_Level.pptx<br/>"
+              "<b>Poster filename:</b> Poster_First_Lastname_Level.pptx<br/>"
               "Replace First/Lastname with your name and Level with Undergrad, Master, or PhD.",
-              MARGIN, 574, CONTENT, 9.5, 13, max_height=39)
+              MARGIN + 9, 574, CONTENT - 18, 9, 13, max_height=39)
     paragraph(f'<link href="{SITE}schedule.html" color="#00665c">Full schedule</link>',
               502, 624, 70, 9, 12, max_height=12)
     text("Program: 9:00 am-5:00 pm  |  Central Time  |  Tentative", MARGIN, 624, 10.5, True)
-    paragraph("We plan to select 8 undergraduate/master's and 6 PhD talks: 14 talks, 15 minutes each.<br/>"
+    paragraph("We plan to select <b>8 undergraduate/master's and 6 PhD talks</b>: 14 talks, 15 minutes each.<br/>"
               "3 external speakers (45 minutes each); posters &amp; demos from 4:00 to 5:00 pm.",
               MARGIN, 644, CONTENT, 10, 14, max_height=28)
     paragraph("Hybrid participation is planned; remote poster arrangements will be announced.",
@@ -189,6 +190,7 @@ def build():
     drawing.add(qr)
     renderPDF.draw(drawing, c, WIDTH - MARGIN - size, 18)
     c.linkURL(SITE + "#posters", (WIDTH - MARGIN - size, 18, WIDTH - MARGIN, 18 + size))
+    text("Scan to submit", WIDTH - MARGIN - size + 3, 775, 7, False, TEAL)
     c.showPage()
     c.save()
     print(OUTPUT)

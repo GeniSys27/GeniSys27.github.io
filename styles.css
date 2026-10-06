@@ -92,6 +92,10 @@ img { max-width: 100%; }
 }
 .poster-copy .section-deck { margin-top: 18px; }
 .poster-guidance { color: var(--muted); font-size: .9rem; margin-top: 12px; }
+.submission-deadline { display: flex; flex-wrap: wrap; gap: 4px 10px; width: fit-content; margin: 18px 0 24px; padding: 10px 14px; border-left: 3px solid var(--teal); border-radius: 0 6px 6px 0; background: #dff1e9; color: var(--teal); font-size: .95rem; }
+.presentation-highlights { margin: 12px 0 0; padding-left: 20px; color: var(--muted); font-size: .9rem; }
+.presentation-highlights li { padding-left: 3px; margin-block: 7px; }
+.presentation-highlights strong { color: var(--ink); }
 .submission-filenames { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
 .submission-filenames p { margin: 0 0 8px; color: var(--muted); font-size: .85rem; }
 .submission-filenames code { display: block; max-width: 100%; margin: 6px 0; color: var(--ink); font-size: .8rem; white-space: normal; overflow-wrap: anywhere; }
@@ -270,6 +274,8 @@ img { max-width: 100%; }
   .schedule-next-actions { width: 100%; }
 }
 @media (max-width: 380px) {
+  .header-inner { column-gap: 8px; }
+  .header-cta { max-width: 145px; padding-inline: 10px; white-space: normal; text-align: center; line-height: 1.3; }
   .site-header .wordmark-type { flex-direction: column; align-items: start; gap: 1px; }
   .site-header .wordmark-year { font-size: .7em; }
   .hero-actions { flex-direction: column; align-items: stretch; }

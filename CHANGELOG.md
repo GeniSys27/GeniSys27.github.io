@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.13 - 2026-10-06
+
+- Remove the introductory sentence beneath the homepage’s “Posters & presentations” heading.
+
 ## 0.8.12 - 2026-10-06
 
 - Add a gentle heartbeat pulse to the submission-status dot, with animation disabled for reduced-motion preferences.

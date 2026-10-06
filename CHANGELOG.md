@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.8 - 2026-10-06
+
+- Separate schedule sessions with alternating light backgrounds, rounded borders, spacing, and subtle shadows; keep the poster session highlighted in mint.
+
 ## 0.8.7 - 2026-10-06
 
 - Shorten the presentation submission label to “Submit a presentation” on the homepage, Schedule, and event flyer.

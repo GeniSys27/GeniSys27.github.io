@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.19 - 2026-10-06
+
+- Rename the PDF heading to “Call for contribution” and align its document title and website download labels.
+
 ## 0.8.18 - 2026-10-06
 
 - Remove the remote-poster arrangements note beneath the homepage submission links.

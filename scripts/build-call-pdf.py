@@ -61,7 +61,7 @@ def build():
     pdfmetrics.registerFontFamily("CallSans", normal="CallSans", bold="CallSans-Bold")
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     c = canvas.Canvas(str(OUTPUT), pagesize=(WIDTH, HEIGHT), pageCompression=1, invariant=1)
-    c.setTitle("GeniSys 2027 - Call for Research")
+    c.setTitle("GeniSys 2027 - Call for contribution")
     c.setAuthor("GeniSys 2027 | Computer Science, Rice University")
     c.setSubject("Research posters and presentations from undergraduate, master's, and PhD students")
 
@@ -108,7 +108,7 @@ def build():
                 width=34, height=34, mask="auto")
     text("GeniSys", 85, 47, 30, True, white)
     text("2027", 85 + pdfmetrics.stringWidth("GeniSys", "CallSans-Bold", 30) + 9, 47, 30, False, MINT)
-    text("Call for Research", MARGIN, 96, 27, True, white)
+    text("Call for contribution", MARGIN, 96, 27, True, white)
     text("Research posters & presentations", MARGIN, 132, 13, False, white)
     text("Spring 2027  |  Rice University, Houston, Texas", MARGIN, 155, 10.5, False, MINT)
     text("Exact workshop date to be announced", MARGIN, 170, 9, False, white)

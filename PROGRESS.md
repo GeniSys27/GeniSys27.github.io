@@ -1,6 +1,6 @@
 # GeniSys 2027 workshop progress
 
-Last updated: September 29, 2026
+Last updated: October 6, 2026
 
 ## First version
 
@@ -49,6 +49,23 @@ Last updated: September 29, 2026
 - [x] Recommend a standard research poster size: 36 in wide × 48 in tall (portrait).
 - [ ] Confirm presentation arrangements and available display space.
 - [ ] Approve the final call for research posters.
+
+## Schedule refinement
+
+- [x] Plan a continuous 9:00 am–5:00 pm workshop with explicit session durations and Q&A time.
+- [x] Reserve 4:00–5:00 pm for the dedicated poster/demo session as the final event of the day.
+- [x] Synchronize the homepage overview, schedule, printable poster, and downloadable call.
+- [x] Allocate two hours for eight undergraduate/master’s presentations: four in the morning and four in the afternoon, with 15 minutes per student.
+- [x] Add six PhD presentations from different research groups: three in the morning and three in the afternoon.
+- [ ] Confirm the proposed 15-minute PhD slots, including Q&A and transitions; the draft reserves 90 minutes total.
+- [x] Include three external speakers in 45-minute slots, with lunch and two coffee breaks in a sequential 9:00 am–5:00 pm program.
+- [ ] Confirm the three external speakers and presentation titles; brief all presenters on timing and Q&A.
+
+## Student presentation submissions
+
+- [x] Add an undergraduate/master’s research presentation submission button at the bottom of the schedule, alongside a poster submission link.
+- [x] Add a separate configurable HTTPS submission destination and a clearly marked pending state.
+- [ ] Receive the student presentation submission URL, or confirmation to reuse the poster Box link, and activate the button.
 
 ## Program and launch
 

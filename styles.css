@@ -106,7 +106,7 @@ img { max-width: 100%; }
 .upload-help a { display: inline-flex; align-items: center; min-height: 44px; }
 .program-overview { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
 .program-overview article { padding-top: 22px; border-top: 2px solid var(--line); }
-.program-overview article:nth-child(2) { border-color: var(--teal); }
+.program-overview .featured-program { border-color: var(--teal); }
 .program-time { font: 500 .8rem/1.5 var(--display); color: var(--teal); margin-bottom: 12px; }
 .program-overview h3 { font-size: 1.16rem; margin-bottom: 10px; }
 .program-overview article > p:last-child { font-size: .9rem; color: var(--muted); }
@@ -150,16 +150,24 @@ img { max-width: 100%; }
 .agenda-column > h2 { font-size: 1.1rem; padding-block: 20px; display: flex; justify-content: space-between; align-items: baseline; gap: 20px; }
 .agenda-column > h2 span { color: var(--muted); font: 400 .8rem/1.5 var(--body); }
 .agenda-list { list-style: none; padding: 0; margin: 0; }
-.agenda-list li { display: grid; grid-template-columns: 104px 1fr; gap: 16px; padding: 22px 16px; border-top: 1px solid var(--line); min-width: 0; }
-.agenda-list time { color: var(--muted); font-size: .8rem; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.agenda-list li { display: grid; grid-template-columns: 164px minmax(0, 1fr); gap: 16px; padding: 22px 16px; border-top: 1px solid var(--line); min-width: 0; }
+.agenda-time { font-variant-numeric: tabular-nums; }
+.agenda-time > p { color: var(--ink); font-size: .8rem; font-weight: 500; white-space: nowrap; }
 .agenda-list h3 { font-size: 1rem; line-height: 1.4; }
-.agenda-list span { color: var(--muted); font-size: .75rem; display: block; margin-top: 5px; }
+.agenda-time > span { color: var(--muted); font-size: .75rem; display: block; margin-top: 5px; }
+.agenda-list h3 + p { color: var(--muted); font-size: .8rem; margin-top: 6px; }
 .agenda-list .featured-session { background: var(--pale); }
 .agenda-list .break-session { padding-block: 14px; color: var(--muted); }
 .schedule-next { display: flex; align-items: center; justify-content: space-between; gap: 24px; margin-top: 48px; padding: 28px 32px; background: var(--pale); border-radius: 6px; }
 .schedule-next h2 { font-size: 1.5rem; }
 .schedule-next p { color: var(--muted); font-size: .9rem; margin-top: 8px; }
 .schedule-next .button { flex-shrink: 0; }
+.schedule-next > div { min-width: 0; }
+.schedule-next-actions { display: flex; flex-direction: column; align-items: stretch; gap: 12px; width: min(100%, 330px); flex-shrink: 0; }
+.schedule-next-actions .button { max-width: 100%; white-space: normal; }
+.schedule-next-actions .button:disabled { background: #65747e; cursor: not-allowed; }
+.schedule-next-actions .text-link { align-self: flex-start; }
+.schedule-next-actions .submission-link-status { margin: 0; font-size: .8rem; }
 @media (max-width: 1100px) {
   .section-nav { gap: 18px; }
   .hero-inner { gap: 32px; }
@@ -186,7 +194,6 @@ img { max-width: 100%; }
   .venue-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
   .venue-map { height: 300px; }
   .agenda-grid { grid-template-columns: 1fr; gap: 36px; }
-  .agenda-list li { grid-template-columns: 120px 1fr; }
   .heading-row { align-items: start; }
 }
 @media (max-width: 600px) {
@@ -238,9 +245,12 @@ img { max-width: 100%; }
   .schedule-heading h1 { font-size: 2.75rem; }
   .schedule-facts { grid-template-columns: 1fr 1fr; gap: 22px; }
   .schedule-facts > div:last-child { grid-column: 1 / -1; }
-  .agenda-list li { grid-template-columns: 94px 1fr; gap: 12px; padding: 20px 8px; }
+  .agenda-list li { grid-template-columns: 1fr; gap: 8px; padding: 20px 12px; }
+  .agenda-time { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 14px; }
+  .agenda-time > span { margin-top: 0; }
   .schedule-next { flex-direction: column; align-items: start; padding: 24px; margin-top: 36px; }
   .schedule-next .button { width: 100%; }
+  .schedule-next-actions { width: 100%; }
 }
 @media (max-width: 380px) {
   .site-header .wordmark-type { flex-direction: column; align-items: start; gap: 1px; }
@@ -250,7 +260,6 @@ img { max-width: 100%; }
   .submission-panel dl > div { grid-template-columns: 1fr; gap: 5px; }
   .poster-actions { align-items: stretch; flex-direction: column; }
   .poster-actions .text-link { justify-content: center; }
-  .agenda-list li { grid-template-columns: 1fr; gap: 6px; }
 }
 @media (max-height: 500px) and (orientation: landscape) {
   .site-header { position: static; }

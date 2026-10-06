@@ -1,5 +1,15 @@
 # Changelog
 
+## 0.8.0 - 2026-10-06
+
+- Add a dedicated undergraduate/master’s research presentation submission button at the bottom of the schedule, with a separately configurable destination and a pending state until the link is supplied.
+- Expand the Efficient AI theme to include AI algorithm design and agent systems.
+- Clarify a sequential 9:00 am–5:00 pm schedule with three external speakers in 45-minute slots, lunch, and two coffee breaks.
+- Allocate two one-hour sessions to eight undergraduate/master’s presentations, four per session in 15-minute slots.
+- Add six PhD presentations from different research groups, three each morning and afternoon, with proposed 15-minute slots including Q&A and transitions.
+- Finish with posters and demos from 4:00 to 5:00 pm; replace the earlier standalone keynote, welcome, roundtable, and closing blocks with the revised program.
+- Synchronize the homepage, printable poster, and downloadable call; add session durations and adapt time labels for desktop and phone layouts.
+
 ## 0.7.0 - 2026-09-29
 
 - Reduce homepage text by approximately 60%, removing repeated descriptions, submission steps, and FAQs while retaining event and submission details.

@@ -7,7 +7,7 @@ Website, printable event poster, and call for research posters for GeniSys 2027 
 ## Included
 
 - Responsive workshop website with phone, tablet, and desktop layouts, touch-friendly section navigation, research topics, a tentative program, and organizers.
-- A dedicated [schedule page](https://genisys27.github.io/schedule.html) with the rough day overview.
+- A dedicated [schedule page](https://genisys27.github.io/schedule.html) with a clear 9:00 am–5:00 pm timetable, session durations, and planned formats.
 - Venue information and a responsive Google Map for the Ralph S. O’Connor Building for Engineering and Science, fifth-floor conference room.
 - A concise poster call with one primary Box submission link, a details panel, and an expandable embedded upload form.
 - Call for posters welcoming recent research and previously published work.
@@ -40,8 +40,8 @@ For the event poster, select **Print event poster**, then **Print / Save PDF**. 
 | `genisys-2027-call-for-posters.txt` | Downloadable call text |
 | `assets/` | Campus photograph, logo, browser tab icons, and touch icon |
 | `.nojekyll` | Publish the static files directly without Jekyll processing |
-| `workshop.json` | Organizer-provided Box upload link |
-| `scripts/update-submission.mjs` | Synchronize the Box link across all three materials |
+| `workshop.json` | Poster Box upload link and student presentation submission link |
+| `scripts/update-submission.mjs` | Synchronize poster links and the schedule’s student presentation button |
 
 Update the website, schedule, printable poster, and downloadable call together when dates, eligibility, or submission details change. If the event is renamed, also update page titles, metadata, filenames, download links, and this documentation.
 
@@ -49,7 +49,9 @@ Update the website, schedule, printable poster, and downloadable call together w
 
 The venue is the fifth-floor conference room in Rice University’s Ralph S. O’Connor Building for Engineering and Science. The embedded Google Map marks the building; a direct Google Maps link is available as a fallback.
 
-The organizer-provided Box link is the primary submission action. An embedded form is available under **Upload on this page**; direct links to `#poster-upload` open that panel automatically. The same Box URL appears on the printable poster and in the downloadable call. The recommended research poster size is 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm). The exact event date, the poster submission deadline, and file requirements are to be announced. The program is tentative, and potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
+The organizer-provided Box link is the primary submission action. An embedded form is available under **Upload on this page**; direct links to `#poster-upload` open that panel automatically. The same Box URL appears on the printable poster and in the downloadable call. The recommended research poster size is 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm). The exact event date, the poster submission deadline, and file requirements are to be announced. The program is tentative and runs from 9:00 am to 5:00 pm Houston (Central Time), with all sessions held sequentially. Three external speakers have 45-minute slots at 9:00 am, 11:45 am, and 1:15 pm, including introductions, Q&A, and transitions. Lunch is 12:30–1:15 pm, with coffee breaks at 10:30–10:45 am and 2:45–3:00 pm. Posters and demos finish the day from 4:00 to 5:00 pm.
+
+Eight undergraduate/master’s presentations occupy two one-hour sessions, from 10:45 to 11:45 am and 3:00 to 4:00 pm, with four 15-minute slots in each. Six PhD presentations occupy two 45-minute sessions, from 9:45 to 10:30 am and 2:00 to 2:45 pm, with three speakers in each. PhD slots are provisionally 15 minutes each. For all student talks, the suggested format is 10–12 minutes presenting, with the remaining time for Q&A and transition. Separate registration, welcome, roundtable, and closing blocks are not scheduled in this draft. Potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
 
 The public website repository is [GeniSys27/GeniSys27.github.io](https://github.com/GeniSys27/GeniSys27.github.io). The site is live at [genisys27.github.io/](https://genisys27.github.io/), verified September 29, 2026. The previous [planning repository](https://github.com/YukeWang96/Genisys-Workshop-Spring-2027) remains available separately.
 
@@ -92,6 +94,12 @@ To change the configured Box upload URL:
 This updates the **Submit via Box** button, the expandable embedded form and its direct-link fallback, the printable poster, and the downloadable call. The embed uses the supplied 800 by 550 dimensions and scales to the available width. The website remains static; Box handles file uploads. Navigation, the native disclosure control, and direct links work without the website's JavaScript, while the Box form may require scripts and cookies from Box.
 
 Leave `boxUploadUrl` as an empty string and run the same command to keep or restore the forthcoming state. The script validates the URL and content markers before writing changes. Do not edit inside the `box:` comment markers directly; those sections are regenerated. The exact event date, submission deadline, and file requirements remain to be announced until confirmed separately.
+
+## Configure student presentation submissions
+
+The bottom of the schedule has a separate undergraduate/master’s research presentation submission button and a link to poster submissions. Set `studentPresentationUrl` in `workshop.json` to the organizer-provided HTTPS submission form, then run `node scripts/update-submission.mjs`. The form can be hosted on Box or another service. This setting is independent of the poster upload link.
+
+Leave `studentPresentationUrl` empty while the destination is pending. The schedule then shows a disabled button and “Submission link to be announced.” Do not edit inside the `presentation:` markers directly; the script regenerates this action. No student presentation files are collected by the static website itself.
 
 ## Image credit
 

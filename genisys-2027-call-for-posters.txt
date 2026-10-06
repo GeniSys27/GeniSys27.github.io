@@ -7,6 +7,7 @@ Venue: Ralph S. O’Connor Building for Engineering and Science
 Room: Fifth-floor conference room
 Schedule: https://genisys27.github.io/schedule.html
 Event timing: Spring 2027
+Workshop hours: 9:00 am–5:00 pm, Houston (Central Time); tentative
 Exact event date: To be announced
 Submission deadline: To be announced
 Submission channel: Box upload
@@ -27,7 +28,15 @@ ELIGIBLE WORK
 Both recent research and previously published work are welcome. Presenters are encouraged to explain the research problem, approach, and key results or insights, and to highlight questions for discussion with the workshop community.
 
 WORKSHOP EXPERIENCE
-The tentative one-day program includes a keynote, invited talks, a lunch poster/demo session, a panel, student lightning talks, and a research roundtable. Hybrid participation is planned; arrangements for remote poster presentations will be announced.
+The tentative one-day program runs from 9:00 am to 5:00 pm, Houston (Central Time), with all sessions held sequentially. It includes three external speakers, eight undergraduate/master’s presentations, six PhD presentations from different research groups, lunch from 12:30 to 1:15 pm, and a dedicated poster/demo session from 4:00 to 5:00 pm.
+
+External speakers have 45-minute slots at 9:00–9:45 am, 11:45 am–12:30 pm, and 1:15–2:00 pm. Introductions, Q&A, and transitions are included in each slot. Speakers and topics are to be announced.
+
+Undergraduate/master’s presentations occupy two one-hour sessions: 10:45–11:45 am and 3:00–4:00 pm, with four students in each session. Each student has a 15-minute slot.
+
+PhD presentations occupy two 45-minute sessions: 9:45–10:30 am and 2:00–2:45 pm, with three speakers in each. The proposed format is 15 minutes per speaker. For all student talks, the suggested format is 10–12 minutes presenting, with the remaining time for Q&A and transition.
+
+Coffee breaks run from 10:30 to 10:45 am and 2:45 to 3:00 pm. The workshop finishes with posters and demos from 4:00 to 5:00 pm. Hybrid participation is planned; arrangements for remote poster presentations will be announced.
 
 SUBMISSION INFORMATION
 Upload your research poster to Box: https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80

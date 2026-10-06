@@ -21,14 +21,26 @@ function escapeHtml(value) {
   })[character]);
 }
 
-function replaceSlot(text, name, replacement) {
-  const start = `<!-- box:${name} -->`;
-  const end = `<!-- /box:${name} -->`;
+function presentationUrl(value = '') {
+  if (typeof value !== 'string') throw new Error('studentPresentationUrl must be a string. Leave it empty while the link is pending.');
+  if (!value.trim()) return '';
+  let url;
+  try { url = new URL(value.trim()); }
+  catch { throw new Error('studentPresentationUrl must be a complete HTTPS submission URL.'); }
+  if (url.protocol !== 'https:' || url.username || url.password) {
+    throw new Error('Use an HTTPS student presentation submission link without embedded credentials.');
+  }
+  return url.href;
+}
+
+function replaceSlot(text, name, replacement, namespace = 'box') {
+  const start = `<!-- ${namespace}:${name} -->`;
+  const end = `<!-- /${namespace}:${name} -->`;
   const first = text.indexOf(start);
   const last = text.indexOf(end);
   if (first < 0 || last < first || text.indexOf(start, first + start.length) !== -1 ||
       text.indexOf(end, last + end.length) !== -1) {
-    throw new Error(`Missing or duplicate Box content marker: ${name}`);
+    throw new Error(`Missing or duplicate submission content marker: ${namespace}:${name}`);
   }
   return text.slice(0, first + start.length) + replacement + text.slice(last);
 }
@@ -36,11 +48,16 @@ function replaceSlot(text, name, replacement) {
 export async function updateSubmission(root) {
   const configuration = JSON.parse(await readFile(path.join(root, 'workshop.json'), 'utf8'));
   const url = uploadUrl(configuration.boxUploadUrl);
+  const studentUrl = presentationUrl(configuration.studentPresentationUrl);
   const escapedUrl = escapeHtml(url);
   const externalLink = (label, className = '') =>
     `<a${className ? ` class="${className}"` : ''} href="${escapedUrl}" target="_blank" rel="noopener noreferrer">${label}</a>`;
-  const paths = ['index.html', 'poster.html', 'genisys-2027-call-for-posters.txt'];
-  let [index, poster, call] = await Promise.all(paths.map(file => readFile(path.join(root, file), 'utf8')));
+  const paths = ['index.html', 'poster.html', 'genisys-2027-call-for-posters.txt', 'schedule.html'];
+  let [index, poster, call, schedule] = await Promise.all(paths.map(file => readFile(path.join(root, file), 'utf8')));
+
+  schedule = replaceSlot(schedule, 'actions', studentUrl
+    ? `<a class="button button-dark" href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a research presentation <span aria-hidden="true">↗</span></a>`
+    : '<button class="button button-dark" type="button" disabled aria-describedby="presentation-link-status">Submit a research presentation</button><p id="presentation-link-status" class="submission-link-status">Submission link to be announced.</p>', 'presentation');
 
   index = replaceSlot(index, 'status', url ? 'Box upload available' : 'Submission link coming soon');
   index = replaceSlot(index, 'actions',
@@ -67,18 +84,16 @@ export async function updateSubmission(root) {
     '\n\nORGANIZERS\n');
 
   // Validate all inputs and render all outputs before changing any file.
-  for (const [i, content] of [index, poster, call].entries()) {
+  for (const [i, content] of [index, poster, call, schedule].entries()) {
     await writeFile(path.join(root, paths[i]), content);
   }
-  return { configured: Boolean(url), files: paths };
+  return { configured: Boolean(url), presentationConfigured: Boolean(studentUrl), files: paths };
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   try {
     const result = await updateSubmission(fileURLToPath(new URL('../', import.meta.url)));
-    console.log(result.configured
-      ? 'Box upload link updated in the website, printable poster, and downloadable call.'
-      : 'Box upload link is pending. All materials show that the link is forthcoming.');
+    console.log(`Poster submission link ${result.configured ? 'updated' : 'pending'}; student presentation submission link ${result.presentationConfigured ? 'updated' : 'pending'}.`);
   } catch (error) {
     console.error(error.message);
     process.exitCode = 1;

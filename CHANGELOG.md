@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.23 - 2026-10-06
+
+- Explicitly state the planned eight undergraduate/master’s and six PhD talks, 14 total with 15-minute slots, in submission guidance and the PDF/text calls.
+
 ## 0.8.22 - 2026-10-06
 
 - Refocus the PDF introduction on connecting across backgrounds and disciplines, showcasing work to a wider audience, and finding potential collaborators.

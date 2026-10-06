@@ -168,8 +168,8 @@ def build():
     paragraph(f'<link href="{SITE}schedule.html" color="#00665c">Full schedule</link>',
               502, 624, 70, 9, 12, max_height=12)
     text("Program: 9:00 am-5:00 pm  |  Central Time  |  Tentative", MARGIN, 624, 10.5, True)
-    paragraph("Three external speakers (45 minutes each), six PhD talks from different groups, "
-              "eight undergraduate/master's talks, and posters &amp; demos from 4:00 to 5:00 pm.",
+    paragraph("We plan 8 undergraduate/master's and 6 PhD talks: 14 talks, 15 minutes each.<br/>"
+              "3 external speakers (45 minutes each); posters &amp; demos from 4:00 to 5:00 pm.",
               MARGIN, 644, CONTENT, 10, 14, max_height=28)
     paragraph("Hybrid participation is planned; remote poster arrangements will be announced.",
               MARGIN, 676, CONTENT, 9, 12, color=MUTED, max_height=12)

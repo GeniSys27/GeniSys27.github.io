@@ -84,7 +84,11 @@ img { max-width: 100%; }
 .poster-section { background: var(--pale); }
 .submission-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 72px; align-items: center; }
 .call-status { color: var(--teal); font-size: .75rem; font-weight: 600; letter-spacing: .025em; margin-bottom: 16px; display: flex; align-items: center; gap: 8px; }
-.call-status::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: currentColor; flex-shrink: 0; }
+.call-status::before { content: ''; width: 6px; height: 6px; border-radius: 50%; background: currentColor; flex-shrink: 0; animation: status-heartbeat 2.2s ease-in-out infinite; }
+@keyframes status-heartbeat {
+  0%, 26%, 48%, 100% { transform: scale(1); opacity: .6; box-shadow: 0 0 0 0 rgb(0 102 92 / 0); }
+  12%, 38% { transform: scale(1.4); opacity: 1; box-shadow: 0 0 0 4px rgb(0 102 92 / .12); }
+}
 .poster-copy .section-deck { margin-top: 18px; }
 .poster-guidance { color: var(--muted); font-size: .9rem; margin-top: 12px; }
 .poster-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; margin-top: 25px; }
@@ -276,4 +280,5 @@ img { max-width: 100%; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { transition: none !important; }
+  .call-status::before { animation: none; }
 }

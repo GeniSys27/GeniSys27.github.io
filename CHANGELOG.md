@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.3 - 2026-10-06
+
+- Give poster and undergraduate/master’s presentation submissions matching navy buttons with equal widths and heights, including when labels wrap on phones.
+
 ## 0.8.2 - 2026-10-06
 
 - Specify fewer than 15 slides (maximum 14) for undergraduate/master’s presentation submissions, beside the submission button and in the downloadable call.

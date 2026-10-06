@@ -88,7 +88,7 @@ export async function updateSubmission(root) {
     (url ? externalLink('Submit a poster <span aria-hidden="true">↗</span>', 'button button-dark') : '') +
     homepagePresentation + '</div>' +
     (studentUrl ? '' : '<p id="homepage-presentation-link-status" class="submission-link-status">Presentation submission link to be announced.</p>') +
-    '<a class="text-link" href="output/pdf/genisys-2027-call-for-submissions.pdf" download="genisys-2027-call-for-submissions.pdf">Download the call for research (PDF) <span aria-hidden="true">↓</span></a>');
+    '<a class="text-link" href="output/pdf/genisys-2027-call-for-submissions.pdf?v=0.8.17" download="genisys-2027-call-for-submissions.pdf">Download the call for research (PDF) <span aria-hidden="true">↓</span></a>');
   index = replaceSlot(index, 'embed', url || studentUrl
     ? '<details class="upload-panel" id="poster-upload"><summary>Upload your research</summary><div class="upload-content">' +
       '<p class="upload-help"><strong>Presentations (PPTX)</strong><br>' +
@@ -103,21 +103,21 @@ export async function updateSubmission(root) {
     ? `<a class="poster-upload-link" href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a presentation</a>`
     : 'Presentation submission link to be announced', 'presentation');
 
-  if (!/^Submission deadlines?: .+$/m.test(call) || !/^Poster submission link: .+$/m.test(call) || !/^Undergraduate\/master’s presentation submission link: .+$/m.test(call) || !/\nSUBMISSION INFORMATION\n[\s\S]*?\nORGANIZERS\n/.test(call)) {
+  if (!/^Submission deadlines?: .+$/m.test(call) || !/^Poster submission link: .+$/m.test(call) || !/^Research presentation submission link: .+$/m.test(call) || !/\nSUBMISSION INFORMATION\n[\s\S]*?\nORGANIZERS\n/.test(call)) {
     throw new Error('The downloadable call is missing its submission links or submission information section.');
   }
   call = call.replace(/^Submission deadlines?: .+$/m, () => `Submission deadline: ${deadlineText}`);
   call = call.replace(/^Poster submission link: .+$/m, () => `Poster submission link: ${url || 'To be announced'}`);
-  call = call.replace(/^Undergraduate\/master’s presentation submission link: .+$/m, () => `Undergraduate/master’s presentation submission link: ${studentUrl || 'To be announced'}`);
+  call = call.replace(/^Research presentation submission link: .+$/m, () => `Research presentation submission link: ${studentUrl || 'To be announced'}`);
   call = call.replace(/\nSUBMISSION INFORMATION\n[\s\S]*?\nORGANIZERS\n/, () =>
     '\nSUBMISSION INFORMATION\nResearch posters\n' +
     (url ? `Upload your research poster to Box: ${url}\n\n` : 'The poster upload link will be announced on the workshop website.\n\n') +
     'Recent research and previously published work are both welcome.\n\n' +
     'Recommended poster size: 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm).\n\n' +
     `File format: PDF. Submission deadline: ${deadlineText}.\n\n` +
-    'Undergraduate/master’s research presentations\n' +
+    'Research presentations\nOpen to undergraduate, master’s, and PhD students.\n\n' +
     (studentUrl ? `Submit your research presentation: ${studentUrl}\n\n` : 'The presentation submission link will be announced on the workshop website.\n\n') +
-    'File format: PPTX. Presentation decks must contain fewer than 15 slides (maximum 14). Eight 15-minute slots are planned, four in the morning and four in the afternoon, including Q&A and transitions.\n\n' +
+    'File format: PPTX. Presentation decks must contain fewer than 15 slides (maximum 14). Presentation slots are 15 minutes, including Q&A and transitions.\n\n' +
     `Submission deadline: ${deadlineText}. Check the workshop website for updates: https://genisys27.github.io/#posters` +
     '\n\nORGANIZERS\n');
 

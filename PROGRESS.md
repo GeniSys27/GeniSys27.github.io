@@ -65,6 +65,7 @@ Last updated: October 6, 2026
 
 ## Student presentation submissions
 
+- [x] Broaden “Research presentations” to undergraduate, master’s, and PhD students across submission guidance and both calls.
 - [x] Add matching undergraduate/master’s research presentation and poster submission buttons at the bottom of the schedule.
 - [x] Make both matching submission buttons and the presentation slide limit visible on the homepage at `#posters`.
 - [x] Add a separate configurable HTTPS submission destination and a clearly marked pending state.

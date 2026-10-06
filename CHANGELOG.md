@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.8.17 - 2026-10-06
+
+- Label the submission category “Research presentations” and welcome undergraduate, master’s, and PhD students across the website, printable poster, and PDF/text calls.
+- Apply the PPTX format and maximum 14-slide requirement to the shared presentation category, while retaining the tentative allocation of eight undergraduate/master’s and six PhD talks.
+
 ## 0.8.16 - 2026-10-06
 
 - Add a one-page PDF call for research with the January 10 deadline, separate poster and presentation requirements, current themes, program, organizers, and contact details.

@@ -63,7 +63,7 @@ def build():
     c = canvas.Canvas(str(OUTPUT), pagesize=(WIDTH, HEIGHT), pageCompression=1, invariant=1)
     c.setTitle("GeniSys 2027 - Call for Research")
     c.setAuthor("GeniSys 2027 | Computer Science, Rice University")
-    c.setSubject("Research posters and undergraduate/master's presentations")
+    c.setSubject("Research posters and presentations from undergraduate, master's, and PhD students")
 
     def box(x, top, width, height, fill, radius=0, stroke=None):
         c.setFillColor(fill)
@@ -109,7 +109,7 @@ def build():
     text("GeniSys", 85, 47, 30, True, white)
     text("2027", 85 + pdfmetrics.stringWidth("GeniSys", "CallSans-Bold", 30) + 9, 47, 30, False, MINT)
     text("Call for Research", MARGIN, 96, 27, True, white)
-    text("Posters & undergraduate/master's presentations", MARGIN, 132, 13, False, white)
+    text("Research posters & presentations", MARGIN, 132, 13, False, white)
     text("Spring 2027  |  Rice University, Houston, Texas", MARGIN, 155, 10.5, False, MINT)
     text("Exact workshop date to be announced", MARGIN, 170, 9, False, white)
 
@@ -151,13 +151,12 @@ def build():
               "(91 x 122 cm, width x height).<br/>"
               "<b>Poster session:</b> 4:00-5:00 pm",
               MARGIN + 15, 457, card_width - 30, 10, 14, max_height=84)
-    text("Undergraduate/master's", right + 15, 432, 12.5, True)
-    text("presentations", right + 15, 448, 12.5, True)
-    paragraph("<b>File format:</b> PPTX<br/>"
+    text("Research presentations", right + 15, 434, 14, True)
+    paragraph("Open to undergraduate, master's, and PhD students.<br/>"
+              "<b>File format:</b> PPTX<br/>"
               "<b>Fewer than 15 slides (maximum 14).</b><br/>"
-              "Eight 15-minute slots, including Q&amp;A and transitions: "
-              "four in the morning and four in the afternoon.",
-              right + 15, 471, card_width - 30, 10, 14, max_height=70)
+              "15-minute slots, including Q&amp;A and transitions.",
+              right + 15, 457, card_width - 30, 10, 14, max_height=84)
     button("Submit a poster", poster_url, MARGIN + 15, 547, card_width - 30)
     button("Submit a presentation", presentation_url, right + 15, 547, card_width - 30)
 

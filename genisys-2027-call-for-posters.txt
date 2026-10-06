@@ -1,4 +1,4 @@
-CALL FOR RESEARCH POSTERS AND UNDERGRADUATE/MASTER’S PRESENTATIONS
+CALL FOR RESEARCH POSTERS AND PRESENTATIONS
 GeniSys 2027
 Exploring Synergy among Next-Generation AI, Systems, and Networking for a Sustainable Future
 
@@ -11,9 +11,9 @@ Workshop hours: 9:00 am–5:00 pm, Houston (Central Time); tentative
 Exact event date: To be announced
 Submission deadline: January 10, 2027
 Poster submission link: https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80
-Undergraduate/master’s presentation submission link: https://rice.box.com/s/rdrn8wny5vq209vp9vr3nop8vk1ru02d
+Research presentation submission link: https://rice.box.com/s/rdrn8wny5vq209vp9vr3nop8vk1ru02d
 
-GeniSys 2027 invites research posters and undergraduate/master’s research presentations exploring the intersection of artificial intelligence, computing systems, and networking. Share results, exchange ideas, and connect with researchers, practitioners, and students across these communities.
+GeniSys 2027 invites research posters and research presentations exploring the intersection of artificial intelligence, computing systems, and networking. Share results, exchange ideas, and connect with researchers, practitioners, and students across these communities.
 
 TOPICS OF INTEREST
 Topics include, but are not limited to:
@@ -26,7 +26,7 @@ Topics include, but are not limited to:
 - Secure AI deployment and cross-layer co-design
 
 ELIGIBLE WORK
-Research posters may present recent research or previously published work. Research presentation submissions are for undergraduate and master’s students. All presenters are encouraged to explain the research problem, approach, and key results or insights, and to highlight questions for discussion with the workshop community.
+Research posters may present recent research or previously published work. Research presentation submissions are open to undergraduate, master’s, and PhD students. All presenters are encouraged to explain the research problem, approach, and key results or insights, and to highlight questions for discussion with the workshop community.
 
 WORKSHOP EXPERIENCE
 The tentative one-day program runs from 9:00 am to 5:00 pm, Houston (Central Time), with all sessions held sequentially. It includes three external speakers, eight undergraduate/master’s presentations, six PhD presentations from different research groups, lunch from 12:30 to 1:15 pm, and a dedicated poster/demo session from 4:00 to 5:00 pm.
@@ -49,10 +49,12 @@ Recommended poster size: 36 in wide × 48 in tall (portrait; approximately 91 ×
 
 File format: PDF. Submission deadline: January 10, 2027.
 
-Undergraduate/master’s research presentations
+Research presentations
+Open to undergraduate, master’s, and PhD students.
+
 Submit your research presentation: https://rice.box.com/s/rdrn8wny5vq209vp9vr3nop8vk1ru02d
 
-File format: PPTX. Presentation decks must contain fewer than 15 slides (maximum 14). Eight 15-minute slots are planned, four in the morning and four in the afternoon, including Q&A and transitions.
+File format: PPTX. Presentation decks must contain fewer than 15 slides (maximum 14). Presentation slots are 15 minutes, including Q&A and transitions.
 
 Submission deadline: January 10, 2027. Check the workshop website for updates: https://genisys27.github.io/#posters
 

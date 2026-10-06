@@ -1,6 +1,6 @@
 # GeniSys 2027 workshop website
 
-Website, printable event poster, and call for research posters and undergraduate/master’s presentations for GeniSys 2027 at Rice University in Spring 2027. The workshop explores AI, systems, and networking for a sustainable future.
+Website, printable event poster, and call for research posters and presentations from undergraduate, master’s, and PhD students for GeniSys 2027 at Rice University in Spring 2027. The workshop explores AI, systems, and networking for a sustainable future.
 
 **Confirmed event:** GeniSys 2027, Spring 2027. The exact date remains to be announced. Track remaining decisions in [PROGRESS.md](PROGRESS.md).
 
@@ -10,7 +10,7 @@ Website, printable event poster, and call for research posters and undergraduate
 - A dedicated [schedule page](https://genisys27.github.io/schedule.html) with a clear 9:00 am–5:00 pm timetable, session durations, and planned formats.
 - Venue information and a responsive Google Map for the Ralph S. O’Connor Building for Engineering and Science, fifth-floor conference room.
 - A homepage submission section with matching poster and student presentation buttons, presentation slide limits, poster details, and an expandable poster upload form.
-- One-page PDF call for research posters and undergraduate/master’s presentations, with separate clickable submission links, requirements, and a QR code for printed copies. The full plain-text call remains available.
+- One-page PDF call for research posters and presentations from undergraduate, master’s, and PhD students, with separate clickable submission links, requirements, and a QR code for printed copies. The full plain-text call remains available.
 - A3 event poster with a browser print / Save PDF control.
 - A coordinated logo, browser tab icons, and touch icon; see [BRANDING.md](BRANDING.md).
 - [Progress checklist](PROGRESS.md) and [change history](CHANGELOG.md).
@@ -37,7 +37,7 @@ For the event poster, select **Event poster**, then **Print / Save PDF**. Choose
 | `poster.html` | Printable event poster |
 | `poster.css` | Poster styling and A3 print layout |
 | `script.js` | Section navigation, sticky-header offsets, and poster print action |
-| `genisys-2027-call-for-posters.txt` | Downloadable call for posters and undergraduate/master’s presentations; original URL retained for existing links |
+| `genisys-2027-call-for-posters.txt` | Downloadable call for research posters and presentations; original URL retained for existing links |
 | `output/pdf/genisys-2027-call-for-submissions.pdf` | One-page PDF call linked from the homepage and event poster toolbar |
 | `scripts/build-call-pdf.py` | Rebuild the PDF with ReportLab; reads links and deadline from `workshop.json` |
 | `assets/` | Campus photograph, logo, browser tab icons, and touch icon |
@@ -62,7 +62,7 @@ The PDF builder requires the Python `reportlab` package and embeds the sans-seri
 
 The venue is the fifth-floor conference room in Rice University’s Ralph S. O’Connor Building for Engineering and Science. The embedded Google Map marks the building; a direct Google Maps link is available as a fallback.
 
-Separate organizer-provided links handle research poster uploads and undergraduate/master’s research presentation submissions. The **Upload your research** panel includes a PPTX presentation link and a separate embedded PDF poster form; direct links to `#poster-upload` open that panel automatically. Both destinations appear on the printable event poster and in the downloadable call. The recommended research poster size is 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm). Both submission types are due January 10, 2027. Presentations must be PPTX files and research posters must be PDF files. The exact event date remains to be announced. The program is tentative and runs from 9:00 am to 5:00 pm Houston (Central Time), with all sessions held sequentially. Three external speakers have 45-minute slots at 9:00 am, 11:45 am, and 1:15 pm, including introductions, Q&A, and transitions. Lunch is 12:30–1:15 pm, with coffee breaks at 10:30–10:45 am and 2:45–3:00 pm. Posters and demos finish the day from 4:00 to 5:00 pm.
+Separate organizer-provided links handle research poster uploads and research presentation submissions from undergraduate, master’s, and PhD students. The **Upload your research** panel includes a PPTX presentation link and a separate embedded PDF poster form; direct links to `#poster-upload` open that panel automatically. Both destinations appear on the printable event poster and in the downloadable call. The recommended research poster size is 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm). Both submission types are due January 10, 2027. Presentations must be PPTX files and research posters must be PDF files. The exact event date remains to be announced. The program is tentative and runs from 9:00 am to 5:00 pm Houston (Central Time), with all sessions held sequentially. Three external speakers have 45-minute slots at 9:00 am, 11:45 am, and 1:15 pm, including introductions, Q&A, and transitions. Lunch is 12:30–1:15 pm, with coffee breaks at 10:30–10:45 am and 2:45–3:00 pm. Posters and demos finish the day from 4:00 to 5:00 pm.
 
 Eight undergraduate/master’s presentations occupy two one-hour sessions, from 10:45 to 11:45 am and 3:00 to 4:00 pm, with four 15-minute slots in each. Six PhD presentations occupy two 45-minute sessions, from 9:45 to 10:30 am and 2:00 to 2:45 pm, with three speakers in each. PhD slots are provisionally 15 minutes each. For all student talks, the suggested format is 10–12 minutes presenting, with the remaining time for Q&A and transition. Separate registration, welcome, roundtable, and closing blocks are not scheduled in this draft. Potential speakers are omitted until confirmed. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
 
@@ -114,9 +114,9 @@ Set `submissionDeadline` in `workshop.json` to an ISO date (`YYYY-MM-DD`), then 
 
 ## Configure student presentation submissions
 
-Undergraduate/master’s presentations must be submitted as PPTX files with fewer than 15 slides (maximum 14). This requirement appears beside the submission buttons, on the event poster, and in the downloadable call.
+Research presentations from undergraduate, master’s, and PhD students must be submitted as PPTX files with fewer than 15 slides (maximum 14). This requirement appears beside the submission buttons, on the event poster, and in the downloadable call.
 
-The homepage’s `#posters` section and the bottom of the schedule have matching buttons for undergraduate/master’s research presentation submissions and poster submissions. Set `studentPresentationUrl` in `workshop.json` to the organizer-provided HTTPS submission form, then run `node scripts/update-submission.mjs` and `python3 scripts/build-call-pdf.py`. These scripts also update the presentation link on the printable event poster and in both downloadable calls. The destination can be hosted on Box or another service. This setting is independent of the poster upload link.
+The homepage’s `#posters` section and the bottom of the schedule have matching buttons for research presentation submissions and poster submissions. Set `studentPresentationUrl` in `workshop.json` to the organizer-provided HTTPS submission form, then run `node scripts/update-submission.mjs` and `python3 scripts/build-call-pdf.py`. These scripts also update the presentation link on the printable event poster and in both downloadable calls. The destination can be hosted on Box or another service. This setting is independent of the poster upload link.
 
 Leave `studentPresentationUrl` empty while the destination is pending. Both pages then show a disabled presentation button and a message that its submission link will be announced. The event poster and downloadable call also show the pending status. Do not edit inside the `presentation:` markers directly; the script regenerates those links. No student presentation files are collected by the static website itself.
 

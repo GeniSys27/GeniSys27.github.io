@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.2 - 2026-10-06
+
+- Specify fewer than 15 slides (maximum 14) for undergraduate/master’s presentation submissions, beside the submission button and in the downloadable call.
+
 ## 0.8.1 - 2026-10-06
 
 - Activate the undergraduate/master’s research presentation submission button with the organizer-provided Box link.

@@ -97,6 +97,8 @@ Leave `boxUploadUrl` as an empty string and run the same command to keep or rest
 
 ## Configure student presentation submissions
 
+Undergraduate/master’s presentation decks must contain fewer than 15 slides (maximum 14). This requirement appears beside the submission button and in the downloadable call.
+
 The bottom of the schedule has a separate undergraduate/master’s research presentation submission button and a link to poster submissions. Set `studentPresentationUrl` in `workshop.json` to the organizer-provided HTTPS submission form, then run `node scripts/update-submission.mjs`. The form can be hosted on Box or another service. This setting is independent of the poster upload link.
 
 Leave `studentPresentationUrl` empty while the destination is pending. The schedule then shows a disabled button and “Submission link to be announced.” Do not edit inside the `presentation:` markers directly; the script regenerates this action. No student presentation files are collected by the static website itself.

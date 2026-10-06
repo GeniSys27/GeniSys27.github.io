@@ -66,6 +66,7 @@ Last updated: October 6, 2026
 - [x] Add an undergraduate/master’s research presentation submission button at the bottom of the schedule, alongside a poster submission link.
 - [x] Add a separate configurable HTTPS submission destination and a clearly marked pending state.
 - [x] Connect the organizer-provided Box link for undergraduate/master’s research presentation submissions and activate the button.
+- [x] Specify fewer than 15 slides (maximum 14) for undergraduate/master’s presentation decks.
 
 ## Program and launch
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.11 - 2026-10-06
+
+- Replace the footer email address buttons with compact envelope icons, labeled “Contact us” for assistive technology and hover.
+
 ## 0.8.10 - 2026-10-06
 
 - Add a clickable contact email button for yuke.wang@rice.edu to the homepage and Schedule footers.

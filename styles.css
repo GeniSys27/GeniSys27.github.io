@@ -138,7 +138,8 @@ img { max-width: 100%; }
 .footer-links { display: flex; gap: 24px; }
 .footer-links a, .back-top { display: inline-flex; align-items: center; min-height: 44px; }
 .footer-contact { margin-top: 18px; }
-.footer-contact .button { max-width: 100%; overflow-wrap: anywhere; }
+.contact-icon { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; color: var(--navy); text-decoration: none; }
+.contact-icon:hover { background: #e7f5ef; border-color: #b9d9cc; }
 .photo-credit { color: var(--muted); font-size: .7rem; margin-top: 14px; }
 /* The schedule shares typography and spacing with the workshop homepage. */
 .schedule-hero { padding-block: 32px 36px; background: var(--pale); }

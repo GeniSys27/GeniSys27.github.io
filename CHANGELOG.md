@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.1 - 2026-10-06
+
+- Activate the undergraduate/master’s research presentation submission button with the organizer-provided Box link.
+
 ## 0.8.0 - 2026-10-06
 
 - Add a dedicated undergraduate/master’s research presentation submission button at the bottom of the schedule, with a separately configurable destination and a pending state until the link is supplied.

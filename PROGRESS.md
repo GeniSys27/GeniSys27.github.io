@@ -65,7 +65,7 @@ Last updated: October 6, 2026
 
 - [x] Add an undergraduate/master’s research presentation submission button at the bottom of the schedule, alongside a poster submission link.
 - [x] Add a separate configurable HTTPS submission destination and a clearly marked pending state.
-- [ ] Receive the student presentation submission URL, or confirmation to reuse the poster Box link, and activate the button.
+- [x] Connect the organizer-provided Box link for undergraduate/master’s research presentation submissions and activate the button.
 
 ## Program and launch
 

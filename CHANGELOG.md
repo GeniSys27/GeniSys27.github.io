@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.18 - 2026-10-06
+
+- Remove the remote-poster arrangements note beneath the homepage submission links.
+
 ## 0.8.17 - 2026-10-06
 
 - Label the submission category “Research presentations” and welcome undergraduate, master’s, and PhD students across the website, printable poster, and PDF/text calls.

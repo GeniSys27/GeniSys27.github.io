@@ -59,12 +59,20 @@ export async function updateSubmission(root) {
     ? `<a class="button button-dark" href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a research presentation <span aria-hidden="true">↗</span></a>`
     : '<button class="button button-dark" type="button" disabled aria-describedby="presentation-link-status">Submit a research presentation</button><p id="presentation-link-status" class="submission-link-status">Submission link to be announced.</p>', 'presentation');
 
-  index = replaceSlot(index, 'status', url ? 'Box upload available' : 'Submission link coming soon');
+  const homepagePresentation = studentUrl
+    ? `<a class="button button-dark" href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a research presentation <span aria-hidden="true">↗</span></a>`
+    : '<button class="button button-dark" type="button" disabled aria-describedby="homepage-presentation-link-status">Submit a research presentation</button>';
+  index = replaceSlot(index, 'status', url && studentUrl ? 'Poster and presentation links available'
+    : url ? 'Poster submission link available'
+    : studentUrl ? 'Presentation submission link available' : 'Submission links coming soon');
   index = replaceSlot(index, 'actions',
-    (url ? externalLink('Submit via Box <span aria-hidden="true">↗</span>', 'button button-dark') : '') +
-    '<a class="text-link" href="genisys-2027-call-for-posters.txt" download>Download the call <span aria-hidden="true">↓</span></a>');
+    '<div class="submission-buttons">' +
+    (url ? externalLink('Submit a poster <span aria-hidden="true">↗</span>', 'button button-dark') : '') +
+    homepagePresentation + '</div>' +
+    (studentUrl ? '' : '<p id="homepage-presentation-link-status" class="submission-link-status">Presentation submission link to be announced.</p>') +
+    '<a class="text-link" href="genisys-2027-call-for-posters.txt" download>Download the poster call <span aria-hidden="true">↓</span></a>');
   index = replaceSlot(index, 'embed', url
-    ? `<details class="upload-panel" id="poster-upload"><summary>Upload on this page</summary><div class="upload-content"><iframe src="${escapedUrl}" height="550" width="800" title="GeniSys research poster upload form on Box" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="upload-help">Form not loading? ${externalLink('Open in Box')}.</p></div></details>`
+    ? `<details class="upload-panel" id="poster-upload"><summary>Upload a poster on this page</summary><div class="upload-content"><iframe src="${escapedUrl}" height="550" width="800" title="GeniSys research poster upload form on Box" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="upload-help">Form not loading? ${externalLink('Open in Box')}.</p></div></details>`
     : '');
   poster = replaceSlot(poster, 'poster', url
     ? `Upload through Box<br>${externalLink(escapedUrl, 'poster-upload-link')}<br>Deadline to be announced`

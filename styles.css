@@ -88,6 +88,10 @@ img { max-width: 100%; }
 .poster-copy .section-deck { margin-top: 18px; }
 .poster-guidance { color: var(--muted); font-size: .9rem; margin-top: 12px; }
 .poster-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; margin-top: 25px; }
+.submission-buttons { display: grid; grid-template-columns: minmax(0, 1fr); grid-auto-rows: 1fr; gap: 12px; width: 100%; }
+.submission-buttons .button { width: 100%; max-width: 100%; white-space: normal; }
+.submission-buttons .button:disabled { background: #65747e; cursor: not-allowed; }
+.poster-actions .submission-link-status { width: 100%; margin: 0; color: var(--muted); font-size: .8rem; }
 .submission-panel { background: #fff; padding: 28px 32px; border: 1px solid var(--line); border-radius: 7px; }
 .submission-panel h3 { font-size: 1.08rem; margin-bottom: 12px; }
 .submission-panel dl > div { display: grid; grid-template-columns: 1fr 1.2fr; gap: 20px; padding-block: 18px; border-bottom: 1px solid var(--line); font-size: .875rem; }

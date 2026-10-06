@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.8.4 - 2026-10-06
+
+- Add matching poster and undergraduate/master’s research presentation submission buttons directly to the homepage’s existing `#posters` section.
+- Show the presentation slide limit on the homepage, clarify poster-only upload guidance, and label homepage navigation for both submission types.
+
 ## 0.8.3 - 2026-10-06
 
 - Give poster and undergraduate/master’s presentation submissions matching navy buttons with equal widths and heights, including when labels wrap on phones.

@@ -88,7 +88,7 @@ export async function updateSubmission(root) {
     (url ? externalLink('Submit a poster <span aria-hidden="true">↗</span>', 'button button-dark') : '') +
     homepagePresentation + '</div>' +
     (studentUrl ? '' : '<p id="homepage-presentation-link-status" class="submission-link-status">Presentation submission link to be announced.</p>') +
-    '<a class="text-link" href="genisys-2027-call-for-posters.txt" download="genisys-2027-call-for-submissions.txt">Download the submission call <span aria-hidden="true">↓</span></a>');
+    '<a class="text-link" href="output/pdf/genisys-2027-call-for-submissions.pdf" download="genisys-2027-call-for-submissions.pdf">Download the call for research (PDF) <span aria-hidden="true">↓</span></a>');
   index = replaceSlot(index, 'embed', url || studentUrl
     ? '<details class="upload-panel" id="poster-upload"><summary>Upload your research</summary><div class="upload-content">' +
       '<p class="upload-help"><strong>Presentations (PPTX)</strong><br>' +
@@ -132,6 +132,7 @@ if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.me
   try {
     const result = await updateSubmission(fileURLToPath(new URL('../', import.meta.url)));
     console.log(`Poster submission link ${result.configured ? 'updated' : 'pending'}; student presentation submission link ${result.presentationConfigured ? 'updated' : 'pending'}.`);
+    console.log('Before publishing, rebuild the PDF: python3 scripts/build-call-pdf.py');
   } catch (error) {
     console.error(error.message);
     process.exitCode = 1;

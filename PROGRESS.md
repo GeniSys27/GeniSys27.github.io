@@ -11,6 +11,7 @@ Last updated: October 6, 2026
 - [x] Welcome recent research and previously published work.
 - [x] Keep unconfirmed dates, deadlines, and submission details to be announced.
 - [x] Create a printable event poster and downloadable call text.
+- [x] Create and visually verify a downloadable PDF call for research with both submission formats, current requirements, and clickable links.
 - [x] Check local page references, JavaScript syntax, mobile overflow, and FAQ keyboard interaction.
 - [x] Add repository documentation and progress tracking.
 

@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.8.16 - 2026-10-06
+
+- Add a one-page PDF call for research with the January 10 deadline, separate poster and presentation requirements, current themes, program, organizers, and contact details.
+- Include clickable submission links and a QR code for printed copies; link the PDF from the homepage download and event poster toolbar.
+- Add a reproducible PDF builder using the configured submission links and deadline.
+
 ## 0.8.15 - 2026-10-06
 
 - Add matching teal chip, connected-node, and leaf icons to the three research themes.

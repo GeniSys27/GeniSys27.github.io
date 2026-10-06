@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.24 - 2026-10-06
+
+- Clarify that the workshop plans to select eight undergraduate/master’s and six PhD talks.
+
 ## 0.8.23 - 2026-10-06
 
 - Explicitly state the planned eight undergraduate/master’s and six PhD talks, 14 total with 15-minute slots, in submission guidance and the PDF/text calls.

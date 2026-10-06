@@ -94,7 +94,7 @@ export async function updateSubmission(root) {
     (url ? externalLink('Submit a poster <span aria-hidden="true">↗</span>', 'button button-dark') : '') +
     homepagePresentation + '</div>' +
     (studentUrl ? '' : '<p id="homepage-presentation-link-status" class="submission-link-status">Presentation submission link to be announced.</p>') +
-    '<a class="text-link" href="output/pdf/genisys-2027-call-for-submissions.pdf?v=0.8.23" download="genisys-2027-call-for-submissions.pdf">Download the call for contribution (PDF) <span aria-hidden="true">↓</span></a>');
+    '<a class="text-link" href="output/pdf/genisys-2027-call-for-submissions.pdf?v=0.8.24" download="genisys-2027-call-for-submissions.pdf">Download the call for contribution (PDF) <span aria-hidden="true">↓</span></a>');
   index = replaceSlot(index, 'embed', url || studentUrl
     ? '<details class="upload-panel" id="poster-upload"><summary>Upload your research</summary><div class="upload-content">' +
       '<p class="upload-help"><strong>Presentations (PPTX)</strong><br>' +
@@ -124,7 +124,7 @@ export async function updateSubmission(root) {
     'Filename: Poster_First_Lastname_Level.pptx. Replace First and Lastname with your name. Use Undergrad, Master, or PhD for Level.\n\n' +
     'Research presentations\nOpen to undergraduate, master’s, and PhD students.\n\n' +
     (studentUrl ? `Submit your research presentation: ${studentUrl}\n\n` : 'The presentation submission link will be announced on the workshop website.\n\n') +
-    'File format: PPTX. Presentation decks must contain fewer than 15 slides (maximum 14). We plan 8 undergraduate/master’s and 6 PhD talks (14 total), each with a 15-minute slot including Q&A and transitions.\n\n' +
+    'File format: PPTX. Presentation decks must contain fewer than 15 slides (maximum 14). We plan to select 8 undergraduate/master’s and 6 PhD talks (14 total), each with a 15-minute slot including Q&A and transitions.\n\n' +
     'Filename: Presentation_First_Lastname_Level.pptx. Replace First and Lastname with your name. Use Undergrad, Master, or PhD for Level.\n\n' +
     `Submission deadline: ${deadlineText}. Check the workshop website for updates: https://genisys27.github.io/#posters` +
     '\n\nORGANIZERS\n');

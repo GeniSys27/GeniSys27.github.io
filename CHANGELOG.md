@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.5 - 2026-10-06
+
+- Remove the redundant poster submission button from the Schedule page header; keep the matching submission buttons at the bottom.
+
 ## 0.8.4 - 2026-10-06
 
 - Add matching poster and undergraduate/master’s research presentation submission buttons directly to the homepage’s existing `#posters` section.

@@ -137,6 +137,8 @@ img { max-width: 100%; }
 .footer-top p, .footer-links, .back-top { font-size: .8rem; color: var(--muted); }
 .footer-links { display: flex; gap: 24px; }
 .footer-links a, .back-top { display: inline-flex; align-items: center; min-height: 44px; }
+.footer-contact { margin-top: 18px; }
+.footer-contact .button { max-width: 100%; overflow-wrap: anywhere; }
 .photo-credit { color: var(--muted); font-size: .7rem; margin-top: 14px; }
 /* The schedule shares typography and spacing with the workshop homepage. */
 .schedule-hero { padding-block: 32px 36px; background: var(--pale); }

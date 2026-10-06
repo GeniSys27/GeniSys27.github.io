@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.8.10 - 2026-10-06
+
+- Add a clickable contact email button for yuke.wang@rice.edu to the homepage and Schedule footers.
+
 ## 0.8.9 - 2026-10-06
 
 - Set the shared submission deadline to January 10, 2027, and specify PPTX presentations and PDF research posters across the website, flyer, and downloadable call.

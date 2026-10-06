@@ -92,6 +92,9 @@ img { max-width: 100%; }
 }
 .poster-copy .section-deck { margin-top: 18px; }
 .poster-guidance { color: var(--muted); font-size: .9rem; margin-top: 12px; }
+.submission-filenames { margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
+.submission-filenames p { margin: 0 0 8px; color: var(--muted); font-size: .85rem; }
+.submission-filenames code { display: block; max-width: 100%; margin: 6px 0; color: var(--ink); font-size: .8rem; white-space: normal; overflow-wrap: anywhere; }
 .poster-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 22px; margin-top: 25px; }
 .submission-buttons { display: grid; grid-template-columns: minmax(0, 1fr); grid-auto-rows: 1fr; gap: 12px; width: 100%; }
 .submission-buttons .button { width: 100%; max-width: 100%; white-space: normal; }

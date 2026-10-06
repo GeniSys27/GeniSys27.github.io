@@ -47,7 +47,9 @@ Recent research and previously published work are both welcome.
 
 Recommended poster size: 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm).
 
-File format: PDF. Submission deadline: January 10, 2027.
+File format: PPTX. Submission deadline: January 10, 2027.
+
+Filename: Poster_First_Lastname_Level.pptx. Replace First and Lastname with your name. Use Undergrad, Master, or PhD for Level.
 
 Research presentations
 Open to undergraduate, master’s, and PhD students.
@@ -55,6 +57,8 @@ Open to undergraduate, master’s, and PhD students.
 Submit your research presentation: https://rice.box.com/s/rdrn8wny5vq209vp9vr3nop8vk1ru02d
 
 File format: PPTX. Presentation decks must contain fewer than 15 slides (maximum 14). Presentation slots are 15 minutes, including Q&A and transitions.
+
+Filename: Presentation_First_Lastname_Level.pptx. Replace First and Lastname with your name. Use Undergrad, Master, or PhD for Level.
 
 Submission deadline: January 10, 2027. Check the workshop website for updates: https://genisys27.github.io/#posters
 

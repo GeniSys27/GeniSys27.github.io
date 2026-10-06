@@ -69,8 +69,14 @@ export async function updateSubmission(root) {
   const paths = ['index.html', 'poster.html', 'genisys-2027-call-for-posters.txt', 'schedule.html'];
   let [index, poster, call, schedule] = await Promise.all(paths.map(file => readFile(path.join(root, file), 'utf8')));
 
+  const filenames = '<div class="submission-filenames"><p><strong>Submission filenames</strong></p>' +
+    '<code>Presentation_<wbr>First_<wbr>Lastname_<wbr>Level.pptx</code>' +
+    '<code>Poster_<wbr>First_<wbr>Lastname_<wbr>Level.pptx</code>' +
+    '<p>Replace First and Lastname with your name. Use Undergrad, Master, or PhD for Level.</p></div>';
+  index = replaceSlot(index, 'filenames', filenames, 'submission');
+  schedule = replaceSlot(schedule, 'filenames', filenames, 'submission');
   index = replaceSlot(index, 'deadline', deadlineHtml, 'submission');
-  schedule = replaceSlot(schedule, 'requirements', `<strong>Submission deadline:</strong> ${deadlineHtml}. Posters: PDF. Presentations: PPTX.`, 'submission');
+  schedule = replaceSlot(schedule, 'requirements', `<strong>Submission deadline:</strong> ${deadlineHtml}. Posters: PPTX. Presentations: PPTX.`, 'submission');
   poster = replaceSlot(poster, 'deadline', deadlineHtml, 'submission');
 
   schedule = replaceSlot(schedule, 'actions', studentUrl
@@ -88,17 +94,17 @@ export async function updateSubmission(root) {
     (url ? externalLink('Submit a poster <span aria-hidden="true">↗</span>', 'button button-dark') : '') +
     homepagePresentation + '</div>' +
     (studentUrl ? '' : '<p id="homepage-presentation-link-status" class="submission-link-status">Presentation submission link to be announced.</p>') +
-    '<a class="text-link" href="output/pdf/genisys-2027-call-for-submissions.pdf?v=0.8.20" download="genisys-2027-call-for-submissions.pdf">Download the call for contribution (PDF) <span aria-hidden="true">↓</span></a>');
+    '<a class="text-link" href="output/pdf/genisys-2027-call-for-submissions.pdf?v=0.8.21" download="genisys-2027-call-for-submissions.pdf">Download the call for contribution (PDF) <span aria-hidden="true">↓</span></a>');
   index = replaceSlot(index, 'embed', url || studentUrl
     ? '<details class="upload-panel" id="poster-upload"><summary>Upload your research</summary><div class="upload-content">' +
       '<p class="upload-help"><strong>Presentations (PPTX)</strong><br>' +
       (studentUrl ? `<a href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a presentation <span aria-hidden="true">↗</span></a>` : 'Presentation submission link to be announced.') + '</p>' +
-      (url ? `<p class="upload-help"><strong>Posters (PDF)</strong><br>Upload your poster using the form below.</p><iframe src="${escapedUrl}" height="550" width="800" title="GeniSys research poster upload form on Box" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="upload-help">Form not loading? ${externalLink('Open the poster form in Box')}.</p>`
-        : '<p class="upload-help"><strong>Posters (PDF)</strong><br>Poster submission link to be announced.</p>') + '</div></details>'
+      (url ? `<p class="upload-help"><strong>Posters (PPTX)</strong><br>Upload your poster using the form below.</p><iframe src="${escapedUrl}" height="550" width="800" title="GeniSys research poster upload form on Box" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="upload-help">Form not loading? ${externalLink('Open the poster form in Box')}.</p>`
+        : '<p class="upload-help"><strong>Posters (PPTX)</strong><br>Poster submission link to be announced.</p>') + '</div></details>'
     : '');
   poster = replaceSlot(poster, 'poster', url
-    ? `PDF format · Upload through Box<br>${externalLink(escapedUrl, 'poster-upload-link')}`
-    : 'PDF format · Poster submission link to be announced');
+    ? `PPTX format · Upload through Box<br>${externalLink(escapedUrl, 'poster-upload-link')}`
+    : 'PPTX format · Poster submission link to be announced');
   poster = replaceSlot(poster, 'poster', studentUrl
     ? `<a class="poster-upload-link" href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a presentation</a>`
     : 'Presentation submission link to be announced', 'presentation');
@@ -114,10 +120,12 @@ export async function updateSubmission(root) {
     (url ? `Upload your research poster to Box: ${url}\n\n` : 'The poster upload link will be announced on the workshop website.\n\n') +
     'Recent research and previously published work are both welcome.\n\n' +
     'Recommended poster size: 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm).\n\n' +
-    `File format: PDF. Submission deadline: ${deadlineText}.\n\n` +
+    `File format: PPTX. Submission deadline: ${deadlineText}.\n\n` +
+    'Filename: Poster_First_Lastname_Level.pptx. Replace First and Lastname with your name. Use Undergrad, Master, or PhD for Level.\n\n' +
     'Research presentations\nOpen to undergraduate, master’s, and PhD students.\n\n' +
     (studentUrl ? `Submit your research presentation: ${studentUrl}\n\n` : 'The presentation submission link will be announced on the workshop website.\n\n') +
     'File format: PPTX. Presentation decks must contain fewer than 15 slides (maximum 14). Presentation slots are 15 minutes, including Q&A and transitions.\n\n' +
+    'Filename: Presentation_First_Lastname_Level.pptx. Replace First and Lastname with your name. Use Undergrad, Master, or PhD for Level.\n\n' +
     `Submission deadline: ${deadlineText}. Check the workshop website for updates: https://genisys27.github.io/#posters` +
     '\n\nORGANIZERS\n');
 

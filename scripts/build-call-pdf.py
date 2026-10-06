@@ -123,14 +123,14 @@ def build():
               "fifth-floor conference room.", MARGIN, 286, CONTENT, 9.5, 13,
               color=MUTED, max_height=26)
 
-    text("RESEARCH THEMES", MARGIN, 322, 10, True, TEAL)
+    text("RESEARCH THEMES", MARGIN, 310, 10, True, TEAL)
     themes = [
         ("Efficient AI", "Algorithm design, agent systems, scalable training/inference, "
          "heterogeneous computing."),
         ("Connected systems", "Networks and infrastructure for distributed intelligence."),
         ("Sustainable computing", "Energy-aware, reliable, and secure systems."),
     ]
-    top = 340
+    top = 328
     for name, description in themes:
         c.setFillColor(TEAL)
         c.circle(MARGIN + 3, HEIGHT - top - 6, 2.1, stroke=0, fill=1)
@@ -139,31 +139,34 @@ def build():
         top += height + 7
 
     # Separate cards make the two submission types and their formats unambiguous.
-    card_top, card_height, gap = 419, 168, 14
+    card_top, card_height, gap = 395, 168, 14
     card_width = (CONTENT - gap) / 2
     right = MARGIN + card_width + gap
     for x in (MARGIN, right):
         box(x, card_top, card_width, card_height, PALE, radius=7, stroke=LINE)
-    text("Research posters", MARGIN + 15, 434, 14, True)
+    text("Research posters", MARGIN + 15, 410, 14, True)
     paragraph("Recent research and previously published work are welcome.<br/>"
-              "<b>File format:</b> PDF<br/>"
+              "<b>File format:</b> PPTX<br/>"
               "<b>Recommended size:</b> 36 x 48 in, portrait<br/>"
               "(91 x 122 cm, width x height).<br/>"
               "<b>Poster session:</b> 4:00-5:00 pm",
-              MARGIN + 15, 457, card_width - 30, 10, 14, max_height=84)
-    text("Research presentations", right + 15, 434, 14, True)
+              MARGIN + 15, 433, card_width - 30, 10, 14, max_height=84)
+    text("Research presentations", right + 15, 410, 14, True)
     paragraph("Open to undergraduate, master's, and PhD students.<br/>"
               "<b>File format:</b> PPTX<br/>"
               "<b>Fewer than 15 slides (maximum 14).</b><br/>"
               "15-minute slots, including Q&amp;A and transitions.",
-              right + 15, 457, card_width - 30, 10, 14, max_height=84)
-    button("Submit a poster", poster_url, MARGIN + 15, 547, card_width - 30)
-    button("Submit a presentation", presentation_url, right + 15, 547, card_width - 30)
+              right + 15, 433, card_width - 30, 10, 14, max_height=84)
+    button("Submit a poster", poster_url, MARGIN + 15, 523, card_width - 30)
+    button("Submit a presentation", presentation_url, right + 15, 523, card_width - 30)
 
-    text("ONE-DAY PROGRAM", MARGIN, 604, 10, True, TEAL)
+    paragraph("<b>Presentations:</b> Presentation_First_Lastname_Level.pptx<br/>"
+              "<b>Posters:</b> Poster_First_Lastname_Level.pptx<br/>"
+              "Replace First/Lastname with your name and Level with Undergrad, Master, or PhD.",
+              MARGIN, 574, CONTENT, 9.5, 13, max_height=39)
     paragraph(f'<link href="{SITE}schedule.html" color="#00665c">Full schedule</link>',
-              502, 604, 70, 9, 12, max_height=12)
-    text("9:00 am-5:00 pm  |  Houston (Central Time)  |  Tentative", MARGIN, 624, 10.5, True)
+              502, 624, 70, 9, 12, max_height=12)
+    text("Program: 9:00 am-5:00 pm  |  Central Time  |  Tentative", MARGIN, 624, 10.5, True)
     paragraph("Three external speakers (45 minutes each), six PhD talks from different groups, "
               "eight undergraduate/master's talks, and posters &amp; demos from 4:00 to 5:00 pm.",
               MARGIN, 644, CONTENT, 10, 14, max_height=28)

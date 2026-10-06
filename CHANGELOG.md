@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.8.21 - 2026-10-06
+
+- Add presentation and poster filename conventions with Undergrad, Master, or PhD suffixes to the homepage, schedule, and PDF/text calls.
+- Use PPTX for poster submissions as well as presentations, matching the requested filenames.
+
 ## 0.8.20 - 2026-10-06
 
 - Shorten the PDF’s Efficient AI description to fit on one line while retaining all research topics.

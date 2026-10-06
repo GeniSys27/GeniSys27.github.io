@@ -46,7 +46,8 @@ Last updated: October 6, 2026
 - [x] Prepare one configuration entry to synchronize the Box link across the website, printable poster, and downloadable call.
 - [x] Receive and connect the organizer-provided Box upload link.
 - [x] Embed the Box upload form and provide a direct-link fallback.
-- [x] Set PDF for research posters and PPTX for undergraduate/master’s presentations.
+- [x] Set PPTX for both research posters and research presentations, matching the latest filename requirements.
+- [x] Add submission filename templates with Undergrad, Master, or PhD suffixes.
 - [ ] Confirm any additional submission fields.
 - [x] Recommend a standard research poster size: 36 in wide × 48 in tall (portrait).
 - [ ] Confirm presentation arrangements and available display space.

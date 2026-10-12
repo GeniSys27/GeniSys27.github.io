@@ -25,7 +25,7 @@ Last updated: October 12, 2026
 
 - [x] Add the organizer-provided Google Map with a direct-link fallback.
 - [x] Add a dedicated tentative schedule page and a concise homepage overview.
-- [x] Verify the new pages at desktop and 320px widths, map loading, section highlighting, cross-page links, all ten agenda sessions, and Box configuration compatibility.
+- [x] Verify the new pages at desktop and 320px widths, map loading, section highlighting, cross-page links, agenda sessions, and Box configuration compatibility.
 
 ## Responsive experience
 
@@ -58,10 +58,11 @@ Last updated: October 12, 2026
 - [x] Plan a continuous 9:00 am–5:00 pm workshop with explicit session durations and Q&A time.
 - [x] Reserve 4:00–5:00 pm for the dedicated poster/demo session as the final event of the day.
 - [x] Synchronize the homepage overview, schedule, printable poster, and downloadable call.
-- [x] Reserve two one-hour research presentation sessions with up to four talks each, with 15 minutes per presenter.
-- [x] Reserve two 45-minute research presentation sessions with up to three talks each; select across career stages and research groups.
-- [ ] Finalize the allocation of up to 14 research talks, including student and postdoctoral presenters, based on submissions.
-- [x] Include three external speakers in 45-minute slots, with lunch and two coffee breaks in a sequential 9:00 am–5:00 pm program.
+- [x] Reserve three 45-minute research presentation sessions at 9:45–10:30 am, 1:00–1:45 pm, and 3:00–3:45 pm, with up to three talks each and 15 minutes per presenter including Q&A and transition.
+- [x] Reserve a 75-minute lunch and discussion period from 11:45 am to 1:00 pm and two 30-minute coffee breaks at 10:30–11:00 am and 2:30–3:00 pm.
+- [x] Reserve open discussion and transition from 3:45 to 4:00 pm before the poster/demo session.
+- [ ] Finalize the allocation of up to 9 research talks, including student and postdoctoral presenters, based on submissions.
+- [x] Include three invited speaker slots at 9:00–9:45 am, 11:00–11:45 am, and 1:45–2:30 pm in a sequential 9:00 am–5:00 pm program.
 - [ ] Confirm the three external speakers and presentation titles; brief all presenters on timing and Q&A.
 
 ## Research presentation submissions
@@ -96,7 +97,7 @@ Last updated: October 12, 2026
 - [x] Make clear that submitted slides and posters need not be final and may be refined before the workshop.
 - [x] Welcome research in progress and research-oriented course projects, alongside recent and previously published work.
 - [x] Emphasize research feedback, presentation practice, and potential collaborators.
-- [x] Replace fixed public career-stage quotas with up to 14 research talks; encourage undergraduate/master’s participation.
+- [x] Replace fixed public career-stage quotas with up to 9 research talks; encourage undergraduate/master’s participation.
 - [x] Retain the exact date and invited speakers as to be announced.
 - [x] Draft the revised announcement email in the parent workspace’s output/email directory.
 - [x] Update the announcement draft and submission guidance to accept PPTX or PDF posters, with matching filename examples.

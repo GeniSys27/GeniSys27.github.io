@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.0 - 2026-10-12
+
+- Provide more time for conversation with a 75-minute lunch and discussion period, two 30-minute coffee breaks, and open discussion before posters.
+- Plan up to 9 research talks across three 45-minute sessions of up to three talks each; retain 15-minute slots including Q&A and transition.
+- Align the website, submission call, and announcement email with the revised 9:00 am–5:00 pm program; retain TBA date and speakers.
+
+- Adjust the event poster’s print spacing to keep the expanded program on one A3 page.
+
 ## 1.0.2 - 2026-10-12
 
 - Open call-for-submissions PDF links in a new tab for viewing.

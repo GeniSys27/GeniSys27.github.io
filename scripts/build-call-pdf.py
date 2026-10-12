@@ -132,14 +132,14 @@ def build():
               "fifth-floor conference room.", MARGIN, 336, CONTENT, 9, 12,
               color=MUTED, max_height=24)
 
-    text("RESEARCH THEMES", MARGIN, 370, 10, True, TEAL)
+    text("RESEARCH THEMES", MARGIN, 358, 10, True, TEAL)
     themes = [
         ("Efficient AI", "Algorithm design, agent systems, scalable training/inference, "
          "heterogeneous computing."),
         ("Connected systems", "Networks and infrastructure for distributed intelligence."),
         ("Sustainable computing", "Energy-aware, reliable, and secure systems."),
     ]
-    top = 387
+    top = 375
     for name, description in themes:
         c.setFillColor(TEAL)
         c.circle(MARGIN + 3, HEIGHT - top - 6, 2.1, stroke=0, fill=1)
@@ -148,37 +148,39 @@ def build():
         top += height + 5
 
     # Separate cards make the two submission types and their formats unambiguous.
-    card_top, card_height, gap = 444, 137, 14
+    card_top, card_height, gap = 432, 129, 14
     card_width = (CONTENT - gap) / 2
     right = MARGIN + card_width + gap
     for x in (MARGIN, right):
         box(x, card_top, card_width, card_height, PALE, radius=7, stroke=LINE)
-    text("Research posters", MARGIN + 15, 456, 14, True)
+    text("Research posters", MARGIN + 15, 444, 14, True)
     paragraph("<b>File formats:</b> PPTX or PDF<br/>"
               "<b>Recommended size:</b> 36 x 48 in, portrait<br/>"
               "(91 x 122 cm, width x height).<br/>"
-              "<b>Poster session:</b> 4:00-5:00 pm",
-              MARGIN + 15, 480, card_width - 30, 9.5, 13, max_height=52)
-    text("Research presentations", right + 15, 456, 14, True)
+              "<b>Poster/demo session:</b> 4:00-5:00 pm",
+              MARGIN + 15, 468, card_width - 30, 9.5, 13, max_height=52)
+    text("Research presentations", right + 15, 444, 14, True)
     paragraph("<b>File format:</b> PPTX<br/>"
               "<b>Maximum 14 slides.</b><br/>"
               "15-minute slots, including Q&amp;A and transitions.",
-              right + 15, 480, card_width - 30, 9.5, 13, max_height=52)
-    button("Submit a poster", poster_url, MARGIN + 15, 541, card_width - 30)
-    button("Submit a presentation", presentation_url, right + 15, 541, card_width - 30)
+              right + 15, 468, card_width - 30, 9.5, 13, max_height=52)
+    button("Submit a poster", poster_url, MARGIN + 15, 525, card_width - 30)
+    button("Submit a presentation", presentation_url, right + 15, 525, card_width - 30)
 
-    box(MARGIN, 589, CONTENT, 42, PALE, radius=4)
+    box(MARGIN, 569, CONTENT, 38, PALE, radius=4)
     paragraph("<b>Presentation filename:</b> Presentation_First_Lastname_Level.pptx<br/>"
               "<b>Poster filename:</b> Poster_First_Lastname_Level.pptx or Poster_First_Lastname_Level.pdf<br/>"
               "Replace First/Lastname with your name; Level: Undergrad, Master, PhD, or Postdoc.",
-              MARGIN + 9, 593, CONTENT - 18, 8.8, 12, max_height=36)
+              MARGIN + 9, 573, CONTENT - 18, 8.8, 10.5, max_height=31.5)
     paragraph(f'<link href="{SITE}schedule.html" color="#00665c">Full schedule</link>',
-              502, 641, 70, 9, 12, max_height=12)
-    text("Program: 9:00 am-5:00 pm  |  Central Time  |  Tentative", MARGIN, 641, 10.5, True)
-    paragraph("We plan to select <b>up to 14 research talks</b>; career-stage allocation will reflect submissions.<br/>"
+              502, 617, 70, 9, 12, max_height=12)
+    text("Program: 9:00 am-5:00 pm  |  Central Time  |  Tentative", MARGIN, 617, 10.5, True)
+    paragraph("<b>Up to 9 research talks</b> across 3 research sessions; maximum 3 talks per session.<br/>"
               "<b>Undergraduate and master's students are especially encouraged to submit.</b><br/>"
-              "Three invited speaker slots planned (45 minutes each); speaker names and topics TBA.",
-              MARGIN, 658, CONTENT, 9.5, 12, max_height=36)
+              "Three invited speaker slots planned (45 minutes each); speaker names and topics TBA.<br/>"
+              "<b>Coffee breaks:</b> 10:30-11:00 am and 2:30-3:00 pm (30 minutes each).<br/>"
+              "<b>Lunch/discussion:</b> 11:45 am-1:00 pm (75 min); <b>discussion/transition:</b> 3:45-4:00 pm.",
+              MARGIN, 634, CONTENT, 9.5, 12, max_height=60)
     paragraph("Hybrid participation is planned; remote poster arrangements will be announced.",
               MARGIN, 699, CONTENT, 9, 12, color=MUTED, max_height=12)
 

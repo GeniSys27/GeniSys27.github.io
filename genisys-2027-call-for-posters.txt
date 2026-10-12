@@ -53,9 +53,9 @@ Research in progress, research-oriented course projects, and recent or previousl
 
 Recommended poster size: 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm).
 
-File format: PPTX. Submission deadline: January 10, 2027.
+File formats: PPTX or PDF. Submission deadline: January 10, 2027.
 
-Filename: Poster_First_Lastname_Level.pptx. Replace First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.
+Filename: Poster_First_Lastname_Level.pptx or Poster_First_Lastname_Level.pdf. Replace First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.
 
 Research presentations
 Research in progress, research-oriented course projects, and recent or previously published work are welcome.

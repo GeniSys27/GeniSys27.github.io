@@ -154,7 +154,7 @@ def build():
     for x in (MARGIN, right):
         box(x, card_top, card_width, card_height, PALE, radius=7, stroke=LINE)
     text("Research posters", MARGIN + 15, 456, 14, True)
-    paragraph("<b>File format:</b> PPTX<br/>"
+    paragraph("<b>File formats:</b> PPTX or PDF<br/>"
               "<b>Recommended size:</b> 36 x 48 in, portrait<br/>"
               "(91 x 122 cm, width x height).<br/>"
               "<b>Poster session:</b> 4:00-5:00 pm",
@@ -169,7 +169,7 @@ def build():
 
     box(MARGIN, 589, CONTENT, 42, PALE, radius=4)
     paragraph("<b>Presentation filename:</b> Presentation_First_Lastname_Level.pptx<br/>"
-              "<b>Poster filename:</b> Poster_First_Lastname_Level.pptx<br/>"
+              "<b>Poster filename:</b> Poster_First_Lastname_Level.pptx or Poster_First_Lastname_Level.pdf<br/>"
               "Replace First/Lastname with your name; Level: Undergrad, Master, PhD, or Postdoc.",
               MARGIN + 9, 593, CONTENT - 18, 8.8, 12, max_height=36)
     paragraph(f'<link href="{SITE}schedule.html" color="#00665c">Full schedule</link>',

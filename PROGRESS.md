@@ -46,8 +46,8 @@ Last updated: October 12, 2026
 - [x] Prepare one configuration entry to synchronize the Box link across the website, printable poster, and downloadable call.
 - [x] Receive and connect the organizer-provided Box upload link.
 - [x] Embed the Box upload form and provide a direct-link fallback.
-- [x] Set PPTX for both research posters and research presentations, matching the latest filename requirements.
-- [x] Add submission filename templates with Undergrad, Master, PhD, or Postdoc suffixes.
+- [x] Accept PPTX or PDF for research posters; retain PPTX for research presentations.
+- [x] Add submission filename templates with Undergrad, Master, PhD, or Postdoc suffixes and matching .pptx or .pdf poster extensions.
 - [ ] Confirm any additional submission fields.
 - [x] Recommend a standard research poster size: 36 in wide × 48 in tall (portrait).
 - [ ] Confirm presentation arrangements and available display space.
@@ -99,6 +99,7 @@ Last updated: October 12, 2026
 - [x] Replace fixed public career-stage quotas with up to 14 research talks; encourage undergraduate/master’s participation.
 - [x] Retain the exact date and invited speakers as to be announced.
 - [x] Draft the revised announcement email in the parent workspace’s output/email directory.
+- [x] Update the announcement draft and submission guidance to accept PPTX or PDF posters, with matching filename examples.
 - [x] Verify the one-page PDF, clickable links, website layouts at 320/768/1440px, local links, and submission synchronization.
 - [ ] Ask K2I faculty, advisers, and relevant course instructors to encourage students and postdocs to submit.
 

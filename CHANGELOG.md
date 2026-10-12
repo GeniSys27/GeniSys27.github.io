@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.1 - 2026-10-12
+
+- Accept research posters as PPTX or PDF while retaining PPTX for research presentations.
+- Add matching .pptx and .pdf poster filename examples to the submission guidance and revised announcement email.
+- Retain the exact workshop date and invited speakers as to be announced.
+
 ## 1.0.0 - 2026-10-12
 
 - Welcome students and postdoctoral researchers in both submission formats, with Postdoc filename support.

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.1 - 2026-10-12
+
+- Remove the repetitive program summary above the detailed schedule.
+
 ## 1.1.0 - 2026-10-12
 
 - Provide more time for conversation with a 75-minute lunch and discussion period, two 30-minute coffee breaks, and open discussion before posters.

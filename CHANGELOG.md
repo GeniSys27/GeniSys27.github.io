@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.0.0 - 2026-10-12
+
+- Welcome students and postdoctoral researchers in both submission formats, with Postdoc filename support.
+- Clarify that draft slides and posters may be refined before the workshop, and welcome research in progress and research-oriented course projects.
+- Emphasize research feedback, presentation practice, and potential collaboration.
+- Plan up to 14 research talks across career stages and research groups, replacing fixed public 8/6 quotas while encouraging undergraduate/master’s submissions.
+- Synchronize the homepage, tentative schedule, printable poster, downloadable text call, and one-page PDF; retain the exact date and invited speakers as to be announced.
+
 ## 0.9.0 - 2026-10-06
 
 - Emphasize the submission deadline and selection counts, put submission buttons before filename instructions, and simplify the presentation requirements.

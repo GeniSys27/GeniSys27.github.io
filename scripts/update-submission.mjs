@@ -28,7 +28,7 @@ function presentationUrl(value = '') {
   try { url = new URL(value.trim()); }
   catch { throw new Error('studentPresentationUrl must be a complete HTTPS submission URL.'); }
   if (url.protocol !== 'https:' || url.username || url.password) {
-    throw new Error('Use an HTTPS student presentation submission link without embedded credentials.');
+    throw new Error('Use an HTTPS research presentation submission link without embedded credentials.');
   }
   return url.href;
 }
@@ -72,7 +72,7 @@ export async function updateSubmission(root) {
   const filenames = '<div class="submission-filenames"><p><strong>Submission filenames</strong></p>' +
     '<code>Presentation_<wbr>First_<wbr>Lastname_<wbr>Level.pptx</code>' +
     '<code>Poster_<wbr>First_<wbr>Lastname_<wbr>Level.pptx</code>' +
-    '<p>Replace First and Lastname with your name. Use Undergrad, Master, or PhD for Level.</p></div>';
+    '<p>Replace First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.</p></div>';
   index = replaceSlot(index, 'filenames', filenames, 'submission');
   schedule = replaceSlot(schedule, 'filenames', filenames, 'submission');
   index = replaceSlot(index, 'deadline', deadlineHtml, 'submission');
@@ -94,7 +94,7 @@ export async function updateSubmission(root) {
     (url ? externalLink('Submit a poster <span aria-hidden="true">↗</span>', 'button button-dark') : '') +
     homepagePresentation + '</div>' +
     (studentUrl ? '' : '<p id="homepage-presentation-link-status" class="submission-link-status">Presentation submission link to be announced.</p>') +
-    '<a class="text-link" href="output/pdf/genisys-2027-call-for-submissions.pdf?v=0.9.0" download="genisys-2027-call-for-submissions.pdf">Download the call for contribution (PDF) <span aria-hidden="true">↓</span></a>');
+    '<a class="text-link" href="output/pdf/genisys-2027-call-for-submissions.pdf?v=1.0.0" download="genisys-2027-call-for-submissions.pdf">Download the call for submissions (PDF) <span aria-hidden="true">↓</span></a>');
   index = replaceSlot(index, 'embed', url || studentUrl
     ? '<details class="upload-panel" id="poster-upload"><summary>Upload your research</summary><div class="upload-content">' +
       '<p class="upload-help"><strong>Presentations (PPTX)</strong><br>' +
@@ -116,16 +116,18 @@ export async function updateSubmission(root) {
   call = call.replace(/^Poster submission link: .+$/m, () => `Poster submission link: ${url || 'To be announced'}`);
   call = call.replace(/^Research presentation submission link: .+$/m, () => `Research presentation submission link: ${studentUrl || 'To be announced'}`);
   call = call.replace(/\nSUBMISSION INFORMATION\n[\s\S]*?\nORGANIZERS\n/, () =>
-    '\nSUBMISSION INFORMATION\nResearch posters\n' +
+    '\nSUBMISSION INFORMATION\nBoth formats are open to undergraduate, master’s, and PhD students and postdoctoral researchers. Undergraduate and master’s students are especially encouraged to submit.\n\n' +
+    'Draft materials are welcome. Submitted slides and posters need not be final; you may refine them before the workshop.\n\n' +
+    'Research posters\n' +
     (url ? `Upload your research poster to Box: ${url}\n\n` : 'The poster upload link will be announced on the workshop website.\n\n') +
-    'Recent research and previously published work are both welcome.\n\n' +
+    'Research in progress, research-oriented course projects, and recent or previously published work are welcome.\n\n' +
     'Recommended poster size: 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm).\n\n' +
     `File format: PPTX. Submission deadline: ${deadlineText}.\n\n` +
-    'Filename: Poster_First_Lastname_Level.pptx. Replace First and Lastname with your name. Use Undergrad, Master, or PhD for Level.\n\n' +
-    'Research presentations\nOpen to undergraduate, master’s, and PhD students.\n\n' +
+    'Filename: Poster_First_Lastname_Level.pptx. Replace First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.\n\n' +
+    'Research presentations\nResearch in progress, research-oriented course projects, and recent or previously published work are welcome.\n\n' +
     (studentUrl ? `Submit your research presentation: ${studentUrl}\n\n` : 'The presentation submission link will be announced on the workshop website.\n\n') +
-    'File format: PPTX. Presentation decks must contain fewer than 15 slides (maximum 14). We plan to select 8 undergraduate/master’s and 6 PhD talks (14 total), each with a 15-minute slot including Q&A and transitions.\n\n' +
-    'Filename: Presentation_First_Lastname_Level.pptx. Replace First and Lastname with your name. Use Undergrad, Master, or PhD for Level.\n\n' +
+    'File format: PPTX. Maximum 14 slides. We plan to select up to 14 research talks across career stages and research groups; the final allocation will reflect submissions. Each talk has a 15-minute slot including Q&A and transitions.\n\n' +
+    'Filename: Presentation_First_Lastname_Level.pptx. Replace First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.\n\n' +
     `Submission deadline: ${deadlineText}. Check the workshop website for updates: https://genisys27.github.io/#posters` +
     '\n\nORGANIZERS\n');
 
@@ -139,7 +141,7 @@ export async function updateSubmission(root) {
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   try {
     const result = await updateSubmission(fileURLToPath(new URL('../', import.meta.url)));
-    console.log(`Poster submission link ${result.configured ? 'updated' : 'pending'}; student presentation submission link ${result.presentationConfigured ? 'updated' : 'pending'}.`);
+    console.log(`Poster submission link ${result.configured ? 'updated' : 'pending'}; research presentation submission link ${result.presentationConfigured ? 'updated' : 'pending'}.`);
     console.log('Before publishing, rebuild the PDF: python3 scripts/build-call-pdf.py');
   } catch (error) {
     console.error(error.message);

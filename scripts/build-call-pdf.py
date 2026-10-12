@@ -61,9 +61,9 @@ def build():
     pdfmetrics.registerFontFamily("CallSans", normal="CallSans", bold="CallSans-Bold")
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     c = canvas.Canvas(str(OUTPUT), pagesize=(WIDTH, HEIGHT), pageCompression=1, invariant=1)
-    c.setTitle("GeniSys 2027 - Call for contribution")
+    c.setTitle("GeniSys 2027 - Call for submissions")
     c.setAuthor("GeniSys 2027 | Computer Science, Rice University")
-    c.setSubject("Research posters and presentations from undergraduate, master's, and PhD students")
+    c.setSubject("Research posters and presentations from students and postdoctoral researchers")
 
     def box(x, top, width, height, fill, radius=0, stroke=None):
         c.setFillColor(fill)
@@ -102,95 +102,102 @@ def build():
             c.linkURL(url, (x, HEIGHT - top - 28, x + width, HEIGHT - top), relative=0)
 
     # Header and the shared deadline are the first things a reader sees.
-    box(0, 0, WIDTH, 188, NAVY)
+    box(0, 0, WIDTH, 166, NAVY)
     text("RICE UNIVERSITY  /  COMPUTER SCIENCE", MARGIN, 23, 9, True, MINT)
     c.drawImage(str(ROOT / "assets/genisys-mark.png"), MARGIN, HEIGHT - 83,
                 width=34, height=34, mask="auto")
     text("GeniSys", 85, 47, 30, True, white)
     text("2027", 85 + pdfmetrics.stringWidth("GeniSys", "CallSans-Bold", 30) + 9, 47, 30, False, MINT)
-    text("Call for contribution", MARGIN, 96, 27, True, white)
-    text("Research posters & presentations", MARGIN, 132, 13, False, white)
-    text("Spring 2027  |  Rice University, Houston, Texas", MARGIN, 155, 10.5, False, MINT)
-    text("Exact workshop date to be announced", MARGIN, 170, 9, False, white)
+    text("Call for submissions", MARGIN, 90, 27, True, white)
+    text("Research posters & presentations", MARGIN, 123, 13, False, white)
+    text("Spring 2027  |  Rice University, Houston, Texas  |  Exact date: TBA",
+         MARGIN, 146, 9.5, False, MINT)
 
-    box(0, 188, WIDTH, 44, MINT)
-    text("SUBMISSION DEADLINE", MARGIN, 204, 10, True, NAVY)
-    text(deadline_label, 325, 199, 20, True, NAVY)
+    box(0, 166, WIDTH, 44, MINT)
+    text("SUBMISSION DEADLINE", MARGIN, 182, 10, True, NAVY)
+    text(deadline_label, 325, 177, 20, True, NAVY)
 
-    paragraph("Connect with people across backgrounds and disciplines, showcase your work to a "
-              "wider audience, and find potential collaborators.",
-              MARGIN, 249, CONTENT, 11, 15, max_height=30)
+    paragraph("Share your research, receive feedback, practice presenting to a broader audience, "
+              "and meet researchers and potential collaborators across disciplines.",
+              MARGIN, 224, CONTENT, 10.5, 14, max_height=28)
+    paragraph("<b>Who can submit:</b> Undergraduate, master's and PhD students and postdoctoral "
+              "researchers. Recent or published work, research in progress and research-oriented "
+              "course projects are welcome.",
+              MARGIN, 260, CONTENT, 9.5, 12, max_height=24)
+    box(MARGIN, 292, CONTENT, 36, PALE, radius=4, stroke=LINE)
+    paragraph("<b>Draft slides and posters are welcome.</b> Submitted materials need not be final "
+              "and may be refined before the workshop.",
+              MARGIN + 9, 298, CONTENT - 18, 9.5, 12, max_height=24)
     paragraph("<b>Venue:</b> Ralph S. O'Connor Building for Engineering and Science, "
-              "fifth-floor conference room.", MARGIN, 286, CONTENT, 9.5, 13,
-              color=MUTED, max_height=26)
+              "fifth-floor conference room.", MARGIN, 336, CONTENT, 9, 12,
+              color=MUTED, max_height=24)
 
-    text("RESEARCH THEMES", MARGIN, 310, 10, True, TEAL)
+    text("RESEARCH THEMES", MARGIN, 370, 10, True, TEAL)
     themes = [
         ("Efficient AI", "Algorithm design, agent systems, scalable training/inference, "
          "heterogeneous computing."),
         ("Connected systems", "Networks and infrastructure for distributed intelligence."),
         ("Sustainable computing", "Energy-aware, reliable, and secure systems."),
     ]
-    top = 328
+    top = 387
     for name, description in themes:
         c.setFillColor(TEAL)
         c.circle(MARGIN + 3, HEIGHT - top - 6, 2.1, stroke=0, fill=1)
         height = paragraph(f"<b>{name}:</b> {description}", MARGIN + 14, top,
-                           CONTENT - 14, 10, 13, max_height=13)
-        top += height + 7
+                           CONTENT - 14, 9.5, 12, max_height=12)
+        top += height + 5
 
     # Separate cards make the two submission types and their formats unambiguous.
-    card_top, card_height, gap = 395, 168, 14
+    card_top, card_height, gap = 444, 137, 14
     card_width = (CONTENT - gap) / 2
     right = MARGIN + card_width + gap
     for x in (MARGIN, right):
         box(x, card_top, card_width, card_height, PALE, radius=7, stroke=LINE)
-    text("Research posters", MARGIN + 15, 410, 14, True)
-    paragraph("Recent research and previously published work are welcome.<br/>"
-              "<b>File format:</b> PPTX<br/>"
+    text("Research posters", MARGIN + 15, 456, 14, True)
+    paragraph("<b>File format:</b> PPTX<br/>"
               "<b>Recommended size:</b> 36 x 48 in, portrait<br/>"
               "(91 x 122 cm, width x height).<br/>"
               "<b>Poster session:</b> 4:00-5:00 pm",
-              MARGIN + 15, 433, card_width - 30, 10, 14, max_height=84)
-    text("Research presentations", right + 15, 410, 14, True)
-    paragraph("Open to undergraduate, master's, and PhD students.<br/>"
-              "<b>File format:</b> PPTX<br/>"
-              "<b>Fewer than 15 slides (maximum 14).</b><br/>"
+              MARGIN + 15, 480, card_width - 30, 9.5, 13, max_height=52)
+    text("Research presentations", right + 15, 456, 14, True)
+    paragraph("<b>File format:</b> PPTX<br/>"
+              "<b>Maximum 14 slides.</b><br/>"
               "15-minute slots, including Q&amp;A and transitions.",
-              right + 15, 433, card_width - 30, 10, 14, max_height=84)
-    button("Submit a poster", poster_url, MARGIN + 15, 523, card_width - 30)
-    button("Submit a presentation", presentation_url, right + 15, 523, card_width - 30)
+              right + 15, 480, card_width - 30, 9.5, 13, max_height=52)
+    button("Submit a poster", poster_url, MARGIN + 15, 541, card_width - 30)
+    button("Submit a presentation", presentation_url, right + 15, 541, card_width - 30)
 
-    box(MARGIN, 570, CONTENT, 47, PALE, radius=4)
+    box(MARGIN, 589, CONTENT, 42, PALE, radius=4)
     paragraph("<b>Presentation filename:</b> Presentation_First_Lastname_Level.pptx<br/>"
               "<b>Poster filename:</b> Poster_First_Lastname_Level.pptx<br/>"
-              "Replace First/Lastname with your name and Level with Undergrad, Master, or PhD.",
-              MARGIN + 9, 574, CONTENT - 18, 9, 13, max_height=39)
+              "Replace First/Lastname with your name; Level: Undergrad, Master, PhD, or Postdoc.",
+              MARGIN + 9, 593, CONTENT - 18, 8.8, 12, max_height=36)
     paragraph(f'<link href="{SITE}schedule.html" color="#00665c">Full schedule</link>',
-              502, 624, 70, 9, 12, max_height=12)
-    text("Program: 9:00 am-5:00 pm  |  Central Time  |  Tentative", MARGIN, 624, 10.5, True)
-    paragraph("We plan to select <b>8 undergraduate/master's and 6 PhD talks</b>: 14 talks, 15 minutes each.<br/>"
-              "3 external speakers (45 minutes each); posters &amp; demos from 4:00 to 5:00 pm.",
-              MARGIN, 644, CONTENT, 10, 14, max_height=28)
+              502, 641, 70, 9, 12, max_height=12)
+    text("Program: 9:00 am-5:00 pm  |  Central Time  |  Tentative", MARGIN, 641, 10.5, True)
+    paragraph("We plan to select <b>up to 14 research talks</b>; career-stage allocation will reflect submissions.<br/>"
+              "<b>Undergraduate and master's students are especially encouraged to submit.</b><br/>"
+              "Three invited speaker slots planned (45 minutes each); speaker names and topics TBA.",
+              MARGIN, 658, CONTENT, 9.5, 12, max_height=36)
     paragraph("Hybrid participation is planned; remote poster arrangements will be announced.",
-              MARGIN, 676, CONTENT, 9, 12, color=MUTED, max_height=12)
+              MARGIN, 699, CONTENT, 9, 12, color=MUTED, max_height=12)
 
     c.setStrokeColor(LINE)
-    c.line(MARGIN, HEIGHT - 700, WIDTH - MARGIN, HEIGHT - 700)
-    text("ORGANIZERS", MARGIN, 713, 8, True, TEAL)
-    text("T. S. Eugene Ng  |  Yuke Wang  |  Jiarong Xing", MARGIN, 727, 10, True)
+    c.line(MARGIN, HEIGHT - 717, WIDTH - MARGIN, HEIGHT - 717)
+    text("ORGANIZERS", MARGIN, 726, 8, True, TEAL)
+    text("T. S. Eugene Ng  |  Yuke Wang  |  Jiarong Xing", MARGIN, 738, 10, True)
     paragraph(f'<b>Links &amp; full schedule:</b> <link href="{SITE}" color="#00665c">'
               'genisys27.github.io</link><br/>'
               '<b>Contact:</b> <link href="mailto:yuke.wang@rice.edu" color="#00665c">'
-              'yuke.wang@rice.edu</link>', MARGIN, 746, CONTENT - 75, 9.5, 13, max_height=26)
+              'yuke.wang@rice.edu</link>', MARGIN, 755, CONTENT - 75, 9.5, 12, max_height=24)
     qr = QrCodeWidget(SITE + "#posters")
     x0, y0, x1, y1 = qr.getBounds()
-    size = 63
+    size = 52
     drawing = Drawing(size, size, transform=[size / (x1 - x0), 0, 0, size / (y1 - y0), 0, 0])
     drawing.add(qr)
-    renderPDF.draw(drawing, c, WIDTH - MARGIN - size, 18)
-    c.linkURL(SITE + "#posters", (WIDTH - MARGIN - size, 18, WIDTH - MARGIN, 18 + size))
-    text("Scan to submit", WIDTH - MARGIN - size + 3, 775, 7, False, TEAL)
+    renderPDF.draw(drawing, c, WIDTH - MARGIN - size, 20)
+    c.linkURL(SITE + "#posters", (WIDTH - MARGIN - size, 20, WIDTH - MARGIN, 20 + size))
+    text("Scan to submit", WIDTH - MARGIN - size + 1, 778, 7, False, TEAL)
     c.showPage()
     c.save()
     print(OUTPUT)

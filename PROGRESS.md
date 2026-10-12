@@ -1,6 +1,6 @@
 # GeniSys 2027 workshop progress
 
-Last updated: October 6, 2026
+Last updated: October 12, 2026
 
 ## First version
 
@@ -47,31 +47,31 @@ Last updated: October 6, 2026
 - [x] Receive and connect the organizer-provided Box upload link.
 - [x] Embed the Box upload form and provide a direct-link fallback.
 - [x] Set PPTX for both research posters and research presentations, matching the latest filename requirements.
-- [x] Add submission filename templates with Undergrad, Master, or PhD suffixes.
+- [x] Add submission filename templates with Undergrad, Master, PhD, or Postdoc suffixes.
 - [ ] Confirm any additional submission fields.
 - [x] Recommend a standard research poster size: 36 in wide × 48 in tall (portrait).
 - [ ] Confirm presentation arrangements and available display space.
-- [ ] Approve the final call for posters and undergraduate/master’s presentations.
+- [ ] Approve and circulate the final call for posters and research presentations.
 
 ## Schedule refinement
 
 - [x] Plan a continuous 9:00 am–5:00 pm workshop with explicit session durations and Q&A time.
 - [x] Reserve 4:00–5:00 pm for the dedicated poster/demo session as the final event of the day.
 - [x] Synchronize the homepage overview, schedule, printable poster, and downloadable call.
-- [x] Allocate two hours for eight undergraduate/master’s presentations: four in the morning and four in the afternoon, with 15 minutes per student.
-- [x] Add six PhD presentations from different research groups: three in the morning and three in the afternoon.
-- [ ] Confirm the proposed 15-minute PhD slots, including Q&A and transitions; the draft reserves 90 minutes total.
+- [x] Reserve two one-hour research presentation sessions with up to four talks each, with 15 minutes per presenter.
+- [x] Reserve two 45-minute research presentation sessions with up to three talks each; select across career stages and research groups.
+- [ ] Finalize the allocation of up to 14 research talks, including student and postdoctoral presenters, based on submissions.
 - [x] Include three external speakers in 45-minute slots, with lunch and two coffee breaks in a sequential 9:00 am–5:00 pm program.
 - [ ] Confirm the three external speakers and presentation titles; brief all presenters on timing and Q&A.
 
-## Student presentation submissions
+## Research presentation submissions
 
-- [x] Broaden “Research presentations” to undergraduate, master’s, and PhD students across submission guidance and both calls.
+- [x] Broaden both submission formats to undergraduate, master’s, and PhD students and postdoctoral researchers across all materials.
 - [x] Add matching undergraduate/master’s research presentation and poster submission buttons at the bottom of the schedule.
 - [x] Make both matching submission buttons and the presentation slide limit visible on the homepage at `#posters`.
 - [x] Add a separate configurable HTTPS submission destination and a clearly marked pending state.
 - [x] Connect the organizer-provided Box link for undergraduate/master’s research presentation submissions and activate the button.
-- [x] Specify fewer than 15 slides (maximum 14) for undergraduate/master’s presentation decks.
+- [x] Specify a maximum of 14 slides for research presentation decks.
 - [x] Align navigation, page descriptions, the event poster, and downloadable call with both submission types and their separate destinations.
 - [x] Rename the upload panel to “Upload your research,” with presentation and poster destinations clearly distinguished.
 - [x] Add schedule-style alternating backgrounds and shadows to the homepage program overview.
@@ -85,10 +85,22 @@ Last updated: October 6, 2026
 - [ ] Confirm speakers before adding their names to the website.
 - [ ] Finalize the schedule and poster/demo session.
 - [ ] Confirm hybrid attendance and remote poster participation details.
-- [ ] Verify the A3 print output in the intended printing browser.
+- [x] Verify the updated event poster prints on one A3 page in Chrome.
 - [x] Publish through GitHub Pages at [genisys27.github.io/](https://genisys27.github.io/).
 - [x] Check published file contents, logo and icon assets, poster download, navigation, and Box form loading.
 - [ ] Circulate the final announcement and submission call.
+
+## Feedback revisions - October 12, 2026
+
+- [x] Explicitly welcome postdoctoral researchers in both submission formats and add the Postdoc filename level.
+- [x] Make clear that submitted slides and posters need not be final and may be refined before the workshop.
+- [x] Welcome research in progress and research-oriented course projects, alongside recent and previously published work.
+- [x] Emphasize research feedback, presentation practice, and potential collaborators.
+- [x] Replace fixed public career-stage quotas with up to 14 research talks; encourage undergraduate/master’s participation.
+- [x] Retain the exact date and invited speakers as to be announced.
+- [x] Draft the revised announcement email in the parent workspace’s output/email directory.
+- [x] Verify the one-page PDF, clickable links, website layouts at 320/768/1440px, local links, and submission synchronization.
+- [ ] Ask K2I faculty, advisers, and relevant course instructors to encourage students and postdocs to submit.
 
 ## How to track progress
 

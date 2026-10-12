@@ -1,4 +1,4 @@
-CALL FOR CONTRIBUTION
+CALL FOR SUBMISSIONS
 Research posters & presentations
 GeniSys 2027
 Exploring Synergy among Next-Generation AI, Systems, and Networking for a Sustainable Future
@@ -14,7 +14,7 @@ Submission deadline: January 10, 2027
 Poster submission link: https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80
 Research presentation submission link: https://rice.box.com/s/rdrn8wny5vq209vp9vr3nop8vk1ru02d
 
-GeniSys 2027 invites research posters and research presentations exploring the intersection of artificial intelligence, computing systems, and networking. Connect with people across backgrounds and disciplines, showcase your work to a wider audience, and find potential collaborators.
+GeniSys 2027 invites research posters and research presentations exploring the intersection of artificial intelligence, computing systems, and networking. Share your research, receive feedback, practice presenting to a broader audience, and meet potential collaborators across AI, systems, and networking.
 
 TOPICS OF INTEREST
 Topics include, but are not limited to:
@@ -27,39 +27,44 @@ Topics include, but are not limited to:
 - Secure AI deployment and cross-layer co-design
 
 ELIGIBLE WORK
-Research posters may present recent research or previously published work. Research presentation submissions are open to undergraduate, master’s, and PhD students. All presenters are encouraged to explain the research problem, approach, and key results or insights, and to highlight questions for discussion with the workshop community.
+Both research posters and presentations are open to undergraduate, master’s, and PhD students and postdoctoral researchers. Undergraduate and master’s students are especially encouraged to participate. Research in progress, research-oriented course projects, and recent or previously published work are welcome.
+
+DRAFT MATERIALS WELCOME
+Submitted slides and posters need not be final; you may refine them before the workshop. All presenters are encouraged to explain the research problem, approach, and key results or insights, and to highlight questions for discussion with the workshop community.
 
 WORKSHOP EXPERIENCE
-The tentative one-day program runs from 9:00 am to 5:00 pm, Houston (Central Time), with all sessions held sequentially. It includes three external speakers, eight undergraduate/master’s presentations, six PhD presentations from different research groups, lunch from 12:30 to 1:15 pm, and a dedicated poster/demo session from 4:00 to 5:00 pm.
+The tentative one-day program runs from 9:00 am to 5:00 pm, Houston (Central Time), with all sessions held sequentially. It includes three invited speaker slots, up to 14 research presentations, lunch from 12:30 to 1:15 pm, and a dedicated poster/demo session from 4:00 to 5:00 pm. The final talk allocation across career stages and research groups will reflect submissions.
 
-External speakers have 45-minute slots at 9:00–9:45 am, 11:45 am–12:30 pm, and 1:15–2:00 pm. Introductions, Q&A, and transitions are included in each slot. Speakers and topics are to be announced.
+Invited speaker slots run from 9:00–9:45 am, 11:45 am–12:30 pm, and 1:15–2:00 pm. Introductions, Q&A, and transitions are included in each 45-minute slot. Speakers and topics are to be announced.
 
-Undergraduate/master’s presentations occupy two one-hour sessions: 10:45–11:45 am and 3:00–4:00 pm, with four students in each session. Each student has a 15-minute slot. Presentation decks must contain fewer than 15 slides (maximum 14).
-
-PhD presentations occupy two 45-minute sessions: 9:45–10:30 am and 2:00–2:45 pm, with three speakers in each. Each speaker has a 15-minute slot. For all student talks, the suggested format is 10–12 minutes presenting, with the remaining time for Q&A and transition.
+Research presentations occupy four sessions: 9:45–10:30 am (up to three talks), 10:45–11:45 am (up to four), 2:00–2:45 pm (up to three), and 3:00–4:00 pm (up to four). Each presenter has a 15-minute slot including approximately 10 minutes presenting, followed by Q&A and transition. Presentation decks may contain a maximum of 14 slides.
 
 Coffee breaks run from 10:30 to 10:45 am and 2:45 to 3:00 pm. The workshop finishes with posters and demos from 4:00 to 5:00 pm. Hybrid participation is planned; arrangements for remote poster presentations will be announced.
 
 SUBMISSION INFORMATION
+Both formats are open to undergraduate, master’s, and PhD students and postdoctoral researchers. Undergraduate and master’s students are especially encouraged to submit.
+
+Draft materials are welcome. Submitted slides and posters need not be final; you may refine them before the workshop.
+
 Research posters
 Upload your research poster to Box: https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80
 
-Recent research and previously published work are both welcome.
+Research in progress, research-oriented course projects, and recent or previously published work are welcome.
 
 Recommended poster size: 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm).
 
 File format: PPTX. Submission deadline: January 10, 2027.
 
-Filename: Poster_First_Lastname_Level.pptx. Replace First and Lastname with your name. Use Undergrad, Master, or PhD for Level.
+Filename: Poster_First_Lastname_Level.pptx. Replace First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.
 
 Research presentations
-Open to undergraduate, master’s, and PhD students.
+Research in progress, research-oriented course projects, and recent or previously published work are welcome.
 
 Submit your research presentation: https://rice.box.com/s/rdrn8wny5vq209vp9vr3nop8vk1ru02d
 
-File format: PPTX. Presentation decks must contain fewer than 15 slides (maximum 14). We plan to select 8 undergraduate/master’s and 6 PhD talks (14 total), each with a 15-minute slot including Q&A and transitions.
+File format: PPTX. Maximum 14 slides. We plan to select up to 14 research talks across career stages and research groups; the final allocation will reflect submissions. Each talk has a 15-minute slot including Q&A and transitions.
 
-Filename: Presentation_First_Lastname_Level.pptx. Replace First and Lastname with your name. Use Undergrad, Master, or PhD for Level.
+Filename: Presentation_First_Lastname_Level.pptx. Replace First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.
 
 Submission deadline: January 10, 2027. Check the workshop website for updates: https://genisys27.github.io/#posters
 

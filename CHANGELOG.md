@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.2 - 2026-10-12
+
+- Open call-for-submissions PDF links in a new tab for viewing.
+
 ## 1.0.1 - 2026-10-12
 
 - Accept research posters as PPTX or PDF while retaining PPTX for research presentations.

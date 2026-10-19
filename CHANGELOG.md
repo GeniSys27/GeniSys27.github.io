@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.2 - 2026-10-19
+
+- Update the presentation submission link across the website, event poster, and downloadable text and PDF calls.
+
 ## 1.1.1 - 2026-10-12
 
 - Remove the repetitive program summary above the detailed schedule.

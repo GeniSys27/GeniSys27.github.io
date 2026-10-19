@@ -12,7 +12,7 @@ Workshop hours: 9:00 am–5:00 pm, Houston (Central Time); tentative
 Exact event date: To be announced
 Submission deadline: January 10, 2027
 Poster submission link: https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80
-Research presentation submission link: https://rice.box.com/s/rdrn8wny5vq209vp9vr3nop8vk1ru02d
+Research presentation submission link: https://rice.app.box.com/f/4326bc92911c49e6beec9122233712e3
 
 GeniSys 2027 invites research posters and research presentations exploring the intersection of artificial intelligence, computing systems, and networking. Share your research, receive feedback, practice presenting to a broader audience, and meet potential collaborators across AI, systems, and networking.
 
@@ -60,7 +60,7 @@ Filename: Poster_First_Lastname_Level.pptx or Poster_First_Lastname_Level.pdf. R
 Research presentations
 Research in progress, research-oriented course projects, and recent or previously published work are welcome.
 
-Submit your research presentation: https://rice.box.com/s/rdrn8wny5vq209vp9vr3nop8vk1ru02d
+Submit your research presentation: https://rice.app.box.com/f/4326bc92911c49e6beec9122233712e3
 
 File format: PPTX. Maximum 14 slides. We plan to select up to 9 research talks across career stages and research groups; the final allocation will reflect submissions. At most three talks per research session, each with a 15-minute slot including Q&A and transitions.
 

@@ -101,6 +101,39 @@ def build():
         if url:
             c.linkURL(url, (x, HEIGHT - top - 28, x + width, HEIGHT - top), relative=0)
 
+    def theme_icon(kind, x, y):
+        """Draw a compact vector illustration centered at x, y."""
+        c.saveState()
+        c.setFillColor(MINT)
+        c.circle(x, y, 10, stroke=0, fill=1)
+        c.setStrokeColor(TEAL)
+        c.setFillColor(TEAL)
+        c.setLineWidth(1.2)
+        c.setLineCap(1)
+        if kind == "compute":
+            c.roundRect(x - 5, y - 5, 10, 10, 1.5, stroke=1, fill=0)
+            c.circle(x, y, 1.7, stroke=0, fill=1)
+            for offset in (-3, 3):
+                c.line(x + offset, y + 5, x + offset, y + 8)
+                c.line(x + offset, y - 5, x + offset, y - 8)
+                c.line(x + 5, y + offset, x + 8, y + offset)
+                c.line(x - 5, y + offset, x - 8, y + offset)
+        elif kind == "network":
+            points = ((x, y + 6), (x - 7, y - 5), (x + 7, y - 5))
+            c.line(*points[0], *points[1])
+            c.line(*points[1], *points[2])
+            c.line(*points[2], *points[0])
+            for px, py in points:
+                c.circle(px, py, 2.1, stroke=0, fill=1)
+        else:
+            leaf = c.beginPath()
+            leaf.moveTo(x - 7, y - 5)
+            leaf.curveTo(x - 5, y + 4, x + 2, y + 8, x + 8, y + 6)
+            leaf.curveTo(x + 7, y - 2, x + 2, y - 7, x - 7, y - 5)
+            c.drawPath(leaf, stroke=1, fill=0)
+            c.line(x - 5, y - 4, x + 5, y + 4)
+        c.restoreState()
+
     # Header and the shared deadline are the first things a reader sees.
     box(0, 0, WIDTH, 166, NAVY)
     text("RICE UNIVERSITY  /  COMPUTER SCIENCE", MARGIN, 23, 9, True, MINT)
@@ -125,12 +158,18 @@ def build():
     text("RESEARCH THEMES", MARGIN, 309, 9, True, TEAL)
     theme_gap = 10
     theme_width = (CONTENT - theme_gap * 2) / 3
-    for index, name in enumerate(("Efficient AI", "Connected systems", "Sustainable computing")):
+    themes = (
+        ("Efficient AI", "compute"),
+        ("Connected systems", "network"),
+        ("Sustainable computing", "leaf"),
+    )
+    for index, (name, icon) in enumerate(themes):
         x = MARGIN + index * (theme_width + theme_gap)
         box(x, 325, theme_width, 34, PALE, radius=5, stroke=LINE)
+        theme_icon(icon, x + 23, HEIGHT - 342)
         c.setFillColor(INK)
-        c.setFont("CallSans-Bold", 9.5)
-        c.drawCentredString(x + theme_width / 2, HEIGHT - 346, name)
+        c.setFont("CallSans-Bold", 8.8)
+        c.drawCentredString(x + theme_width / 2 + 13, HEIGHT - 346, name)
 
     # Two spacious cards keep the submission choices easy to compare.
     card_top, card_height, gap = 382, 153, 14

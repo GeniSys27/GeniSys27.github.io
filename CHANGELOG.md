@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.2 - 2026-10-19
+
+- Add vector illustrations for efficient AI, connected systems, and sustainable computing to the poster's research-theme cards.
+
 ## 1.2.1 - 2026-10-19
 
 - Clarify that the `Dept` filename field accepts any department name or abbreviation.

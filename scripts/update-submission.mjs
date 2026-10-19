@@ -73,7 +73,7 @@ export async function updateSubmission(root) {
     '<code>Presentation_<wbr>Dept_<wbr>First_<wbr>Lastname_<wbr>Level.pptx</code>' +
     '<code>Poster_<wbr>Dept_<wbr>First_<wbr>Lastname_<wbr>Level.pptx</code>' +
     '<code>Poster_<wbr>Dept_<wbr>First_<wbr>Lastname_<wbr>Level.pdf</code>' +
-    '<p>Replace Dept with your department name or abbreviation; any department is accepted. Replace First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.</p></div>';
+    '<p>Replace Dept with your department name or abbreviation; any department is accepted. Replace First and Lastname with your first and last names. Use Undergrad, Master, PhD, or Postdoc for Level.</p></div>';
   index = replaceSlot(index, 'filenames', filenames, 'submission');
   schedule = replaceSlot(schedule, 'filenames', filenames, 'submission');
   index = replaceSlot(index, 'deadline', deadlineHtml, 'submission');
@@ -87,7 +87,7 @@ export async function updateSubmission(root) {
   const homepagePresentation = studentUrl
     ? `<a class="button button-dark" href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a presentation <span aria-hidden="true">↗</span></a>`
     : '<button class="button button-dark" type="button" disabled aria-describedby="homepage-presentation-link-status">Submit a presentation</button>';
-  index = replaceSlot(index, 'status', url && studentUrl ? 'Poster and presentation links available'
+  index = replaceSlot(index, 'status', url && studentUrl ? 'Poster and presentation submission links available'
     : url ? 'Poster submission link available'
     : studentUrl ? 'Presentation submission link available' : 'Submission links coming soon');
   index = replaceSlot(index, 'actions',
@@ -95,8 +95,8 @@ export async function updateSubmission(root) {
     (url ? externalLink('Submit a poster <span aria-hidden="true">↗</span>', 'button button-dark') : '') +
     homepagePresentation + '</div>' +
     (studentUrl ? '' : '<p id="homepage-presentation-link-status" class="submission-link-status">Presentation submission link to be announced.</p>') +
-    '<a class="text-link" href="output/pdf/genisys-2027-call-for-submissions.pdf?v=1.2.5" target="_blank" rel="noopener noreferrer" aria-label="View the call for submissions PDF (opens in a new tab)">View the call for submissions (PDF) <span aria-hidden="true">↗</span></a>' +
-    '<a class="text-link" href="output/image/genisys-2027-call-for-submissions.jpg?v=1.0.1" download>Download poster (JPG) <span aria-hidden="true">↓</span></a>');
+    '<a class="text-link" href="output/pdf/genisys-2027-call-for-submissions.pdf?v=1.2.6" target="_blank" rel="noopener noreferrer" aria-label="View the call for submissions PDF (opens in a new tab)">View the call for submissions (PDF) <span aria-hidden="true">↗</span></a>' +
+    '<a class="text-link" href="output/image/genisys-2027-call-for-submissions.jpg?v=1.0.2" download>Download poster (JPG) <span aria-hidden="true">↓</span></a>');
   index = replaceSlot(index, 'embed', url || studentUrl
     ? '<details class="upload-panel" id="poster-upload"><summary>Upload your research</summary><div class="upload-content">' +
       '<p class="upload-help"><strong>Presentations (PPTX)</strong><br>' +
@@ -125,11 +125,11 @@ export async function updateSubmission(root) {
     'Research in progress, research-oriented course projects, and recent or previously published work are welcome.\n\n' +
     'Recommended poster size: 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm).\n\n' +
     `File formats: PPTX or PDF. Submission deadline: ${deadlineText}.\n\n` +
-    'Filename: Poster_Dept_First_Lastname_Level.pptx or Poster_Dept_First_Lastname_Level.pdf. Replace Dept with your department name or abbreviation; any department is accepted. Replace First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.\n\n' +
+    'Filename: Poster_Dept_First_Lastname_Level.pptx or Poster_Dept_First_Lastname_Level.pdf. Replace Dept with your department name or abbreviation; any department is accepted. Replace First and Lastname with your first and last names. Use Undergrad, Master, PhD, or Postdoc for Level.\n\n' +
     'Research presentations\nResearch in progress, research-oriented course projects, and recent or previously published work are welcome.\n\n' +
     (studentUrl ? `Submit your research presentation: ${studentUrl}\n\n` : 'The presentation submission link will be announced on the workshop website.\n\n') +
-    'File format: PPTX. Maximum 15 slides. We plan to select up to 9 research talks across career stages and research groups; the final allocation will reflect submissions. At most three talks per research session, each with a 15-minute slot including Q&A and transitions.\n\n' +
-    'Filename: Presentation_Dept_First_Lastname_Level.pptx. Replace Dept with your department name or abbreviation; any department is accepted. Replace First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.\n\n' +
+    'File format: PPTX. Maximum 15 slides. We plan to select up to 9 research talks across career stages and research groups; the final allocation will reflect submissions. At most three talks per research session, each with a 15-minute slot including Q&A and transition.\n\n' +
+    'Filename: Presentation_Dept_First_Lastname_Level.pptx. Replace Dept with your department name or abbreviation; any department is accepted. Replace First and Lastname with your first and last names. Use Undergrad, Master, PhD, or Postdoc for Level.\n\n' +
     `Submission deadline: ${deadlineText}. Check the workshop website for updates: https://genisys27.github.io/#posters` +
     '\n\nORGANIZERS\n');
 

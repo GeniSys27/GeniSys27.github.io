@@ -13,7 +13,7 @@ Keep the mark's proportions. The PNGs retain transparency outside the navy tile.
 
 ## Generation
 
-Created September 29, 2026 using the built-in image-generation tool. Smaller assets were resized from the original with macOS `sips`.
+Created September 29, 2026, using the built-in image-generation tool. Smaller assets were resized from the original with macOS `sips`.
 
 Generation prompt:
 

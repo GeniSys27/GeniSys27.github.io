@@ -1,6 +1,6 @@
 # GeniSys 2027 workshop progress
 
-Last updated: October 12, 2026
+Last updated: October 19, 2026
 
 ## First version
 
@@ -41,7 +41,7 @@ Last updated: October 12, 2026
 - [x] Confirm the event name and season: GeniSys 2027, Spring 2027.
 - [x] Confirm the workshop timing as mid-February 2027 and update all materials consistently.
 - [x] Confirm the venue: Ralph S. O’Connor Building for Engineering and Science, fifth-floor conference room.
-- [x] Set January 10, 2027 as the shared poster and undergraduate/master’s presentation submission deadline.
+- [x] Set January 10, 2027 as the shared poster and research-presentation submission deadline.
 - [x] Confirm the submission channel: research posters are uploaded through Box.
 - [x] Prepare one configuration entry to synchronize the Box link across the website, printable poster, and downloadable call.
 - [x] Receive and connect the organizer-provided Box upload link.
@@ -63,15 +63,15 @@ Last updated: October 12, 2026
 - [x] Reserve open discussion and transition from 3:45 to 4:00 pm before the poster/demo session.
 - [ ] Finalize the allocation of up to 9 research talks, including student and postdoctoral presenters, based on submissions.
 - [x] Include three invited speaker slots at 9:00–9:45 am, 11:00–11:45 am, and 1:45–2:30 pm in a sequential 9:00 am–5:00 pm program.
-- [ ] Confirm the three external speakers and presentation titles; brief all presenters on timing and Q&A.
+- [ ] Confirm the three invited speakers and presentation titles; brief all presenters on timing and Q&A.
 
 ## Research presentation submissions
 
 - [x] Broaden both submission formats to undergraduate, master’s, and PhD students and postdoctoral researchers across all materials.
-- [x] Add matching undergraduate/master’s research presentation and poster submission buttons at the bottom of the schedule.
+- [x] Add matching research presentation and poster submission buttons at the bottom of the schedule.
 - [x] Make both matching submission buttons and the presentation slide limit visible on the homepage at `#posters`.
 - [x] Add a separate configurable HTTPS submission destination and a clearly marked pending state.
-- [x] Connect the organizer-provided Box link for undergraduate/master’s research presentation submissions and activate the button.
+- [x] Connect the organizer-provided Box link for research presentation submissions and activate the button.
 - [x] Specify a maximum of 15 slides for research presentation decks.
 - [x] Align navigation, page descriptions, the event poster, and downloadable call with both submission types and their separate destinations.
 - [x] Rename the upload panel to “Upload your research,” with presentation and poster destinations clearly distinguished.

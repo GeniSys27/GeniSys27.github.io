@@ -151,8 +151,8 @@ def build():
     text(deadline_label, 325, 177, 20, True, NAVY)
 
     text("Share your work. Get feedback. Find collaborators.", MARGIN, 230, 18, True)
-    paragraph("Open to undergraduate, master's and PhD students, and postdoctoral researchers. "
-              "Work in progress, course projects, and recent or published research are welcome.",
+    paragraph("Open to undergraduate, master's, and PhD students and postdoctoral researchers. "
+              "Research in progress, course projects, and recent or published work are welcome.",
               MARGIN, 261, CONTENT, 10.5, 14, max_height=28)
 
     text("RESEARCH THEMES", MARGIN, 309, 9, True, TEAL)
@@ -200,7 +200,7 @@ def build():
     text("SUBMISSION FILENAMES", MARGIN + 12, 636, 8.5, True, TEAL)
     paragraph("<b>Presentation filename:</b> Presentation_Dept_First_Lastname_Level.pptx<br/>"
               "<b>Poster filename:</b> Poster_Dept_First_Lastname_Level.pptx or Poster_Dept_First_Lastname_Level.pdf<br/>"
-              "Dept: any department name  |  Level: Undergrad, Master, PhD, or Postdoc",
+              "Dept: department name or abbreviation  |  Level: Undergrad, Master, PhD, or Postdoc",
               MARGIN + 12, 651, CONTENT - 24, 8.7, 12, max_height=36)
 
     c.setStrokeColor(LINE)

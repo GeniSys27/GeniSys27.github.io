@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.2.6 - 2026-10-19
+
+- Polish grammar and terminology across the website, schedule, printable poster, downloadable calls, and project documentation.
+- Clarify filename instructions and align talk-transition wording across all submission materials.
+- Remove the unconfirmed hybrid-participation claim from public materials while retaining it as an open planning decision.
+
 ## 1.2.5 - 2026-10-19
 
 - Increase the research-presentation deck limit from 14 to 15 slides across the website and downloadable materials.

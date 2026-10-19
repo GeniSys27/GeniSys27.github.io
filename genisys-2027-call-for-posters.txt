@@ -7,8 +7,7 @@ Rice University | Houston, Texas
 Venue: Ralph S. O’Connor Building for Engineering and Science
 Room: Fifth-floor conference room
 Schedule: https://genisys27.github.io/schedule.html
-Event timing: Mid-February 2027
-Workshop hours: 9:00 am–5:00 pm, Houston (Central Time); tentative
+Workshop hours: 9:00 am–5:00 pm in Houston (Central Time); tentative
 Workshop date: Mid-February 2027
 Submission deadline: January 10, 2027
 Poster submission link: https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80
@@ -30,16 +29,16 @@ ELIGIBLE WORK
 Both research posters and presentations are open to undergraduate, master’s, and PhD students and postdoctoral researchers. Undergraduate and master’s students are especially encouraged to participate. Research in progress, research-oriented course projects, and recent or previously published work are welcome.
 
 DRAFT MATERIALS WELCOME
-Submitted slides and posters need not be final; you may refine them before the workshop. All presenters are encouraged to explain the research problem, approach, and key results or insights, and to highlight questions for discussion with the workshop community.
+Submitted slides and posters need not be final; you may refine them before the workshop. All presenters are encouraged to explain the research problem, approach, and key results or insights and highlight questions for discussion with the workshop community.
 
 WORKSHOP EXPERIENCE
-The tentative one-day program runs from 9:00 am to 5:00 pm, Houston (Central Time), with all sessions held sequentially. It includes three invited speaker slots, up to nine research presentations, a 75-minute lunch and discussion, two 30-minute coffee breaks, and a dedicated poster/demo session from 4:00 to 5:00 pm. The final talk allocation across career stages and research groups will reflect submissions.
+The tentative one-day program runs from 9:00 am to 5:00 pm in Houston (Central Time), with all sessions held sequentially. It includes three invited speaker slots, up to nine research presentations, a 75-minute lunch and discussion, two 30-minute coffee breaks, and a dedicated poster and demo session from 4:00 to 5:00 pm. The final talk allocation across career stages and research groups will reflect submissions.
 
-Invited speaker slots run from 9:00–9:45 am, 11:00–11:45 am, and 1:45–2:30 pm. A brief welcome is included in the first slot. Introductions, Q&A, and transitions are included in each 45-minute slot. Speakers and topics are to be announced.
+Invited speaker slots run from 9:00–9:45 am, 11:00–11:45 am, and 1:45–2:30 pm. A brief welcome is included in the first slot. Introductions, Q&A, and transitions are included in each 45-minute slot. Speakers and topics will be announced.
 
 Research presentations occupy three sessions: 9:45–10:30 am, 1:00–1:45 pm, and 3:00–3:45 pm. Each session has at most three talks. Each presenter has a 15-minute slot including approximately 10 minutes presenting, followed by Q&A and transition. Presentation decks may contain a maximum of 15 slides. Open discussion and transition to posters run from 3:45 to 4:00 pm.
 
-Coffee and conversation breaks run from 10:30 to 11:00 am and 2:30 to 3:00 pm. Lunch and discussion run from 11:45 am to 1:00 pm. The workshop finishes with posters and demos from 4:00 to 5:00 pm. Hybrid participation is planned; arrangements for remote poster presentations will be announced.
+Coffee and conversation breaks run from 10:30 to 11:00 am and 2:30 to 3:00 pm. Lunch and discussion run from 11:45 am to 1:00 pm. The workshop finishes with posters and demos from 4:00 to 5:00 pm.
 
 SUBMISSION INFORMATION
 Both formats are open to undergraduate, master’s, and PhD students and postdoctoral researchers. Undergraduate and master’s students are especially encouraged to submit.
@@ -55,16 +54,16 @@ Recommended poster size: 36 in wide × 48 in tall (portrait; approximately 91 ×
 
 File formats: PPTX or PDF. Submission deadline: January 10, 2027.
 
-Filename: Poster_Dept_First_Lastname_Level.pptx or Poster_Dept_First_Lastname_Level.pdf. Replace Dept with your department name or abbreviation; any department is accepted. Replace First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.
+Filename: Poster_Dept_First_Lastname_Level.pptx or Poster_Dept_First_Lastname_Level.pdf. Replace Dept with your department name or abbreviation; any department is accepted. Replace First and Lastname with your first and last names. Use Undergrad, Master, PhD, or Postdoc for Level.
 
 Research presentations
 Research in progress, research-oriented course projects, and recent or previously published work are welcome.
 
 Submit your research presentation: https://rice.app.box.com/f/4326bc92911c49e6beec9122233712e3
 
-File format: PPTX. Maximum 15 slides. We plan to select up to 9 research talks across career stages and research groups; the final allocation will reflect submissions. At most three talks per research session, each with a 15-minute slot including Q&A and transitions.
+File format: PPTX. Maximum 15 slides. We plan to select up to 9 research talks across career stages and research groups; the final allocation will reflect submissions. At most three talks per research session, each with a 15-minute slot including Q&A and transition.
 
-Filename: Presentation_Dept_First_Lastname_Level.pptx. Replace Dept with your department name or abbreviation; any department is accepted. Replace First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.
+Filename: Presentation_Dept_First_Lastname_Level.pptx. Replace Dept with your department name or abbreviation; any department is accepted. Replace First and Lastname with your first and last names. Use Undergrad, Master, PhD, or Postdoc for Level.
 
 Submission deadline: January 10, 2027. Check the workshop website for updates: https://genisys27.github.io/#posters
 

@@ -1,8 +1,8 @@
 # GeniSys 2027 workshop website
 
-Website, printable event poster, and call for research posters and presentations from undergraduate, master’s, and PhD students and postdoctoral researchers for GeniSys 2027 at Rice University in Spring 2027. The workshop explores AI, systems, and networking for a sustainable future.
+Website, printable event poster, and call for research posters and presentations from undergraduate, master’s, and PhD students and postdoctoral researchers for GeniSys 2027 at Rice University in mid-February 2027. The workshop explores AI, systems, and networking for a sustainable future.
 
-**Confirmed event:** GeniSys 2027, Spring 2027. The exact date remains to be announced. Track remaining decisions in [PROGRESS.md](PROGRESS.md).
+**Confirmed event:** GeniSys 2027, mid-February 2027. Track remaining decisions in [PROGRESS.md](PROGRESS.md).
 
 ## Included
 
@@ -62,11 +62,11 @@ The PDF builder requires the Python `reportlab` package and embeds the sans-seri
 
 The venue is the fifth-floor conference room in Rice University’s Ralph S. O’Connor Building for Engineering and Science. The embedded Google Map marks the building; a direct Google Maps link is available as a fallback.
 
-Separate organizer-provided links handle research poster uploads and research presentation submissions from undergraduate, master’s, and PhD students and postdoctoral researchers. The **Upload your research** panel includes a PPTX presentation link and a separate embedded poster form for PPTX or PDF files; direct links to `#poster-upload` open that panel automatically. Both destinations appear on the printable event poster and in the downloadable call. The recommended research poster size is 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm). Both submission types are due January 10, 2027. Presentations must be PPTX files; research posters may be PPTX or PDF files. The exact event date remains to be announced. The program is tentative and runs from 9:00 am to 5:00 pm Houston (Central Time), with all sessions held sequentially. Three invited speaker slots are planned for 45 minutes at 9:00–9:45 am, 11:00–11:45 am, and 1:45–2:30 pm, including introductions, Q&A, and transitions. Lunch and discussion run from 11:45 am to 1:00 pm (75 minutes), with two 30-minute coffee breaks at 10:30–11:00 am and 2:30–3:00 pm. Open discussion and transition run from 3:45 to 4:00 pm. Posters and demos finish the day from 4:00 to 5:00 pm.
+Separate organizer-provided links handle research poster uploads and research presentation submissions from undergraduate, master’s, and PhD students and postdoctoral researchers. The **Upload your research** panel includes a PPTX presentation link and a separate embedded poster form for PPTX or PDF files; direct links to `#poster-upload` open that panel automatically. Both destinations appear on the printable event poster and in the downloadable call. The recommended research poster size is 36 in wide × 48 in tall (portrait; approximately 91 × 122 cm). Both submission types are due January 10, 2027. Presentations must be PPTX files; research posters may be PPTX or PDF files. The workshop is planned for mid-February 2027. The program is tentative and runs from 9:00 am to 5:00 pm Houston (Central Time), with all sessions held sequentially. Three invited speaker slots are planned for 45 minutes at 9:00–9:45 am, 11:00–11:45 am, and 1:45–2:30 pm, including introductions, Q&A, and transitions. Lunch and discussion run from 11:45 am to 1:00 pm (75 minutes), with two 30-minute coffee breaks at 10:30–11:00 am and 2:30–3:00 pm. Open discussion and transition run from 3:45 to 4:00 pm. Posters and demos finish the day from 4:00 to 5:00 pm.
 
 Up to 9 research presentations occupy three 45-minute sessions: 9:45–10:30 am, 1:00–1:45 pm, and 3:00–3:45 pm, with up to three talks each. Each presenter has a 15-minute slot, including approximately 10 minutes presenting followed by Q&A and transition. The final allocation across career stages and research groups will reflect submissions. Undergraduate and master’s students are especially encouraged to participate.
 
-Both posters and talks welcome research in progress, research-oriented course projects, and recent or previously published work. Submitted materials need not be final and may be refined before the workshop. Separate registration, welcome, roundtable, and closing blocks are not scheduled in this draft. Exact date, invited speakers, and topics remain to be announced. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
+Both posters and talks welcome research in progress, research-oriented course projects, and recent or previously published work. Submitted materials need not be final and may be refined before the workshop. Separate registration, welcome, roundtable, and closing blocks are not scheduled in this draft. Invited speakers and topics remain to be announced. Hybrid workshop participation is planned; remote poster arrangements are unconfirmed.
 
 The public website repository is [GeniSys27/GeniSys27.github.io](https://github.com/GeniSys27/GeniSys27.github.io). The site is live at [genisys27.github.io/](https://genisys27.github.io/), verified September 29, 2026. The previous [planning repository](https://github.com/YukeWang96/Genisys-Workshop-Spring-2027) remains available separately.
 
@@ -108,7 +108,7 @@ To change the configured Box upload URL:
 
 This updates the **Submit a poster** button, the expandable embedded form and its direct-link fallback, the printable poster, and the downloadable call. The poster-only embed uses the supplied 800 by 550 dimensions and scales to the available width. The website remains static; Box handles file uploads. Navigation, the native disclosure control, and direct links work without the website's JavaScript, while the Box form may require scripts and cookies from Box.
 
-Leave `boxUploadUrl` as an empty string and run the same command to keep or restore the forthcoming state. The script validates the URL and content markers before writing changes. Do not edit inside the `box:` comment markers directly; those sections are regenerated. The exact workshop date remains to be announced. Submission deadlines and accepted file formats are separate from link availability.
+Leave `boxUploadUrl` as an empty string and run the same command to keep or restore the forthcoming state. The script validates the URL and content markers before writing changes. Do not edit inside the `box:` comment markers directly; those sections are regenerated. Submission deadlines and accepted file formats are separate from link availability.
 
 ## Configure the submission deadline
 

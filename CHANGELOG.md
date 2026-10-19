@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.3 - 2026-10-19
+
+- Set the workshop timing to mid-February 2027 across the website, schedule, printable poster, and downloadable calls.
+
 ## 1.2.2 - 2026-10-19
 
 - Add vector illustrations for efficient AI, connected systems, and sustainable computing to the poster's research-theme cards.

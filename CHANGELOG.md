@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.2.0 - 2026-10-19
+
+- Simplify the downloadable submission poster with shorter copy, more white space, and a clearer visual hierarchy.
+- Keep the deadline, submission formats, filenames, venue, and direct submission actions while moving detailed program information to the website.
+
 ## 1.1.3 - 2026-10-19
 
 - Add the department name to presentation and poster submission filenames, with matching guidance on both web pages and in the downloadable calls.

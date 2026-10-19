@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.1.3 - 2026-10-19
+
+- Add the department name to presentation and poster submission filenames, with matching guidance on both web pages and in the downloadable calls.
+
 ## 1.1.2 - 2026-10-19
 
 - Update the presentation submission link across the website, event poster, and downloadable text and PDF calls.

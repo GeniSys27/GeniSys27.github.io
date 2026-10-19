@@ -167,25 +167,26 @@ def build():
     button("Submit a poster", poster_url, MARGIN + 15, 525, card_width - 30)
     button("Submit a presentation", presentation_url, right + 15, 525, card_width - 30)
 
-    box(MARGIN, 569, CONTENT, 38, PALE, radius=4)
-    paragraph("<b>Presentation filename:</b> Presentation_First_Lastname_Level.pptx<br/>"
-              "<b>Poster filename:</b> Poster_First_Lastname_Level.pptx or Poster_First_Lastname_Level.pdf<br/>"
-              "Replace First/Lastname with your name; Level: Undergrad, Master, PhD, or Postdoc.",
-              MARGIN + 9, 573, CONTENT - 18, 8.8, 10.5, max_height=31.5)
+    box(MARGIN, 566, CONTENT, 50, PALE, radius=4)
+    paragraph("<b>Presentation filename:</b> Presentation_Dept_First_Lastname_Level.pptx<br/>"
+              "<b>Poster filename:</b> Poster_Dept_First_Lastname_Level.pptx or Poster_Dept_First_Lastname_Level.pdf<br/>"
+              "Dept: your department name (e.g., CS or ECE). First/Lastname: your name.<br/>"
+              "Level: Undergrad, Master, PhD, or Postdoc.",
+              MARGIN + 9, 570, CONTENT - 18, 8.8, 10.5, max_height=42)
     paragraph(f'<link href="{SITE}schedule.html" color="#00665c">Full schedule</link>',
-              502, 617, 70, 9, 12, max_height=12)
-    text("Program: 9:00 am-5:00 pm  |  Central Time  |  Tentative", MARGIN, 617, 10.5, True)
+              502, 623, 70, 9, 12, max_height=12)
+    text("Program: 9:00 am-5:00 pm  |  Central Time  |  Tentative", MARGIN, 623, 10.5, True)
     paragraph("<b>Up to 9 research talks</b> across 3 research sessions; maximum 3 talks per session.<br/>"
               "<b>Undergraduate and master's students are especially encouraged to submit.</b><br/>"
               "Three invited speaker slots planned (45 minutes each); speaker names and topics TBA.<br/>"
               "<b>Coffee breaks:</b> 10:30-11:00 am and 2:30-3:00 pm (30 minutes each).<br/>"
               "<b>Lunch/discussion:</b> 11:45 am-1:00 pm (75 min); <b>discussion/transition:</b> 3:45-4:00 pm.",
-              MARGIN, 634, CONTENT, 9.5, 12, max_height=60)
+              MARGIN, 640, CONTENT, 9.5, 12, max_height=60)
     paragraph("Hybrid participation is planned; remote poster arrangements will be announced.",
-              MARGIN, 699, CONTENT, 9, 12, color=MUTED, max_height=12)
+              MARGIN, 705, CONTENT, 9, 12, color=MUTED, max_height=12)
 
     c.setStrokeColor(LINE)
-    c.line(MARGIN, HEIGHT - 717, WIDTH - MARGIN, HEIGHT - 717)
+    c.line(MARGIN, HEIGHT - 721, WIDTH - MARGIN, HEIGHT - 721)
     text("ORGANIZERS", MARGIN, 726, 8, True, TEAL)
     text("T. S. Eugene Ng  |  Yuke Wang  |  Jiarong Xing", MARGIN, 738, 10, True)
     paragraph(f'<b>Links &amp; full schedule:</b> <link href="{SITE}" color="#00665c">'

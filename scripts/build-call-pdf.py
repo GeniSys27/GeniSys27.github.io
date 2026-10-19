@@ -161,7 +161,7 @@ def build():
     text("SUBMISSION FILENAMES", MARGIN + 12, 636, 8.5, True, TEAL)
     paragraph("<b>Presentation filename:</b> Presentation_Dept_First_Lastname_Level.pptx<br/>"
               "<b>Poster filename:</b> Poster_Dept_First_Lastname_Level.pptx or Poster_Dept_First_Lastname_Level.pdf<br/>"
-              "Dept: CS/ECE  |  Level: Undergrad, Master, PhD, or Postdoc",
+              "Dept: any department name  |  Level: Undergrad, Master, PhD, or Postdoc",
               MARGIN + 12, 651, CONTENT - 24, 8.7, 12, max_height=36)
 
     c.setStrokeColor(LINE)

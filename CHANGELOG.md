@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.1 - 2026-10-19
+
+- Clarify that the `Dept` filename field accepts any department name or abbreviation.
+
 ## 1.2.0 - 2026-10-19
 
 - Simplify the downloadable submission poster with shorter copy, more white space, and a clearer visual hierarchy.

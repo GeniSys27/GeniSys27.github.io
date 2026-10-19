@@ -116,7 +116,7 @@ Set `submissionDeadline` in `workshop.json` to an ISO date (`YYYY-MM-DD`), then 
 
 ## Submission filenames
 
-Use `Presentation_Dept_First_Lastname_Level.pptx` for research presentations. For research posters, use `Poster_Dept_First_Lastname_Level.pptx` or `Poster_Dept_First_Lastname_Level.pdf`, matching the submitted file format. Replace `Dept` with your department name (e.g., `CS` or `ECE`), `First` and `Lastname` with the presenter’s name, and `Level` with one of `Undergrad`, `Master`, `PhD`, or `Postdoc`. Presentations use PPTX; posters accept PPTX or PDF.
+Use `Presentation_Dept_First_Lastname_Level.pptx` for research presentations. For research posters, use `Poster_Dept_First_Lastname_Level.pptx` or `Poster_Dept_First_Lastname_Level.pdf`, matching the submitted file format. Replace `Dept` with the presenter’s department name or abbreviation; any department is accepted. Replace `First` and `Lastname` with the presenter’s name, and `Level` with one of `Undergrad`, `Master`, `PhD`, or `Postdoc`. Presentations use PPTX; posters accept PPTX or PDF.
 
 ## Configure research presentation submissions
 

@@ -55,7 +55,7 @@ Recommended poster size: 36 in wide × 48 in tall (portrait; approximately 91 ×
 
 File formats: PPTX or PDF. Submission deadline: January 10, 2027.
 
-Filename: Poster_Dept_First_Lastname_Level.pptx or Poster_Dept_First_Lastname_Level.pdf. Replace Dept with your department name (e.g., CS or ECE), and First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.
+Filename: Poster_Dept_First_Lastname_Level.pptx or Poster_Dept_First_Lastname_Level.pdf. Replace Dept with your department name or abbreviation; any department is accepted. Replace First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.
 
 Research presentations
 Research in progress, research-oriented course projects, and recent or previously published work are welcome.
@@ -64,7 +64,7 @@ Submit your research presentation: https://rice.app.box.com/f/4326bc92911c49e6be
 
 File format: PPTX. Maximum 14 slides. We plan to select up to 9 research talks across career stages and research groups; the final allocation will reflect submissions. At most three talks per research session, each with a 15-minute slot including Q&A and transitions.
 
-Filename: Presentation_Dept_First_Lastname_Level.pptx. Replace Dept with your department name (e.g., CS or ECE), and First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.
+Filename: Presentation_Dept_First_Lastname_Level.pptx. Replace Dept with your department name or abbreviation; any department is accepted. Replace First and Lastname with your name. Use Undergrad, Master, PhD, or Postdoc for Level.
 
 Submission deadline: January 10, 2027. Check the workshop website for updates: https://genisys27.github.io/#posters
 

@@ -121,7 +121,7 @@ Use `Presentation_Dept_First_Lastname_Level.pptx` for research presentations. Fo
 
 ## Configure research presentation submissions
 
-Research presentations from undergraduate, master’s, and PhD students and postdoctoral researchers must be submitted as PPTX files with a maximum of 14 slides. This requirement appears beside the submission buttons, on the event poster, and in the downloadable call.
+Research presentations from undergraduate, master’s, and PhD students and postdoctoral researchers must be submitted as PPTX files with a maximum of 15 slides. This requirement appears beside the submission buttons, on the event poster, and in the downloadable call.
 
 The homepage’s `#posters` section and the bottom of the schedule have matching buttons for research presentation submissions and poster submissions. Set `studentPresentationUrl` in `workshop.json` to the organizer-provided HTTPS submission form, then run `node scripts/update-submission.mjs` and `python3 scripts/build-call-pdf.py`. These scripts also update the presentation link on the printable event poster and in both downloadable calls. The destination can be hosted on Box or another service. This setting is independent of the poster upload link.
 

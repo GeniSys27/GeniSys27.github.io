@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.5 - 2026-10-19
+
+- Increase the research-presentation deck limit from 14 to 15 slides across the website and downloadable materials.
+
 ## 1.2.4 - 2026-10-19
 
 - Add a high-resolution JPG export of the submission poster and direct download links from the homepage and event-poster toolbar.

@@ -72,7 +72,7 @@ Last updated: October 12, 2026
 - [x] Make both matching submission buttons and the presentation slide limit visible on the homepage at `#posters`.
 - [x] Add a separate configurable HTTPS submission destination and a clearly marked pending state.
 - [x] Connect the organizer-provided Box link for undergraduate/master’s research presentation submissions and activate the button.
-- [x] Specify a maximum of 14 slides for research presentation decks.
+- [x] Specify a maximum of 15 slides for research presentation decks.
 - [x] Align navigation, page descriptions, the event poster, and downloadable call with both submission types and their separate destinations.
 - [x] Rename the upload panel to “Upload your research,” with presentation and poster destinations clearly distinguished.
 - [x] Add schedule-style alternating backgrounds and shadows to the homepage program overview.

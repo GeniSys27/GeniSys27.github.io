@@ -183,7 +183,7 @@ def build():
               "Poster session: 4:00-5:00 pm",
               MARGIN + 17, 427, card_width - 34, 10.5, 17, max_height=52)
     text("Research presentation", right + 17, 398, 15, True)
-    paragraph("<b>PPTX - maximum 14 slides</b><br/>"
+    paragraph("<b>PPTX - maximum 15 slides</b><br/>"
               "15-minute slot<br/>"
               "Includes Q&amp;A and transition",
               right + 17, 427, card_width - 34, 10.5, 17, max_height=52)

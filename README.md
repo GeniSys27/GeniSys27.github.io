@@ -23,7 +23,7 @@ No package installation or build step is required. From the repository root, run
 python3 -m http.server 8765
 ```
 
-Open [the website](http://localhost:8765/), [the printable poster](http://localhost:8765/poster.html), or [the PDF submission call](http://localhost:8765/output/pdf/genisys-2027-call-for-submissions.pdf).
+Open [the website](http://localhost:8765/), [the printable poster](http://localhost:8765/poster.html), [the PDF submission call](http://localhost:8765/output/pdf/genisys-2027-call-for-submissions.pdf), or [the JPG poster](http://localhost:8765/output/image/genisys-2027-call-for-submissions.jpg).
 
 For the event poster, select **Event poster**, then **Print / Save PDF**. Choose A3 portrait, disable browser headers and footers, and enable background graphics. Printing behavior depends on the browser; use a browser with print support if the embedded preview does not open a print dialog.
 
@@ -39,6 +39,7 @@ For the event poster, select **Event poster**, then **Print / Save PDF**. Choose
 | `script.js` | Section navigation, sticky-header offsets, and poster print action |
 | `genisys-2027-call-for-posters.txt` | Downloadable call for research posters and presentations; original URL retained for existing links |
 | `output/pdf/genisys-2027-call-for-submissions.pdf` | One-page PDF call linked from the homepage and event poster toolbar |
+| `output/image/genisys-2027-call-for-submissions.jpg` | High-resolution JPG export for sharing and image-based publishing |
 | `scripts/build-call-pdf.py` | Rebuild the PDF with ReportLab; reads links and deadline from `workshop.json` |
 | `assets/` | Campus photograph, logo, browser tab icons, and touch icon |
 | `.nojekyll` | Publish the static files directly without Jekyll processing |
@@ -56,7 +57,7 @@ node scripts/update-submission.mjs
 python3 scripts/build-call-pdf.py
 ```
 
-The PDF builder requires the Python `reportlab` package and embeds the sans-serif fonts included with that package. Its program and research-theme copy is maintained in the builder; update it alongside the HTML and text call when those details change. It supports pending links and deadlines as well as configured values. Render the PDF and inspect it before publishing, for example with `pdftoppm -png output/pdf/genisys-2027-call-for-submissions.pdf /tmp/genisys-call`. Commit the regenerated PDF with the source changes. Viewing or serving the checked-in site does not require ReportLab or a build step.
+The PDF builder requires the Python `reportlab` package and embeds the sans-serif fonts included with that package. Its program and research-theme copy is maintained in the builder; update it alongside the HTML and text call when those details change. It supports pending links and deadlines as well as configured values. Render the PDF and inspect it before publishing, for example with `pdftoppm -png output/pdf/genisys-2027-call-for-submissions.pdf /tmp/genisys-call`. Export the sharing image with `pdftoppm -jpeg -r 200 -singlefile output/pdf/genisys-2027-call-for-submissions.pdf output/image/genisys-2027-call-for-submissions`. Commit the regenerated PDF and JPG with the source changes. Viewing or serving the checked-in site does not require ReportLab or a build step.
 
 ## Current content status
 

@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.2.4 - 2026-10-19
+
+- Add a high-resolution JPG export of the submission poster and direct download links from the homepage and event-poster toolbar.
+
 ## 1.2.3 - 2026-10-19
 
 - Set the workshop timing to mid-February 2027 across the website, schedule, printable poster, and downloadable calls.

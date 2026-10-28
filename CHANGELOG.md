@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.8 - 2026-10-28
+
+- Move the Updates registration section to the end of the homepage so the scroll order matches the navigation order.
+
 ## 1.3.7 - 2026-10-28
 
 - Remove the explanatory paragraph and check-mark list from the event-updates section for a cleaner, more direct layout.

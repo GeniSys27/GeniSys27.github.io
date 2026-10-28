@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.7 - 2026-10-28
+
+- Remove the explanatory paragraph and check-mark list from the event-updates section for a cleaner, more direct layout.
+
 ## 1.3.6 - 2026-10-28
 
 - Add smooth scrolling for in-page navigation such as Submissions, Venue, and Updates.

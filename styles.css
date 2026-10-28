@@ -101,10 +101,6 @@ html.page-motion.page-leaving main { opacity: 0; transform: translateY(-4px); }
 .updates-grid { position: relative; display: grid; grid-template-columns: .8fr 1.2fr; gap: 72px; align-items: start; }
 .updates-copy { padding-top: 18px; }
 .updates-copy .eyebrow { color: var(--teal); margin-bottom: 14px; }
-.updates-copy .section-deck { margin-top: 18px; }
-.updates-benefits { margin: 24px 0 0; padding: 0; list-style: none; display: grid; gap: 12px; }
-.updates-benefits li { position: relative; padding-left: 27px; color: var(--muted); font-size: .92rem; }
-.updates-benefits li::before { content: '\2713'; position: absolute; left: 0; top: 0; color: var(--teal); font-weight: 700; }
 .updates-clarification { margin-top: 24px; padding-top: 18px; border-top: 1px solid #cfdadd; color: var(--muted); font-size: .82rem; }
 .updates-form { position: relative; display: grid; gap: 20px; padding: 30px 32px; background: #fff; border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 10px 30px rgb(7 30 59 / .08); }
 .form-heading { display: flex; align-items: end; justify-content: space-between; gap: 20px; padding-bottom: 18px; border-bottom: 1px solid var(--line); }

@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.3.4 - 2026-10-28
+
+- Remove the optional update-preferences question from both the website and Google Form.
+- Simplify registration to name, email, optional organization, role, and consent.
+
 ## 1.3.3 - 2026-10-28
 
 - Keep the header navigation in the same centered position when switching between the homepage and Schedule.

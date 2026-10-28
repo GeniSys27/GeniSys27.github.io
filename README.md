@@ -7,7 +7,7 @@ This repository contains the website, printable event poster, and call for resea
 ## Included
 
 - Responsive workshop website with phone, tablet, and desktop layouts, touch-friendly section navigation, research topics, a tentative program, and organizers.
-- A site-native participant information-list form backed by Google Forms, with required consent, validated email addresses, update preferences, and responses stored in a private organizer-owned Google Sheet.
+- A site-native participant information-list form backed by Google Forms, with required consent, validated email addresses, and responses stored in a private organizer-owned Google Sheet.
 - A dedicated [schedule page](https://genisys27.github.io/schedule.html) with a clear 9:00 am–5:00 pm timetable, session durations, and planned formats.
 - Venue information for the fifth-floor conference room in the Ralph S. O’Connor Building for Engineering and Science, plus a responsive Google Map of the building.
 - A homepage submission section with matching poster and research presentation buttons, presentation slide limits, poster details, and an expandable poster upload form.
@@ -74,9 +74,9 @@ The public website repository is [GeniSys27/GeniSys27.github.io](https://github.
 
 ## Configure participant registration and event updates
 
-The homepage presents a site-native registration form that submits to the published **GeniSys 2027 Event Updates** Google Form and provides a direct-link fallback. It collects name, validated email address, optional affiliation, role, update preferences, and explicit communication consent. The form is intentionally separate from research submissions and does not claim to reserve attendance or a speaking slot.
+The homepage presents a site-native registration form that submits to the published **GeniSys 2027 Event Updates** Google Form and provides a direct-link fallback. It collects name, validated email address, optional affiliation, role, and explicit communication consent. The form is intentionally separate from research submissions and does not claim to reserve attendance or a speaking slot.
 
-Responses are written to a private Google Sheet owned by the organizers. The response Sheet URL and participant data are intentionally excluded from this public repository. Review new responses before adding participants to an information or mailing group, and honor the submitted preferences when sending updates.
+Responses are written to a private Google Sheet owned by the organizers. The response Sheet URL and participant data are intentionally excluded from this public repository. Review new responses before adding participants to an information or mailing group.
 
 If the Google Form changes, update `workshop.json` → `registration.googleFormUrl`, the response endpoint, field entry IDs, and fallback link in `index.html`. Confirm that the Form remains published for anyone with the link and that the response destination is still the private Sheet. Routine website checks should use prefilled dummy values without submitting a response.
 

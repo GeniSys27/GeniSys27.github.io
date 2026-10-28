@@ -26,9 +26,9 @@ Last updated: October 28, 2026
 - [x] Add the organizer-provided Google Map with a direct-link fallback.
 - [x] Add a dedicated tentative schedule page and a concise homepage overview.
 - [x] Verify the new pages at desktop and 320px widths, map loading, section highlighting, cross-page links, agenda sessions, and Box configuration compatibility.
-- [x] Add a participant information-list form with role, affiliation, update preferences, and explicit communication consent.
+- [x] Add a participant information-list form with role, affiliation, and explicit communication consent.
 - [x] Keep event updates separate from poster/presentation submissions and avoid implying that an updates request reserves attendance or a speaking slot.
-- [x] Create and publish a Rice Google Form with validated email, required consent, preferences, and role.
+- [x] Create and publish a Rice Google Form with validated email, required consent, and role.
 - [x] Link form responses to a private Google Sheet owned by the organizers.
 - [x] Add a site-native registration form backed by Google Forms, with a direct-link fallback.
 - [ ] Define the organizer workflow for adding consented respondents to the event information group.

@@ -30,7 +30,7 @@ Last updated: October 28, 2026
 - [x] Keep event updates separate from poster/presentation submissions and avoid implying that an updates request reserves attendance or a speaking slot.
 - [x] Create and publish a Rice Google Form with validated email, required consent, preferences, and role.
 - [x] Link form responses to a private Google Sheet owned by the organizers.
-- [x] Embed the Google Form on the homepage with a direct-link fallback.
+- [x] Add a site-native registration form backed by Google Forms, with a direct-link fallback.
 - [ ] Define the organizer workflow for adding consented respondents to the event information group.
 
 ## Responsive experience

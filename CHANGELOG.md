@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.2 - 2026-10-28
+
+- Replace the visually heavy Google Form embed with a compact, site-native registration form.
+- Keep Google Forms and the private linked Sheet as the response backend, with the original Form available as a fallback.
+- Add responsive field layouts and clear sending, success, and delayed-confirmation status messages.
+
 ## 1.3.1 - 2026-10-28
 
 - Replace the custom email and optional Apps Script registration workflow with a published Google Form.

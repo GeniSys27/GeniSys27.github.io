@@ -58,3 +58,38 @@ if (navigation.length) {
   window.addEventListener('load', queueNavigationUpdate);
   updateNavigation();
 }
+
+const participantForm = document.getElementById('participant-form');
+const participantStatus = document.getElementById('participant-form-status');
+const participantTarget = document.getElementById('participant-submit-target');
+
+if (participantForm instanceof HTMLFormElement && participantStatus && participantTarget instanceof HTMLIFrameElement) {
+  const submitButton = participantForm.querySelector('button[type="submit"]');
+  let submissionPending = false;
+  let submissionTimer;
+
+  participantForm.addEventListener('submit', () => {
+    submissionPending = true;
+    submitButton?.setAttribute('disabled', '');
+    participantStatus.textContent = 'Sending your request…';
+    participantStatus.classList.remove('is-success', 'is-error');
+    window.clearTimeout(submissionTimer);
+    submissionTimer = window.setTimeout(() => {
+      if (!submissionPending) return;
+      submissionPending = false;
+      submitButton?.removeAttribute('disabled');
+      participantStatus.textContent = 'Confirmation is taking longer than expected. You can use the original Google Form below.';
+      participantStatus.classList.add('is-error');
+    }, 15000);
+  });
+
+  participantTarget.addEventListener('load', () => {
+    if (!submissionPending) return;
+    submissionPending = false;
+    window.clearTimeout(submissionTimer);
+    submitButton?.removeAttribute('disabled');
+    participantForm.reset();
+    participantStatus.textContent = 'Thank you — your request was recorded.';
+    participantStatus.classList.add('is-success');
+  });
+}

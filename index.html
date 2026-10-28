@@ -17,8 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-  <link rel="stylesheet" href="styles.css?v=1.3.1">
-  <script src="script.js?v=1.3.1" defer></script>
+  <link rel="stylesheet" href="styles.css?v=1.3.2">
+  <script src="script.js?v=1.3.2" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -80,20 +80,69 @@
         <p class="updates-clarification">This form is separate from poster and presentation submissions and does not reserve a speaking slot.</p>
       </div>
 
-      <div class="google-form-card">
-        <div class="google-form-heading">
+      <form class="updates-form" id="participant-form" action="https://docs.google.com/forms/d/e/1FAIpQLSdi6idWx1U4IHsQ_Jp1PxmKGNcUkDWDJAEkohXZYpt6WhXeZw/formResponse" method="post" target="participant-submit-target">
+        <div class="form-heading">
           <div>
             <p class="eyebrow">REGISTRATION FORM</p>
             <h3>Join event updates</h3>
           </div>
-          <a class="text-link" href="https://docs.google.com/forms/d/e/1FAIpQLSdi6idWx1U4IHsQ_Jp1PxmKGNcUkDWDJAEkohXZYpt6WhXeZw/viewform" target="_blank" rel="noopener noreferrer">Open form <span aria-hidden="true">↗</span></a>
+          <p>Required fields are marked <span aria-hidden="true">*</span><span class="sr-only">required</span>.</p>
         </div>
-        <iframe class="google-form-embed" src="https://docs.google.com/forms/d/e/1FAIpQLSdi6idWx1U4IHsQ_Jp1PxmKGNcUkDWDJAEkohXZYpt6WhXeZw/viewform?embedded=true" title="GeniSys 2027 event updates registration form" loading="lazy" referrerpolicy="strict-origin-when-cross-origin">Loading…</iframe>
-        <div class="google-form-footer">
-          <p class="google-form-fallback">Form not loading? <a href="https://docs.google.com/forms/d/e/1FAIpQLSdi6idWx1U4IHsQ_Jp1PxmKGNcUkDWDJAEkohXZYpt6WhXeZw/viewform" target="_blank" rel="noopener noreferrer">Open the Google Form in a new tab</a>.</p>
-          <p class="privacy-note">Responses are stored in a private Google Sheet accessible to the organizers.</p>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="participant-name">Full name <span aria-hidden="true">*</span></label>
+            <input id="participant-name" name="entry.744098906" type="text" autocomplete="name" maxlength="100" required>
+          </div>
+          <div class="form-field">
+            <label for="participant-email">Email address <span aria-hidden="true">*</span></label>
+            <input id="participant-email" name="entry.266170335" type="email" inputmode="email" autocomplete="email" maxlength="254" required>
+          </div>
         </div>
-      </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="participant-affiliation">University or organization</label>
+            <input id="participant-affiliation" name="entry.959373608" type="text" autocomplete="organization" maxlength="120">
+          </div>
+          <div class="form-field">
+            <label for="participant-role">Role <span aria-hidden="true">*</span></label>
+            <select id="participant-role" name="entry.1136485300" required>
+              <option value="">Select your role</option>
+              <option>Undergraduate student</option>
+              <option>Master’s student</option>
+              <option>PhD student</option>
+              <option>Postdoctoral researcher</option>
+              <option>Faculty or staff</option>
+              <option>Industry professional</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <fieldset class="form-options">
+          <legend>What would you like to receive?</legend>
+          <label><input type="checkbox" name="entry.1693443298" value="Program and speaker updates" checked> <span>Program and speaker updates</span></label>
+          <label><input type="checkbox" name="entry.1693443298" value="Registration and event logistics" checked> <span>Registration and event logistics</span></label>
+          <label><input type="checkbox" name="entry.1693443298" value="Research submission reminders"> <span>Research submission reminders</span></label>
+          <label><input type="checkbox" name="entry.1693443298" value="Future GeniSys events"> <span>Future GeniSys events</span></label>
+        </fieldset>
+
+        <label class="consent-field">
+          <input type="checkbox" name="entry.1453192845" value="I agree that the GeniSys organizers may use this information to add me to the event information list and send relevant workshop updates." required>
+          <span>I agree that the GeniSys organizers may use this information to add me to the event information list and send relevant workshop updates. <span aria-hidden="true">*</span></span>
+        </label>
+
+        <input type="hidden" name="fvv" value="1">
+        <input type="hidden" name="pageHistory" value="0">
+
+        <div class="form-submit-row">
+          <button class="button button-dark" type="submit">Join event updates</button>
+          <p class="form-status" id="participant-form-status" role="status" aria-live="polite">Responses are stored in a private organizer-accessible Google Sheet.</p>
+        </div>
+        <p class="form-fallback">Prefer Google Forms? <a href="https://docs.google.com/forms/d/e/1FAIpQLSdi6idWx1U4IHsQ_Jp1PxmKGNcUkDWDJAEkohXZYpt6WhXeZw/viewform" target="_blank" rel="noopener noreferrer">Open the original form <span aria-hidden="true">↗</span></a></p>
+      </form>
+      <iframe class="submission-target" id="participant-submit-target" name="participant-submit-target" title="Participant registration response"></iframe>
     </div>
   </section>
 

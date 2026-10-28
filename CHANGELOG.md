@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.3.1 - 2026-10-28
+
+- Replace the custom email and optional Apps Script registration workflow with a published Google Form.
+- Link responses to a private organizer-owned Google Sheet while keeping its URL and participant data out of the public repository.
+- Embed the form on the homepage with a direct-link fallback for browsers that do not load the iframe.
+- Require name, validated email address, role, and communication consent; retain optional affiliation and update preferences.
+
 ## 1.3.0 - 2026-10-28
 
 - Add an accessible homepage form for participants to request GeniSys 2027 program, logistics, submission, and future-event updates.

@@ -3,8 +3,6 @@
   "studentPresentationUrl": "https://rice.app.box.com/f/4326bc92911c49e6beec9122233712e3",
   "submissionDeadline": "2027-01-10",
   "registration": {
-    "endpoint": "",
-    "contactEmail": "yuke.wang@rice.edu",
-    "groupName": "GeniSys 2027 event information list"
+    "googleFormUrl": "https://docs.google.com/forms/d/e/1FAIpQLSdi6idWx1U4IHsQ_Jp1PxmKGNcUkDWDJAEkohXZYpt6WhXeZw/viewform"
   }
 }

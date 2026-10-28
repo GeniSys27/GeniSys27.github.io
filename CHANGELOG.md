@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.3.0 - 2026-10-28
+
+- Add an accessible homepage form for participants to request GeniSys 2027 program, logistics, submission, and future-event updates.
+- Require explicit communication consent, collect only relevant participant fields, and keep the updates workflow separate from research submissions.
+- Add a safe organizer-email fallback for the static GitHub Pages site and a configurable HTTPS endpoint path for automated handling.
+- Include an optional Google Apps Script integration that records requests in a private Sheet, deduplicates emails, verifies address ownership through a one-time confirmation link, notifies organizers, and can add confirmed members to a Google Group.
+- Add responsive form layouts, submission status feedback, spam honeypot handling, privacy guidance, and configuration documentation.
+
 ## 1.2.6 - 2026-10-19
 
 - Polish grammar and terminology across the website, schedule, printable poster, downloadable calls, and project documentation.
@@ -25,7 +33,6 @@
 ## 1.2.1 - 2026-10-19
 
 - Clarify that the `Dept` filename field accepts any department name or abbreviation.
-
 ## 1.2.0 - 2026-10-19
 
 - Simplify the downloadable submission poster with shorter copy, more white space, and a clearer visual hierarchy.

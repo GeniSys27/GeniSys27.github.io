@@ -17,8 +17,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-  <link rel="stylesheet" href="styles.css?v=0.9.0">
-  <script src="script.js?v=0.7.0" defer></script>
+  <link rel="stylesheet" href="styles.css?v=1.3.0">
+  <script src="script.js?v=1.3.0" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -26,10 +26,10 @@
   <div class="header-inner">
     <a class="wordmark" href="#home" aria-label="GeniSys 2027 home"><img class="brand-mark" src="assets/genisys-mark.png?v=network-1" width="36" height="36" alt=""><span class="wordmark-type">GeniSys<span class="wordmark-year">2027</span></span></a>
     <nav class="section-nav" aria-label="Main navigation">
+      <a href="#updates">Updates</a>
       <a href="#posters">Submissions</a>
       <a href="schedule.html">Schedule</a>
       <a href="#venue">Venue</a>
-      <a href="#organizers">Organizers</a>
     </nav>
     <a class="button button-dark header-cta" href="#posters">Submit your research</a>
   </div>
@@ -64,6 +64,88 @@
     <article><h3><svg class="theme-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" rx="2"></rect><rect x="9" y="9" width="6" height="6" rx="1"></rect><path d="M9 3v3m6-3v3M9 18v3m6-3v3M3 9h3m-3 6h3m12-6h3m-3 6h3"></path></svg><span>Efficient AI</span></h3><p>AI algorithm design, agent systems, scalable training and inference, and heterogeneous computing.</p></article>
     <article><h3><svg class="theme-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="5" r="2.5"></circle><circle cx="5" cy="18" r="2.5"></circle><circle cx="19" cy="18" r="2.5"></circle><path d="m10.8 7.2-4.6 8.6m7-8.6 4.6 8.6M7.5 18h9"></path></svg><span>Connected systems</span></h3><p>Networks and infrastructure for distributed intelligence.</p></article>
     <article><h3><svg class="theme-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 4C12 3 5 7 5 13a6 6 0 0 0 6 6c6 0 10-7 9-15Z"></path><path d="m4 20 10-10"></path></svg><span>Sustainable computing</span></h3><p>Energy-aware, reliable, and secure systems.</p></article>
+  </section>
+
+  <section class="updates-section section-space" id="updates" aria-labelledby="updates-title">
+    <div class="page-width updates-grid">
+      <div class="updates-copy">
+        <p class="eyebrow">EVENT INFORMATION GROUP</p>
+        <h2 id="updates-title">Stay informed about GeniSys 2027</h2>
+        <p class="section-deck">Join the participant information list for event-date announcements, program updates, registration details, and workshop logistics.</p>
+        <ul class="updates-benefits">
+          <li>Receive only GeniSys workshop information from the organizers.</li>
+          <li>Choose the updates that are most relevant to you.</li>
+          <li>Unsubscribe at any time by contacting the organizers.</li>
+        </ul>
+        <p class="updates-clarification">This form is separate from poster and presentation submissions and does not reserve a speaking slot.</p>
+      </div>
+
+      <form class="updates-form" id="participant-form" novalidate>
+        <div class="form-heading">
+          <h3>Join event updates</h3>
+          <p>Required fields are marked <span aria-hidden="true">*</span><span class="sr-only">required</span>.</p>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="participant-name">Full name <span aria-hidden="true">*</span></label>
+            <input id="participant-name" name="fullName" type="text" autocomplete="name" maxlength="100" required>
+          </div>
+          <div class="form-field">
+            <label for="participant-email">Email address <span aria-hidden="true">*</span></label>
+            <input id="participant-email" name="email" type="email" inputmode="email" autocomplete="email" maxlength="254" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-field">
+            <label for="participant-affiliation">University or organization</label>
+            <input id="participant-affiliation" name="affiliation" type="text" autocomplete="organization" maxlength="120">
+          </div>
+          <div class="form-field">
+            <label for="participant-role">Role <span aria-hidden="true">*</span></label>
+            <select id="participant-role" name="role" required>
+              <option value="">Select your role</option>
+              <option>Undergraduate student</option>
+              <option>Master’s student</option>
+              <option>PhD student</option>
+              <option>Postdoctoral researcher</option>
+              <option>Faculty or staff</option>
+              <option>Industry professional</option>
+              <option>Other</option>
+            </select>
+          </div>
+        </div>
+
+        <fieldset class="form-options">
+          <legend>What would you like to receive?</legend>
+          <label><input type="checkbox" name="interests" value="Program and speaker updates" checked> Program and speaker updates</label>
+          <label><input type="checkbox" name="interests" value="Registration and event logistics" checked> Registration and event logistics</label>
+          <label><input type="checkbox" name="interests" value="Research submission reminders"> Research submission reminders</label>
+          <label><input type="checkbox" name="interests" value="Future GeniSys events"> Future GeniSys events</label>
+        </fieldset>
+
+        <label class="consent-field">
+          <input type="checkbox" name="consent" value="yes" required>
+          <span>I agree that the GeniSys organizers may use this information to add me to the event information list and send relevant workshop updates. <span aria-hidden="true">*</span></span>
+        </label>
+
+        <div class="bot-field" aria-hidden="true">
+          <label for="participant-website">Leave this field empty</label>
+          <input id="participant-website" name="website" type="text" tabindex="-1" autocomplete="off">
+        </div>
+        <input type="hidden" name="event" value="GeniSys 2027">
+        <input type="hidden" name="source" value="genisys27.github.io">
+
+        <div class="form-submit-row">
+          <button class="button button-dark" type="submit">Request event updates</button>
+          <p class="form-status" id="participant-form-status" role="status" aria-live="polite">Loading submission options…</p>
+        </div>
+        <p class="privacy-note">Your information will be used only for GeniSys event communication and will not be published on this website.</p>
+        <noscript><p class="form-error">JavaScript is required for this form. Please email <a href="mailto:yuke.wang@rice.edu?subject=GeniSys%202027%20event%20updates">yuke.wang@rice.edu</a> to join the information list.</p></noscript>
+      </form>
+      <iframe class="submission-target" id="participant-submit-target" name="participant-submit-target" title="Participant registration response"></iframe>
+    </div>
   </section>
 
   <section class="poster-section section-space" id="posters" aria-labelledby="poster-title">

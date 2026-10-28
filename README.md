@@ -7,6 +7,7 @@ This repository contains the website, printable event poster, and call for resea
 ## Included
 
 - Responsive workshop website with phone, tablet, and desktop layouts, touch-friendly section navigation, research topics, a tentative program, and organizers.
+- An accessible participant information-list form with consent, update preferences, duplicate-safe backend support, spam honeypot, and an organizer-email fallback while the automated endpoint is not configured.
 - A dedicated [schedule page](https://genisys27.github.io/schedule.html) with a clear 9:00 am–5:00 pm timetable, session durations, and planned formats.
 - Venue information for the fifth-floor conference room in the Ralph S. O’Connor Building for Engineering and Science, plus a responsive Google Map of the building.
 - A homepage submission section with matching poster and research presentation buttons, presentation slide limits, poster details, and an expandable poster upload form.
@@ -37,13 +38,14 @@ For the event poster, select **Event poster**, then **Print / Save PDF**. Choose
 | `poster.html` | Printable event poster |
 | `poster.css` | Poster styling and A3 print layout |
 | `script.js` | Section navigation, sticky-header offsets, and poster print action |
+| `integrations/google-apps-script/` | Optional private Sheet and Google Group endpoint for the participant information-list form |
 | `genisys-2027-call-for-posters.txt` | Downloadable call for research posters and presentations; original URL retained for existing links |
 | `output/pdf/genisys-2027-call-for-submissions.pdf` | One-page PDF call linked from the homepage and event poster toolbar |
 | `output/image/genisys-2027-call-for-submissions.jpg` | High-resolution JPG export for sharing and image-based publishing |
 | `scripts/build-call-pdf.py` | Rebuild the PDF with ReportLab; reads links and deadline from `workshop.json` |
 | `assets/` | Campus photograph, logo, browser tab icons, and touch icon |
 | `.nojekyll` | Publish the static files directly without Jekyll processing |
-| `workshop.json` | Poster upload link, research presentation submission link, and shared submission deadline |
+| `workshop.json` | Poster/presentation links, deadline, and participant registration configuration |
 | `scripts/update-submission.mjs` | Synchronize both submission destinations across the homepage, schedule, event poster, and downloadable call |
 
 Update the website, schedule, printable poster, and downloadable call together when dates, eligibility, or submission details change. If the event is renamed, also update page titles, metadata, filenames, download links, and this documentation.
@@ -70,6 +72,19 @@ Up to 9 research presentations occupy three 45-minute sessions: 9:45–10:30 am,
 Poster and presentation submissions welcome research in progress, research-oriented course projects, and recent or previously published work. Submitted materials need not be final and may be refined before the workshop. Separate registration, welcome, roundtable, and closing blocks are not scheduled in this draft. Invited speakers and topics remain to be announced. Hybrid attendance and remote poster arrangements remain unconfirmed.
 
 The public website repository is [GeniSys27/GeniSys27.github.io](https://github.com/GeniSys27/GeniSys27.github.io). The site is live at [genisys27.github.io/](https://genisys27.github.io/), verified September 29, 2026. The previous [planning repository](https://github.com/YukeWang96/Genisys-Workshop-Spring-2027) remains available separately.
+
+## Configure participant registration and event updates
+
+The homepage includes a **Stay informed about GeniSys 2027** form for name, email, affiliation, role, update preferences, and explicit communication consent. It is intentionally separate from research submissions and does not claim to reserve attendance or a speaking slot.
+
+The static website has two submission modes:
+
+1. When `workshop.json` → `registration.endpoint` is empty, submitting opens a pre-addressed email to `registration.contactEmail`. The participant must send the message; the website does not falsely report it as received.
+2. When `registration.endpoint` contains a complete HTTPS form endpoint, the form posts there in a hidden response frame and accepts a confirmation message from the endpoint.
+
+The included [`integrations/google-apps-script/`](integrations/google-apps-script/) endpoint is the recommended setup. It records consented requests in a private Google Sheet, deduplicates by normalized email address, sends a one-time confirmation link to verify ownership of the submitted address, notifies the organizer, and can add confirmed members to a Google Group when the deploying Rice Workspace account has permission. Follow that directory’s setup guide, then add the deployed `/exec` URL to `registration.endpoint` and test with a designated test address before circulation.
+
+Do not add Sheet IDs, Group administration credentials, or private participant data to this repository. Keep the public `workshop.json` limited to the endpoint URL, organizer contact, and public group label.
 
 GitHub Pages publishes the repository root. The `.nojekyll` marker keeps the HTML, CSS, JavaScript, and assets as static files. Local Sites account metadata is excluded from Git; the original proposals, budgets, and CVs are not included in this repository.
 

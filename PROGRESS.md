@@ -1,6 +1,6 @@
 # GeniSys 2027 workshop progress
 
-Last updated: October 19, 2026
+Last updated: October 28, 2026
 
 ## First version
 
@@ -26,6 +26,11 @@ Last updated: October 19, 2026
 - [x] Add the organizer-provided Google Map with a direct-link fallback.
 - [x] Add a dedicated tentative schedule page and a concise homepage overview.
 - [x] Verify the new pages at desktop and 320px widths, map loading, section highlighting, cross-page links, agenda sessions, and Box configuration compatibility.
+- [x] Add a participant information-list form with role, affiliation, update preferences, and explicit communication consent.
+- [x] Keep event updates separate from poster/presentation submissions and avoid implying that an updates request reserves attendance or a speaking slot.
+- [x] Provide a static-site email fallback and a configurable automated submission endpoint.
+- [x] Prepare a private Google Sheet / optional Google Group Apps Script integration with email deduplication and organizer notices.
+- [ ] Deploy the registration endpoint with the organizer’s private Sheet and mailing-group settings, add its `/exec` URL to `workshop.json`, and complete a test submission.
 
 ## Responsive experience
 

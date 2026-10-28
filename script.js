@@ -3,6 +3,40 @@ printButton?.addEventListener('click', () => {
   window.print();
 });
 
+// Add a short content transition in browsers without cross-document View Transitions.
+const pageContent = document.querySelector('main');
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+if (pageContent && !reduceMotion && typeof window.PageSwapEvent === 'undefined') {
+  const pageRoot = document.documentElement;
+  pageRoot.classList.add('page-motion', 'page-entering');
+  window.setTimeout(() => pageRoot.classList.remove('page-entering'), 320);
+
+  let navigationStarted = false;
+  document.addEventListener('click', event => {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const link = event.target instanceof Element ? event.target.closest('a[href]') : null;
+    if (!link || link.hasAttribute('download') || (link.target && link.target !== '_self')) return;
+
+    const current = new URL(window.location.href);
+    const destination = new URL(link.href, current);
+    if (destination.origin !== current.origin || destination.pathname === current.pathname) return;
+
+    event.preventDefault();
+    if (navigationStarted) return;
+    navigationStarted = true;
+    let navigationCompleted = false;
+    const navigate = () => {
+      if (navigationCompleted) return;
+      navigationCompleted = true;
+      window.location.assign(destination.href);
+    };
+    pageRoot.classList.remove('page-entering');
+    void pageContent.offsetWidth;
+    pageRoot.classList.add('page-leaving');
+    window.setTimeout(navigate, 170);
+  });
+}
+
 // Preserve direct links to the embedded upload form while keeping it compact by default.
 const uploadPanel = document.getElementById('poster-upload');
 if (uploadPanel instanceof HTMLDetailsElement) {

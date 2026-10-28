@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.3.6 - 2026-10-28
+
+- Add smooth scrolling for in-page navigation such as Submissions, Venue, and Updates.
+- Add a subtle same-origin transition between the homepage and Schedule while keeping the shared header visually stable, including a fallback for browsers without native cross-document transitions.
+- Disable navigation animation when the visitor prefers reduced motion.
+
 ## 1.3.4 - 2026-10-28
 
 - Remove the optional update-preferences question from both the website and Google Form.

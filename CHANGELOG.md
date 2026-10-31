@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.9 - 2026-10-31
+
+- Place Schedule before Submissions in the shared header navigation so the tab sequence follows the intended browsing order.
+
 ## 1.3.8 - 2026-10-28
 
 - Move the Updates registration section to the end of the homepage so the scroll order matches the navigation order.

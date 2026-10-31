@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.11 - 2026-10-31
+
+- Move the Rice University venue section to the end of the homepage and update the shared navigation to match the page order.
+
 ## 1.3.10 - 2026-10-31
 
 - Move the event-updates registration section ahead of Organizers on the homepage.

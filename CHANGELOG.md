@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.10 - 2026-10-31
+
+- Move the event-updates registration section ahead of Organizers on the homepage.
+
 ## 1.3.9 - 2026-10-31
 
 - Place Schedule before Submissions in the shared header navigation so the tab sequence follows the intended browsing order.

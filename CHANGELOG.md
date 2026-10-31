@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.0 - 2026-10-31
+
+- Integrate Schedule into the homepage so visitors can move between sections without loading a separate page.
+- Keep the date, time, and venue visible while placing the detailed day program in a collapsed-by-default panel that expands on click.
+- Redirect the former Schedule page to the new homepage section and update public schedule links and maintenance tooling.
+
 ## 1.3.11 - 2026-10-31
 
 - Move the Rice University venue section to the end of the homepage and update the shared navigation to match the page order.

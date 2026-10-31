@@ -8,7 +8,7 @@ This repository contains the website, printable event poster, and call for resea
 
 - Responsive workshop website with phone, tablet, and desktop layouts, touch-friendly section navigation, research topics, a tentative program, and organizers.
 - A site-native participant information-list form backed by Google Forms, with required consent, validated email addresses, and responses stored in a private organizer-owned Google Sheet.
-- A dedicated [schedule page](https://genisys27.github.io/schedule.html) with a clear 9:00 am–5:00 pm timetable, session durations, and planned formats.
+- An expandable [homepage schedule](https://genisys27.github.io/#schedule) with a clear 9:00 am–5:00 pm timetable, session durations, and planned formats.
 - Venue information for the fifth-floor conference room in the Ralph S. O’Connor Building for Engineering and Science, plus a responsive Google Map of the building.
 - A homepage submission section with matching poster and research presentation buttons, presentation slide limits, poster details, and an expandable poster upload form.
 - One-page PDF call for research posters and presentations from undergraduate, master’s, and PhD students and postdoctoral researchers, with separate clickable submission links, requirements, and a QR code for printed copies. Links on the homepage and event poster open the PDF in a new tab for viewing. The full plain-text call remains available.
@@ -32,8 +32,8 @@ For the event poster, select **Event poster**, then **Print / Save PDF**. Choose
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | Workshop page, tentative program, and submission call |
-| `schedule.html` | Detailed tentative schedule; homepage summarizes morning, lunch, and afternoon |
+| `index.html` | Workshop page, expandable tentative schedule, and submission call |
+| `schedule.html` | Compatibility redirect to the homepage Schedule section |
 | `styles.css` | Website styling and responsive layout |
 | `poster.html` | Printable event poster |
 | `poster.css` | Poster styling and A3 print layout |
@@ -45,9 +45,9 @@ For the event poster, select **Event poster**, then **Print / Save PDF**. Choose
 | `assets/` | Campus photograph, logo, browser tab icons, and touch icon |
 | `.nojekyll` | Publish the static files directly without Jekyll processing |
 | `workshop.json` | Poster/presentation links, deadline, and public Google Form URL |
-| `scripts/update-submission.mjs` | Synchronize both submission destinations across the homepage, schedule, event poster, and downloadable call |
+| `scripts/update-submission.mjs` | Synchronize both submission destinations across the homepage, event poster, and downloadable call |
 
-Update the website, schedule, printable poster, and downloadable call together when dates, eligibility, or submission details change. If the event is renamed, also update page titles, metadata, filenames, download links, and this documentation.
+Update the website, printable poster, and downloadable call together when dates, eligibility, or submission details change. If the event is renamed, also update page titles, metadata, filenames, download links, and this documentation.
 
 ### Rebuild the PDF call
 
@@ -102,11 +102,11 @@ The published repository is `GeniSys27/GeniSys27.github.io`. Relative URLs keep 
 
 ## Responsive layout
 
-The homepage and schedule use fluid spacing and typography, with a stacked hero and agenda at 900px and phone layouts at 600px. Research themes simplify at 1100px; very narrow phones receive additional adjustments at 380px. Key navigation and primary controls have touch targets of at least 44px. The header becomes non-sticky in short landscape viewports. The printable poster retains its A3 print rules.
+The homepage uses fluid spacing and typography, with a stacked hero and agenda at 900px and phone layouts at 600px. The detailed day program is collapsed by default inside the Schedule section and expands on request. Research themes simplify at 1100px; very narrow phones receive additional adjustments at 380px. Key navigation and primary controls have touch targets of at least 44px. The header becomes non-sticky in short landscape viewports. The printable poster retains its A3 print rules.
 
 The campus photo has 600px, 1000px, and 1800px sources; browsers choose a suitable image for the viewport and display density. Native links, keyboard focus, pinch zoom, reduced-motion preferences, and direct Box/Google Maps links remain available.
 
-The homepage and schedule were checked in browser viewport simulations from 320px to 1920px, including portrait tablets and landscape phones. Checks cover overflow, local links, agenda content, upload disclosure, and direct upload anchors; they do not replace testing on every physical device or browser.
+The homepage was checked in browser viewport simulations from 320px to 1920px, including portrait tablets and landscape phones. Checks cover overflow, local links, agenda content, upload disclosure, and direct upload anchors; they do not replace testing on every physical device or browser.
 
 ## Configure the Box upload link
 

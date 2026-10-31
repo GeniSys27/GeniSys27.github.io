@@ -1,6 +1,6 @@
 # GeniSys 2027 workshop progress
 
-Last updated: October 28, 2026
+Last updated: October 31, 2026
 
 ## First version
 
@@ -24,8 +24,8 @@ Last updated: October 28, 2026
 - [x] Verify desktop and phone navigation, keyboard FAQ controls, and Box form loading without submitting files.
 
 - [x] Add the organizer-provided Google Map with a direct-link fallback.
-- [x] Add a dedicated tentative schedule page and a concise homepage overview.
-- [x] Verify the new pages at desktop and 320px widths, map loading, section highlighting, cross-page links, agenda sessions, and Box configuration compatibility.
+- [x] Integrate the tentative schedule into the homepage with a collapsed-by-default detailed program.
+- [x] Verify the homepage at desktop and phone widths, map loading, section highlighting, agenda expansion, and Box configuration compatibility.
 - [x] Add a participant information-list form with role, affiliation, and explicit communication consent.
 - [x] Keep event updates separate from poster/presentation submissions and avoid implying that an updates request reserves attendance or a speaking slot.
 - [x] Create and publish a Rice Google Form with validated email, required consent, and role.
@@ -36,8 +36,8 @@ Last updated: October 28, 2026
 ## Responsive experience
 
 - [x] Simplify the website and schedule, reduce repeated copy, and make embedded uploads optional to expand.
-- [x] Verify the simplified homepage and schedule at 18 page/viewport combinations, plus keyboard uploads, direct upload anchors, and configured/pending Box links.
-- [x] Check the homepage, schedule, and printable poster across 45 page/viewport combinations, from 320px phones to 1920px desktops, including phone landscape.
+- [x] Verify the responsive homepage schedule, keyboard uploads, direct upload anchors, and configured/pending Box links.
+- [x] Check the homepage and printable poster across 45 page/viewport combinations, from 320px phones to 1920px desktops, including phone landscape.
 - [x] Improve tablet layouts, phone submission details, and touch targets; keep all content within the viewport.
 - [x] Add 600px and 1000px campus image variants and responsive source selection.
 - [x] Preserve Box configuration compatibility, cross-page links, and the print stylesheet.

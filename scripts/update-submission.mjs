@@ -66,8 +66,8 @@ export async function updateSubmission(root) {
   const escapedUrl = escapeHtml(url);
   const externalLink = (label, className = '') =>
     `<a${className ? ` class="${className}"` : ''} href="${escapedUrl}" target="_blank" rel="noopener noreferrer">${label}</a>`;
-  const paths = ['index.html', 'poster.html', 'genisys-2027-call-for-posters.txt', 'schedule.html'];
-  let [index, poster, call, schedule] = await Promise.all(paths.map(file => readFile(path.join(root, file), 'utf8')));
+  const paths = ['index.html', 'poster.html', 'genisys-2027-call-for-posters.txt'];
+  let [index, poster, call] = await Promise.all(paths.map(file => readFile(path.join(root, file), 'utf8')));
 
   const filenames = '<div class="submission-filenames"><p><strong>Submission filenames</strong></p>' +
     '<code>Presentation_<wbr>Dept_<wbr>First_<wbr>Lastname_<wbr>Level.pptx</code>' +
@@ -75,14 +75,8 @@ export async function updateSubmission(root) {
     '<code>Poster_<wbr>Dept_<wbr>First_<wbr>Lastname_<wbr>Level.pdf</code>' +
     '<p>Replace Dept with your department name or abbreviation; any department is accepted. Replace First and Lastname with your first and last names. Use Undergrad, Master, PhD, or Postdoc for Level.</p></div>';
   index = replaceSlot(index, 'filenames', filenames, 'submission');
-  schedule = replaceSlot(schedule, 'filenames', filenames, 'submission');
   index = replaceSlot(index, 'deadline', deadlineHtml, 'submission');
-  schedule = replaceSlot(schedule, 'requirements', `<strong>Submission deadline:</strong> ${deadlineHtml}. Posters: PPTX or PDF. Presentations: PPTX.`, 'submission');
   poster = replaceSlot(poster, 'deadline', deadlineHtml, 'submission');
-
-  schedule = replaceSlot(schedule, 'actions', studentUrl
-    ? `<a class="button button-dark" href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a presentation <span aria-hidden="true">↗</span></a>`
-    : '<button class="button button-dark" type="button" disabled aria-describedby="presentation-link-status">Submit a presentation</button><p id="presentation-link-status" class="submission-link-status">Submission link to be announced.</p>', 'presentation');
 
   const homepagePresentation = studentUrl
     ? `<a class="button button-dark" href="${escapeHtml(studentUrl)}" target="_blank" rel="noopener noreferrer">Submit a presentation <span aria-hidden="true">↗</span></a>`
@@ -134,7 +128,7 @@ export async function updateSubmission(root) {
     '\n\nORGANIZERS\n');
 
   // Validate all inputs and render all outputs before changing any file.
-  for (const [i, content] of [index, poster, call, schedule].entries()) {
+  for (const [i, content] of [index, poster, call].entries()) {
     await writeFile(path.join(root, paths[i]), content);
   }
   return { configured: Boolean(url), presentationConfigured: Boolean(studentUrl), files: paths };

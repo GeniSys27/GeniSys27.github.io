@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap">
-  <link rel="stylesheet" href="styles.css?v=1.3.7">
+  <link rel="stylesheet" href="styles.css?v=1.4.0">
   <script src="script.js?v=1.3.6" defer></script>
 </head>
 <body>
@@ -26,7 +26,7 @@
   <div class="header-inner">
     <a class="wordmark" href="#home" aria-label="GeniSys 2027 home"><img class="brand-mark" src="assets/genisys-mark.png?v=network-1" width="36" height="36" alt=""><span class="wordmark-type">GeniSys<span class="wordmark-year">2027</span></span></a>
     <nav class="section-nav" aria-label="Main navigation">
-      <a href="schedule.html">Schedule</a>
+      <a href="#schedule">Schedule</a>
       <a href="#posters">Submissions</a>
       <a href="#updates">Updates</a>
       <a href="#venue">Venue</a>
@@ -44,7 +44,7 @@
         <p class="hero-description">A one-day workshop on efficient, connected, and sustainable computing. Share your research, receive feedback, practice presenting to a broader audience, and meet potential collaborators.</p>
         <div class="hero-actions">
           <a class="button button-mint" href="#posters">Submit your research</a>
-          <a class="text-link" href="schedule.html">View the program <span aria-hidden="true">↗</span></a>
+          <a class="text-link" href="#schedule">View the program <span aria-hidden="true">↓</span></a>
         </div>
       </div>
       <figure class="hero-photo">
@@ -64,6 +64,54 @@
     <article><h3><svg class="theme-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="6" y="6" width="12" height="12" rx="2"></rect><rect x="9" y="9" width="6" height="6" rx="1"></rect><path d="M9 3v3m6-3v3M9 18v3m6-3v3M3 9h3m-3 6h3m12-6h3m-3 6h3"></path></svg><span>Efficient AI</span></h3><p>AI algorithm design, agent systems, scalable training and inference, and heterogeneous computing.</p></article>
     <article><h3><svg class="theme-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="12" cy="5" r="2.5"></circle><circle cx="5" cy="18" r="2.5"></circle><circle cx="19" cy="18" r="2.5"></circle><path d="m10.8 7.2-4.6 8.6m7-8.6 4.6 8.6M7.5 18h9"></path></svg><span>Connected systems</span></h3><p>Networks and infrastructure for distributed intelligence.</p></article>
     <article><h3><svg class="theme-icon" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 4C12 3 5 7 5 13a6 6 0 0 0 6 6c6 0 10-7 9-15Z"></path><path d="m4 20 10-10"></path></svg><span>Sustainable computing</span></h3><p>Energy-aware, reliable, and secure systems.</p></article>
+  </section>
+
+  <section class="homepage-schedule section-space" id="schedule" aria-labelledby="schedule-title">
+    <div class="page-width">
+      <div class="section-heading heading-row schedule-intro">
+        <div>
+          <p class="eyebrow">ONE-DAY WORKSHOP</p>
+          <h2 id="schedule-title">Schedule</h2>
+          <p class="section-note">All sessions are held sequentially. Invited speakers and topics will be announced.</p>
+        </div>
+        <span class="outline-label">Tentative</span>
+      </div>
+      <dl class="schedule-facts">
+        <div><dt>When</dt><dd>Mid-February 2027<span>One-day workshop</span></dd></div>
+        <div><dt>Time</dt><dd>9:00 am–5:00 pm<span>Houston · Central Time</span></dd></div>
+        <div><dt>Where</dt><dd><a href="#venue">Rice University · O’Connor Building</a><span>Fifth-floor conference room</span></dd></div>
+      </dl>
+
+      <details class="schedule-panel">
+        <summary>
+          <span class="schedule-summary-copy"><strong>The day’s program</strong><span>Morning talks, lunch, afternoon sessions, posters and demos</span></span>
+          <span class="schedule-toggle" aria-hidden="true"><span class="schedule-toggle-show">Show schedule</span><span class="schedule-toggle-hide">Hide schedule</span><svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="m5 7.5 5 5 5-5"></path></svg></span>
+        </summary>
+        <div class="schedule-panel-content">
+          <div class="agenda-grid">
+            <section class="agenda-column" aria-labelledby="morning-title"><h3 id="morning-title">Morning &amp; lunch <span>9:00 am–1:00 pm</span></h3>
+              <ol class="agenda-list">
+                <li><div class="agenda-time"><p><time datetime="09:00">9:00 am</time>–<time datetime="09:45">9:45 am</time></p><span>45 min</span></div><div><h4>Invited talk 1</h4><p>A brief welcome and invited research talk. Speaker and topic to be announced.</p></div></li>
+                <li><div class="agenda-time"><p><time datetime="09:45">9:45 am</time>–<time datetime="10:30">10:30 am</time></p><span>45 min</span></div><div><h4>Research presentations · Morning</h4><p>Up to three research talks · 15 minutes each.</p></div></li>
+                <li class="break-session"><div class="agenda-time"><p><time datetime="10:30">10:30 am</time>–<time datetime="11:00">11:00 am</time></p><span>30 min</span></div><div><h4>Coffee &amp; conversation</h4><p>Meet participants and continue discussions.</p></div></li>
+                <li><div class="agenda-time"><p><time datetime="11:00">11:00 am</time>–<time datetime="11:45">11:45 am</time></p><span>45 min</span></div><div><h4>Invited talk 2</h4><p>Invited research talk. Speaker and topic to be announced.</p></div></li>
+                <li class="break-session"><div class="agenda-time"><p><time datetime="11:45">11:45 am</time>–<time datetime="13:00">1:00 pm</time></p><span>75 min</span></div><div><h4>Lunch &amp; discussion</h4><p>Lunch, informal discussion, and meeting researchers from other groups.</p></div></li>
+              </ol>
+            </section>
+            <section class="agenda-column" aria-labelledby="afternoon-title"><h3 id="afternoon-title">Afternoon <span>1:00 pm–5:00 pm</span></h3>
+              <ol class="agenda-list">
+                <li><div class="agenda-time"><p><time datetime="13:00">1:00 pm</time>–<time datetime="13:45">1:45 pm</time></p><span>45 min</span></div><div><h4>Research presentations · Afternoon 1</h4><p>Up to three research talks · 15 minutes each.</p></div></li>
+                <li><div class="agenda-time"><p><time datetime="13:45">1:45 pm</time>–<time datetime="14:30">2:30 pm</time></p><span>45 min</span></div><div><h4>Invited talk 3</h4><p>Invited research talk. Speaker and topic to be announced.</p></div></li>
+                <li class="break-session"><div class="agenda-time"><p><time datetime="14:30">2:30 pm</time>–<time datetime="15:00">3:00 pm</time></p><span>30 min</span></div><div><h4>Coffee &amp; conversation</h4><p>Meet participants and continue discussions.</p></div></li>
+                <li><div class="agenda-time"><p><time datetime="15:00">3:00 pm</time>–<time datetime="15:45">3:45 pm</time></p><span>45 min</span></div><div><h4>Research presentations · Afternoon 2</h4><p>Up to three research talks · 15 minutes each.</p></div></li>
+                <li class="break-session"><div class="agenda-time"><p><time datetime="15:45">3:45 pm</time>–<time datetime="16:00">4:00 pm</time></p><span>15 min</span></div><div><h4>Open discussion</h4><p>Continue conversations and transition to posters.</p></div></li>
+                <li class="featured-session"><div class="agenda-time"><p><time datetime="16:00">4:00 pm</time>–<time datetime="17:00">5:00 pm</time></p><span>60 min</span></div><div><h4>Research posters &amp; demos</h4><p>Explore the work and talk with presenters. Workshop ends at 5:00 pm.</p></div></li>
+              </ol>
+            </section>
+          </div>
+        </div>
+      </details>
+    </div>
   </section>
 
   <section class="poster-section section-space" id="posters" aria-labelledby="poster-title">
@@ -90,15 +138,6 @@
         </aside>
       </div>
       <!-- box:embed --><details class="upload-panel" id="poster-upload"><summary>Upload your research</summary><div class="upload-content"><p class="upload-help"><strong>Presentations (PPTX)</strong><br><a href="https://rice.app.box.com/f/4326bc92911c49e6beec9122233712e3" target="_blank" rel="noopener noreferrer">Submit a presentation <span aria-hidden="true">↗</span></a></p><p class="upload-help"><strong>Posters (PPTX or PDF)</strong><br>Upload your poster using the form below.</p><iframe src="https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80" height="550" width="800" title="GeniSys research poster upload form on Box" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe><p class="upload-help">Form not loading? <a href="https://rice.app.box.com/f/0370111606fc4a1da368d135b485fb80" target="_blank" rel="noopener noreferrer">Open the poster form in Box</a>.</p></div></details><!-- /box:embed -->
-    </div>
-  </section>
-
-  <section class="program-section section-space page-width" id="program" aria-labelledby="program-title">
-    <div class="section-heading heading-row"><div><h2 id="program-title">Program at a glance</h2><p class="section-note">9:00 am–5:00 pm · Tentative · Houston (Central Time)<br>Invited speakers and topics to be announced.</p></div><a class="text-link" href="schedule.html">Full schedule <span aria-hidden="true">↗</span></a></div>
-    <div class="program-overview">
-      <article><p class="program-time">9:00 am–11:45 am</p><h3>Talks &amp; ideas</h3><p>Two invited talks, up to three research presentations, and a 30-minute coffee and conversation break.</p></article>
-      <article><p class="program-time">11:45 am–4:00 pm</p><h3>Lunch &amp; afternoon talks</h3><p>75-minute lunch and discussion until 1:00 pm, then one invited talk and two research sessions. Coffee: 2:30–3:00 pm; open discussion: 3:45–4:00 pm.</p></article>
-      <article class="featured-program"><p class="program-time">4:00 pm–5:00 pm</p><h3>Research posters &amp; demos</h3><p>A dedicated hour for posters, demonstrations, and informal discussion. Workshop ends at 5:00 pm.</p></article>
     </div>
   </section>
 

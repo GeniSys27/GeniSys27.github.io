@@ -1,6 +1,6 @@
 # GeniSys 2027 workshop progress
 
-Last updated: October 31, 2026
+Last updated: November 6, 2026
 
 ## First version
 
@@ -45,7 +45,7 @@ Last updated: October 31, 2026
 ## Decisions needed before circulation
 
 - [x] Confirm the event name and season: GeniSys 2027, Spring 2027.
-- [x] Confirm the workshop timing as mid-February 2027 and update all materials consistently.
+- [x] Confirm the workshop date as Tuesday, February 16, 2027, and update all materials consistently.
 - [x] Confirm the venue: Ralph S. O’Connor Building for Engineering and Science, fifth-floor conference room.
 - [x] Set January 10, 2027 as the shared poster and research-presentation submission deadline.
 - [x] Confirm the submission channel: research posters are uploaded through Box.
@@ -104,7 +104,7 @@ Last updated: October 31, 2026
 - [x] Welcome research in progress and research-oriented course projects, alongside recent and previously published work.
 - [x] Emphasize research feedback, presentation practice, and potential collaborators.
 - [x] Replace fixed public career-stage quotas with up to 9 research talks; encourage undergraduate/master’s participation.
-- [x] Update the workshop timing to mid-February 2027; retain invited speakers as to be announced.
+- [x] Update the workshop date to Tuesday, February 16, 2027; retain invited speakers as to be announced.
 - [x] Draft the revised announcement email in the parent workspace’s output/email directory.
 - [x] Update the announcement draft and submission guidance to accept PPTX or PDF posters, with matching filename examples.
 - [x] Verify the one-page PDF, clickable links, website layouts at 320/768/1440px, local links, and submission synchronization.

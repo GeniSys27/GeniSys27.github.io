@@ -45,6 +45,13 @@ def build():
     config = json.loads((ROOT / "workshop.json").read_text())
     poster_url = submission_url(config, "boxUploadUrl")
     presentation_url = submission_url(config, "studentPresentationUrl")
+    event_iso = config.get("eventDate", "").strip()
+    if not event_iso:
+        raise ValueError("eventDate must use YYYY-MM-DD")
+    event_date = date.fromisoformat(event_iso)
+    if event_date.isoformat() != event_iso:
+        raise ValueError("eventDate must use YYYY-MM-DD")
+    event_label = f"{event_date:%A}, {event_date:%B} {event_date.day}, {event_date.year}"
     iso = config.get("submissionDeadline", "").strip()
     if iso:
         deadline = date.fromisoformat(iso)
@@ -143,7 +150,7 @@ def build():
     text("2027", 85 + pdfmetrics.stringWidth("GeniSys", "CallSans-Bold", 30) + 9, 47, 30, False, MINT)
     text("Call for submissions", MARGIN, 90, 27, True, white)
     text("Research posters & presentations", MARGIN, 123, 13, False, white)
-    text("Mid-February 2027  |  Rice University, Houston, Texas",
+    text(f"{event_label}  |  Rice University, Houston, Texas",
          MARGIN, 146, 9.5, False, MINT)
 
     box(0, 166, WIDTH, 44, MINT)
@@ -192,7 +199,7 @@ def build():
 
     box(MARGIN, 552, CONTENT, 57, PALE, radius=5, stroke=LINE)
     text("WORKSHOP DETAILS", MARGIN + 12, 563, 8.5, True, TEAL)
-    paragraph("<b>Mid-February 2027</b>  |  9:00 am-5:00 pm, Central Time<br/>"
+    paragraph(f"<b>{event_label}</b>  |  9:00 am-5:00 pm, Central Time<br/>"
               "Ralph S. O'Connor Building, fifth-floor conference room, Rice University",
               MARGIN + 12, 578, CONTENT - 24, 10, 14, max_height=28)
 

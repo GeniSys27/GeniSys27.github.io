@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.4.1 - 2026-11-06
+
+- Confirm the workshop date as Tuesday, February 16, 2027, across the website, printable poster, downloadable calls, metadata, and project documentation.
+- Store the event date in the workshop configuration and use it when rebuilding the PDF call.
+- Version downloadable PDF and JPG links to prevent visitors from seeing cached materials with the previous tentative date.
+
 ## 1.4.0 - 2026-10-31
 
 - Integrate Schedule into the homepage so visitors can move between sections without loading a separate page.

@@ -7,6 +7,7 @@ This repository contains the website, printable event poster, and call for resea
 ## Included
 
 - Responsive workshop website with phone, tablet, and desktop layouts, touch-friendly section navigation, research topics, a tentative program, and organizers.
+- A **Mark this date** control with Google Calendar and downloadable `.ics` options for the confirmed workshop date and program time.
 - A site-native participant information-list form backed by Google Forms, with required consent, validated email addresses, and responses stored in a private organizer-owned Google Sheet.
 - An expandable [homepage schedule](https://genisys27.github.io/#schedule) with a clear 9:00 am–5:00 pm timetable, session durations, and planned formats.
 - Venue information for the fifth-floor conference room in the Ralph S. O’Connor Building for Engineering and Science, plus a responsive Google Map of the building.
@@ -38,6 +39,7 @@ For the event poster, select **Event poster**, then **Print / Save PDF**. Choose
 | `poster.html` | Printable event poster |
 | `poster.css` | Poster styling and A3 print layout |
 | `script.js` | Section navigation, sticky-header offsets, and poster print action |
+| `genisys-2027.ics` | Downloadable calendar event for Apple Calendar, Outlook, and other calendar apps |
 | `genisys-2027-call-for-posters.txt` | Downloadable call for research posters and presentations; original URL retained for existing links |
 | `output/pdf/genisys-2027-call-for-submissions.pdf` | One-page PDF call linked from the homepage and event poster toolbar |
 | `output/image/genisys-2027-call-for-submissions.jpg` | High-resolution JPG export for sharing and image-based publishing |

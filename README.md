@@ -11,7 +11,7 @@ This repository contains the website, printable event poster, and call for resea
 - An expandable [homepage schedule](https://genisys27.github.io/#schedule) with a clear 9:00 am–5:00 pm timetable, session durations, and planned formats.
 - Venue information for the fifth-floor conference room in the Ralph S. O’Connor Building for Engineering and Science, plus a responsive Google Map of the building.
 - A homepage submission section with matching poster and research presentation buttons, presentation slide limits, poster details, and an expandable poster upload form.
-- One-page PDF call for research posters and presentations from undergraduate, master’s, and PhD students and postdoctoral researchers, with separate clickable submission links, requirements, and a QR code for printed copies. Links on the homepage and event poster open the PDF in a new tab for viewing. The full plain-text call remains available.
+- One-page PDF call for research posters and presentations from undergraduate, master’s, and PhD students and postdoctoral researchers, with separate clickable submission links, a participant-updates link, requirements, and an updates QR code for printed copies. Links on the homepage and event poster open the PDF in a new tab for viewing. The full plain-text call remains available.
 - A3 event poster with a browser **Print / Save PDF** control.
 - A coordinated logo, browser tab icons, and touch icon; see [BRANDING.md](BRANDING.md).
 - [Progress checklist](PROGRESS.md) and [change history](CHANGELOG.md).

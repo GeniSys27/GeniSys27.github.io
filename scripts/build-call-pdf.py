@@ -216,16 +216,18 @@ def build():
     text("T. S. Eugene Ng  |  Yuke Wang  |  Jiarong Xing", MARGIN, 730, 10, True)
     paragraph(f'<b>Details &amp; schedule:</b> <link href="{SITE}" color="#00665c">'
               'genisys27.github.io</link><br/>'
+              f'<b>Stay informed:</b> <link href="{SITE}#updates" color="#00665c">'
+              'genisys27.github.io/#updates</link><br/>'
               '<b>Contact:</b> <link href="mailto:yuke.wang@rice.edu" color="#00665c">'
-              'yuke.wang@rice.edu</link>', MARGIN, 747, CONTENT - 75, 9.5, 12, max_height=24)
-    qr = QrCodeWidget(SITE + "#posters")
+              'yuke.wang@rice.edu</link>', MARGIN, 747, CONTENT - 75, 8.7, 11, max_height=33)
+    qr = QrCodeWidget(SITE + "#updates")
     x0, y0, x1, y1 = qr.getBounds()
     size = 52
     drawing = Drawing(size, size, transform=[size / (x1 - x0), 0, 0, size / (y1 - y0), 0, 0])
     drawing.add(qr)
     renderPDF.draw(drawing, c, WIDTH - MARGIN - size, 20)
-    c.linkURL(SITE + "#posters", (WIDTH - MARGIN - size, 20, WIDTH - MARGIN, 20 + size))
-    text("Scan for details", WIDTH - MARGIN - size, 778, 7, False, TEAL)
+    c.linkURL(SITE + "#updates", (WIDTH - MARGIN - size, 20, WIDTH - MARGIN, 20 + size))
+    text("Scan for updates", WIDTH - MARGIN - size, 778, 7, False, TEAL)
     c.showPage()
     c.save()
     print(OUTPUT)

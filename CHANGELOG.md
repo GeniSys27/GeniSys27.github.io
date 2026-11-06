@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.2 - 2026-11-06
+
+- Add a participant-information-list link to the printable poster, plain-text call, downloadable PDF, and sharing JPG.
+- Point the PDF poster QR code directly to the homepage event-updates form and version the downloadable files to refresh cached copies.
+
 ## 1.4.1 - 2026-11-06
 
 - Confirm the workshop date as Tuesday, February 16, 2027, across the website, printable poster, downloadable calls, metadata, and project documentation.

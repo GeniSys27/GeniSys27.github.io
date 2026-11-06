@@ -195,7 +195,7 @@ html.page-motion.page-leaving main { opacity: 0; transform: translateY(-4px); }
 .venue-copy .text-link { color: var(--teal); margin-top: 18px; }
 .venue-map { height: 310px; overflow: hidden; border: 1px solid var(--line); border-radius: 7px; }
 .venue-map iframe { display: block; width: 100%; height: 100%; border: 0; }
-.organizers-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; }
+.organizers-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 32px; }
 .organizers-grid article { padding-top: 22px; border-top: 1px solid var(--line); }
 .organizers-grid h3 { font-size: 1.25rem; }
 .organizers-grid h3 a { display: inline-flex; min-height: 44px; align-items: center; gap: 16px; text-decoration: none; }
@@ -272,7 +272,7 @@ html.page-motion.page-leaving main { opacity: 0; transform: translateY(-4px); }
   .submission-grid { grid-template-columns: 1fr 1fr; gap: 28px; }
   .updates-grid { grid-template-columns: .75fr 1.25fr; gap: 28px; }
   .submission-panel dl > div { grid-template-columns: 1fr; gap: 5px; padding-block: 14px; }
-  .organizers-grid { gap: 22px; }
+  .organizers-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 22px; }
   .venue-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
   .venue-map { height: 300px; }
   .agenda-grid { grid-template-columns: 1fr; gap: 36px; }

@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.4.3 - 2026-11-06
+
+- Add Tong Geng from Electrical and Computer Engineering to the GeniSys 2027 organizing committee.
+- Update the homepage, printable poster, downloadable PDF and JPG, and plain-text call to show all four organizers.
+
 ## 1.4.2 - 2026-11-06
 
 - Add a participant-information-list link to the printable poster, plain-text call, downloadable PDF, and sharing JPG.

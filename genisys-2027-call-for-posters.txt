@@ -72,6 +72,7 @@ ORGANIZERS
 T. S. Eugene Ng, Professor, Computer Science, Rice University
 Yuke Wang, Assistant Professor, Computer Science, Rice University
 Jiarong Xing, Assistant Professor, Computer Science, Rice University
+Tong Geng, Assistant Professor, Electrical and Computer Engineering, Rice University
 
 CONTACT
 Questions: yuke.wang@rice.edu

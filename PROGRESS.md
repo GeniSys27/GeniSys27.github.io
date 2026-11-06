@@ -6,7 +6,7 @@ Last updated: November 6, 2026
 
 - [x] Create the workshop website and responsive layout.
 - [x] Add research topics and the tentative one-day program.
-- [x] Add the three workshop organizers.
+- [x] Add the four workshop organizers.
 - [x] Draft the call for research posters.
 - [x] Welcome recent research and previously published work.
 - [x] Keep unconfirmed dates, deadlines, and submission details to be announced.

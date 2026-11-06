@@ -213,7 +213,7 @@ def build():
     c.setStrokeColor(LINE)
     c.line(MARGIN, HEIGHT - 708, WIDTH - MARGIN, HEIGHT - 708)
     text("ORGANIZERS", MARGIN, 718, 8, True, TEAL)
-    text("T. S. Eugene Ng  |  Yuke Wang  |  Jiarong Xing", MARGIN, 730, 10, True)
+    text("T. S. Eugene Ng  |  Yuke Wang  |  Jiarong Xing  |  Tong Geng (ECE)", MARGIN, 730, 10, True)
     paragraph(f'<b>Details &amp; schedule:</b> <link href="{SITE}" color="#00665c">'
               'genisys27.github.io</link><br/>'
               f'<b>Stay informed:</b> <link href="{SITE}#updates" color="#00665c">'
